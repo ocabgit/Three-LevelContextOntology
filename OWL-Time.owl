@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2006/time"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.w3.org/2006/time">
+    <Prefix name="" IRI="http://www.w3.org/2006/time#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="time" IRI="http://www.w3.org/2006/time#"/>
+    <Prefix name="tzont" IRI="http://www.w3.org/2006/timezone#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.w3.org/TR/owl-time</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">
+      An OWL Ontology of Time (OWL-Time).
+    </Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#DateTimeDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DateTimeInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DurationDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#January"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProperInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="zone#TimeZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#after"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#before"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBeginning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDateTimeDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDurationDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnd"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inDateTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inside"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalAfter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalBefore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalContains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalDuring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalEquals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalFinishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalFinishes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalMeets"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalMetBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalOverlappedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalOverlaps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalStartedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#intervalStarts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#timeZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#unitType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#day"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dayOfYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#days"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inXSDDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#month"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#months"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#second"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#seconds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#week"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weeks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#xsdDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#years"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DayOfWeek"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Wednesday"/>
+            <NamedIndividual IRI="#Friday"/>
+            <NamedIndividual IRI="#Saturday"/>
+            <NamedIndividual IRI="#Tuesday"/>
+            <NamedIndividual IRI="#Monday"/>
+            <NamedIndividual IRI="#Sunday"/>
+            <NamedIndividual IRI="#Thursday"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TemporalEntity"/>
+        <ObjectUnionOf>
+            <Class IRI="#Instant"/>
+            <Class IRI="#Interval"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TemporalUnit"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#unitMonth"/>
+            <NamedIndividual IRI="#unitMinute"/>
+            <NamedIndividual IRI="#unitDay"/>
+            <NamedIndividual IRI="#unitHour"/>
+            <NamedIndividual IRI="#unitYear"/>
+            <NamedIndividual IRI="#unitSecond"/>
+            <NamedIndividual IRI="#unitWeek"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#unitType"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#dayOfWeek"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#timeZone"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#day"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#dayOfYear"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hour"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#minute"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#month"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#second"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#week"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#year"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DateTimeInterval"/>
+        <Class IRI="#ProperInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#days"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#minutes"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#months"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#seconds"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#weeks"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DurationDescription"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#years"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instant"/>
+        <Class IRI="#TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interval"/>
+        <Class IRI="#TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#January"/>
+        <Class IRI="#DateTimeDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#January"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#unitType"/>
+            <NamedIndividual IRI="#unitMonth"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#January"/>
+        <DataHasValue>
+            <DataProperty IRI="#month"/>
+            <Literal datatypeIRI="&xsd;gMonth">--01</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProperInterval"/>
+        <Class IRI="#Interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#DurationDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="#days"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="#hours"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="#minutes"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="#months"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="#seconds"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="#weeks"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#years"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Instant"/>
+        <Class IRI="#ProperInterval"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Friday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Monday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Saturday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Sunday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Thursday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Tuesday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DayOfWeek"/>
+        <NamedIndividual IRI="#Wednesday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitDay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitHour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitMinute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitMonth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitSecond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitWeek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemporalUnit"/>
+        <NamedIndividual IRI="#unitYear"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#intervalBefore"/>
+        <ObjectProperty IRI="#before"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#after"/>
+        <ObjectProperty IRI="#before"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#intervalAfter"/>
+        <ObjectProperty IRI="#intervalBefore"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#intervalContains"/>
+        <ObjectProperty IRI="#intervalDuring"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#intervalFinishedBy"/>
+        <ObjectProperty IRI="#intervalFinishes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#intervalMetBy"/>
+        <ObjectProperty IRI="#intervalMeets"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#intervalOverlappedBy"/>
+        <ObjectProperty IRI="#intervalOverlaps"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#intervalStartedBy"/>
+        <ObjectProperty IRI="#intervalStarts"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#before"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#before"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dayOfWeek"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBeginning"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDateTimeDescription"/>
+        <Class IRI="#DateTimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDurationDescription"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnd"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inDateTime"/>
+        <Class IRI="#Instant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inside"/>
+        <Class IRI="#Interval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalBefore"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalDuring"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalEquals"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalFinishes"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalMeets"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalOverlaps"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalStarts"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#timeZone"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#unitType"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#before"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dayOfWeek"/>
+        <Class IRI="#DayOfWeek"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBeginning"/>
+        <Class IRI="#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDateTimeDescription"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDurationDescription"/>
+        <Class IRI="#DurationDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnd"/>
+        <Class IRI="#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inDateTime"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inside"/>
+        <Class IRI="#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalBefore"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalDuring"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalEquals"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalFinishes"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalMeets"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalOverlaps"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalStarts"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#timeZone"/>
+        <Class IRI="zone#TimeZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#unitType"/>
+        <Class IRI="#TemporalUnit"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#day"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dayOfYear"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#days"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hour"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hours"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inXSDDateTime"/>
+        <Class IRI="#Instant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minute"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minutes"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#month"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#months"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#second"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#seconds"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#week"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weeks"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#xsdDateTime"/>
+        <Class IRI="#DateTimeInterval"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#year"/>
+        <Class IRI="#DateTimeDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#years"/>
+        <Class IRI="#DurationDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#day"/>
+        <Datatype abbreviatedIRI="xsd:gDay"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dayOfYear"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#days"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hour"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hours"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inXSDDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minute"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minutes"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#month"/>
+        <Datatype abbreviatedIRI="xsd:gMonth"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#months"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#second"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#seconds"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#week"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weeks"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#xsdDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#years"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
