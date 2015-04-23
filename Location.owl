@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/location"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/location">
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -23,16 +23,1141 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represent the module of location taken from CONON</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represent the module of location taken from CONON and complemented with the vocabulary of SUMO and SOUPA ontologies.</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="#AMRadioStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ATMMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ATMSlot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirStream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirTransitway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anchorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntarcticArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApartmentBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApartmentUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArableLand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchipelagicArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archipelago"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AridClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtStudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtificialSatellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AstronomicalBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atmosphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtmosphericRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atoll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Auditorium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barricade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballDugout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bedroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyOfWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BorealForest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BritishCrownColony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BroadGaugeRailway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BroadcastingStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuildingLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusStop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Butte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CanalLock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CanalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canyon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaveMatrix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ceiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cemetery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Checkpoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chimney"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityDistrict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cliff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Closet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoastalPlain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdDampClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommercialBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommercialUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationSatellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CondominiumBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CondominiumUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContinentalClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContinentalMargin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContinentalShelf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoralReef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#County"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourtRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cove"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrudeOilPipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CultivatedLandArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Curb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeepDraftHarbor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeepDraftPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesertClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiningRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doorway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dormitory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Downtown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drawbridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DressingRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driveway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryWinterColdClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DualGaugeRailway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectrifiedRailway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmbassyBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntertainmentBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Estuary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuropeanCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuropeanNation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eutelsat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExclusiveFishingZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExecutiveResidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expressway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendedFishingZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FMRadioStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Factory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FarmBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fireplace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedBridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Floor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreshWaterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeopoliticalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glacier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grassland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gulf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harbor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heliport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hemisphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeGarage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HospitalBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostNation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydropowerWaterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IllicitDrugMoneyLaunderingArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentState"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#IndoorSpace"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Location"/>
+        <Class IRI="#IndustrialPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InlandWaterSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inlet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InletPassage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inmarsat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intelsat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalBorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intersputnik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrrigatedLand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Island"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Isthmus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JetStream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jungle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LakeRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandTransitway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandlockedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandlockedWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Latitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lawn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LittoralCurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LittoralZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocalizablePlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowlandArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeClaimArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeContiguousZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeExclusiveEconomicZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeHazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeShelfArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marketplace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalClinicBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediterraneanClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meteorite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meteoroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiddleLatitudeDesertClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MidlatitudeContinentalClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryInstallation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonsoonClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MountainRange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MovableBridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipleTrackRailway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NarrowGaugeRailway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGasPipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalSatellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NuclearWeaponProductionFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NuclearWeaponResearchFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficeBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OffshoreAnchorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orbita"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OutdoorSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OuterSpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OverseasArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pampa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParkingGarage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParkingLot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParliamentaryTerritory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PavedRunway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peninsula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerformanceStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerformanceStageWing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerimeterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermanentCropLand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermanentResidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PetroleumProductPipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piedmont"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfCommerce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfWorship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plateau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolarClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolarTypeFClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliceFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PontoonBridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Porch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PortCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostalPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostcodeArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prairie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prison"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadioStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RailJunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RailroadTrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Railway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RailwayTerminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RainForest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rapids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealEstate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reservoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReservoirLake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidentialBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RipCurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiverBank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiverMouth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiverPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiverSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadJunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roadway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Runway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaltLake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaltWaterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satellite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Savanna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeaLane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeaPort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeabedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seacoast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryHighway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemiaridClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SewageSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShipBerth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShippingChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShippingLane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShoreArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shoreline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShortwaveRadioStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sidewalk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleFamilyResidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlopedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsGround"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stairway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandardGaugeRailway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Star"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateOrProvince"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaticWaterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StationaryArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steeple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steppe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SteppeClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StormFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreamWaterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreamWaterConfluence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Street"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubmergedLandArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubtropicalDesertClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceGroundArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfacedRoadway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SwimmingPool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelevisionStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperateClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperateHardwoodForest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperateRainForest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperateSummerDryClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperateWinterDryClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporaryResidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerminalBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerritorialSea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TidalBore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TidalEbb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TidalFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TollBooth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tomb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TouristSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitStop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitTerminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transitway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitwayJunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TropicalClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TropicalRainForest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tundra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TundraClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tunnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UndergroundArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UniformPerimeterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnincorporatedUnitedStatesTerritory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnpavedRunway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnsurfacedRoadway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UplandArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Veldt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolcanicCone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolcanicMountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volcano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VotingPoll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WMDWeaponsProductionFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WMDWeaponsResearchFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Warehouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterCurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterJunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WatershedDivide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetTropicalClimateZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Workshop"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#contains"/>
@@ -43,18 +1168,2722 @@
     <Declaration>
         <DataProperty IRI="#longtitude"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AachenAirport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AalandIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AalborgAirport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbadanAirport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdanaTurkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AddisAbabaEthiopia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdenYemen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdoraWestBank"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AfulaIsrael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alabama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alaska"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Albania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Algeria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmericanSamoa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andorra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anguilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AntarcticArea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antarctica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AntiguaAndBarbuda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArcticRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argentina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arizona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arkansas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Armenia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aruba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AshmoreAndCartierIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AtlantaGeorgia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BakerIsland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BaltimoreMaryland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BassasDaIndia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Belgium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BerlinGermany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bermuda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BernSwitzerland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BetLidJunctionIsrael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BosphorousStraitsTurkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BostonMassachusetts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BouvetIsland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BritishVirginIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BwindiforestUganda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#California"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaribbeanRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChicagoUnitedStates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClevelandOhio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colorado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColumbusOhio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConfederateStatedOfAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continents-Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continents-America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continents-Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continents-Australia-Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Continents-Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CopenhagenDenmark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cuba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Czechoslovakia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DallasTexas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denmark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DenverColorado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deserts-ArabianDesert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deserts-Asauad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deserts-Atacama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deserts-Dschurab"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deserts-ErgdeBilma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EarthsAtmosphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EarthsMoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EasternHemisphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EuropaIsland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Finland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GazaStrip"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GloriosoIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HudsonRiver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indoors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LondonUnitedKingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MiddleEastRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MississippiRiver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Montenegro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MoscowRussia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NorthernHemisphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NothAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Outdoors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palestine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PalestinianTerritories"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParacelIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParisFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetEarth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetJupiter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetMars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetMercury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetNeptune"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetPluto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetSaturn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetUranus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlanetVenus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PuertoRico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RedRiver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rivers-Ajan-Jurjach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rivers-Amazonas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RomeItaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scotland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serbia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthernHemisphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthernOcean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USVirginIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VirginIslands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WesternHemisphere"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#IndoorSpace"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#AMRadioStation"/>
+        <Class IRI="#RadioStation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OutdoorSpace"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#ATMMachine"/>
+        <Class IRI="#StationaryArtifact"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ATMSlot"/>
+        <Class IRI="#Hole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirRoute"/>
+        <Class IRI="#TransitRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirStream"/>
+        <Class IRI="#FlowRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirTransitway"/>
+        <Class IRI="#Transitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#AirTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#TransitTerminal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airway"/>
+        <Class IRI="#Transitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanCity"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanState"/>
+        <Class IRI="#StateOrProvince"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anchorage"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntarcticArea"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApartmentBuilding"/>
+        <Class IRI="#ResidentialBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApartmentUnit"/>
+        <Class IRI="#SingleFamilyResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArableLand"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchipelagicArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archipelago"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AridClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtStudio"/>
+        <Class IRI="#Workshop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtificialSatellite"/>
+        <Class IRI="#Satellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AstronomicalBody"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atmosphere"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtmosphericRegion"/>
+        <Class IRI="#SpaceRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atoll"/>
+        <Class IRI="#CoralReef"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Auditorium"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barn"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barricade"/>
+        <Class IRI="#Barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barrier"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballDugout"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballField"/>
+        <Class IRI="#SportsFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basement"/>
+        <Class IRI="#BuildingLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basin"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathroom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bay"/>
+        <Class IRI="#Inlet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bedroom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biome"/>
+        <Class IRI="#Ecosystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodyOfWater"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BorealForest"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BorealForest"/>
+        <Class IRI="#Forest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bridge"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bridge"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BritishCrownColony"/>
+        <Class IRI="#OverseasArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BroadGaugeRailway"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BroadcastingStation"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingLevel"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burrow"/>
+        <Class IRI="#Cave"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusStop"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butte"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butte"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campground"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canal"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canal"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CanalLock"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CanalLock"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CanalStructure"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canyon"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cape"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cave"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cave"/>
+        <Class IRI="#Hole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaveMatrix"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceiling"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cemetery"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Channel"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Channel"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Checkpoint"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chimney"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityBlock"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityDistrict"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classroom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cliff"/>
+        <Class IRI="#SlopedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClimateZone"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Closet"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoastalPlain"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdDampClimateZone"/>
+        <Class IRI="#ColdClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialBuilding"/>
+        <Class IRI="#PlaceOfCommerce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialUnit"/>
+        <Class IRI="#PlaceOfCommerce"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationSatellite"/>
+        <Class IRI="#ArtificialSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CondominiumBuilding"/>
+        <Class IRI="#ResidentialBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CondominiumUnit"/>
+        <Class IRI="#SingleFamilyResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContainerPort"/>
+        <Class IRI="#PortCity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContinentalClimateZone"/>
+        <Class IRI="#TemperateClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContinentalMargin"/>
+        <Class IRI="#SubmergedLandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContinentalShelf"/>
+        <Class IRI="#SubmergedLandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoralReef"/>
+        <Class IRI="#Reef"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#County"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#County"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourtRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cove"/>
+        <Class IRI="#Inlet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creek"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creek"/>
+        <Class IRI="#FreshWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creek"/>
+        <Class IRI="#StreamWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrudeOilPipeline"/>
+        <Class IRI="#Pipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CultivatedLandArea"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curb"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dam"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeepDraftHarbor"/>
+        <Class IRI="#Harbor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeepDraftPort"/>
+        <Class IRI="#PortCity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delta"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desert"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesertClimateZone"/>
+        <Class IRI="#AridClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doorway"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dormitory"/>
+        <Class IRI="#ResidentialBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dormitory"/>
+        <Class IRI="#TemporaryResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Downtown"/>
+        <Class IRI="#CityDistrict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drawbridge"/>
+        <Class IRI="#MovableBridge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DressingRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driveway"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryWinterColdClimateZone"/>
+        <Class IRI="#ColdClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DualGaugeRailway"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalFacility"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectrifiedRailway"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmbassyBuilding"/>
+        <Class IRI="#GovernmentBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntertainmentBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Estuary"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Estuary"/>
+        <Class IRI="#Inlet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Estuary"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuropeanCity"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuropeanNation"/>
+        <Class IRI="#Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eutelsat"/>
+        <Class IRI="#CommunicationSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExclusiveFishingZone"/>
+        <Class IRI="#MaritimeClaimArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExclusiveFishingZone"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExecutiveResidence"/>
+        <Class IRI="#PermanentResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expressway"/>
+        <Class IRI="#SurfacedRoadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendedFishingZone"/>
+        <Class IRI="#MaritimeClaimArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendedFishingZone"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FMRadioStation"/>
+        <Class IRI="#RadioStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Factory"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farm"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FarmBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fence"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Field"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fireplace"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedBridge"/>
+        <Class IRI="#Bridge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedBridge"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Floor"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowRegion"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreshWaterArea"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garage"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeographicArea"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeopoliticalArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glacier"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grassland"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grassland"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gulf"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gulf"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harbor"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harbor"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heliport"/>
+        <Class IRI="#TransitTerminal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hemisphere"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hill"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hill"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hole"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeGarage"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HospitalBuilding"/>
+        <Class IRI="#TemporaryResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostNation"/>
+        <Class IRI="#Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#TemporaryResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#ResidentialBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#SingleFamilyResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydropowerWaterArea"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IllicitDrugMoneyLaunderingArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentState"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentState"/>
+        <Class IRI="#Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndustrialPlant"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InlandWaterSystem"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inlet"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InletPassage"/>
+        <Class IRI="#Inlet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inmarsat"/>
+        <Class IRI="#CommunicationSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intelsat"/>
+        <Class IRI="#CommunicationSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternationalBorder"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intersputnik"/>
+        <Class IRI="#CommunicationSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrrigatedLand"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Island"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isthmus"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JetStream"/>
+        <Class IRI="#AirStream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jungle"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jungle"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#StaticWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LakeRegion"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandForm"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandTransitway"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandTransitway"/>
+        <Class IRI="#Transitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandlockedArea"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandlockedWater"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lane"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Latitude"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lawn"/>
+        <Class IRI="#CultivatedLandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lawn"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LittoralCurrent"/>
+        <Class IRI="#WaterCurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LittoralZone"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocalizablePlace"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Longitude"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowlandArea"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeClaimArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeContiguousZone"/>
+        <Class IRI="#MaritimeClaimArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeContiguousZone"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeExclusiveEconomicZone"/>
+        <Class IRI="#MaritimeClaimArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeExclusiveEconomicZone"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeHazard"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeShelfArea"/>
+        <Class IRI="#MaritimeClaimArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeShelfArea"/>
+        <Class IRI="#SubmergedLandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marketplace"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalClinicBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediterraneanClimateZone"/>
+        <Class IRI="#TemperateClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesa"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesa"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meteorite"/>
+        <Class IRI="#Meteoroid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meteoroid"/>
+        <Class IRI="#AstronomicalBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiddleLatitudeDesertClimateZone"/>
+        <Class IRI="#DesertClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidlatitudeContinentalClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryFront"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryInstallation"/>
+        <Class IRI="#PostalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryInstallation"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mine"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonsoonClimateZone"/>
+        <Class IRI="#TropicalClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moon"/>
+        <Class IRI="#NaturalSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MountainRange"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MountainRange"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovableBridge"/>
+        <Class IRI="#Bridge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultipleTrackRailway"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NarrowGaugeRailway"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nation"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nation"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGasPipeline"/>
+        <Class IRI="#Pipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalSatellite"/>
+        <Class IRI="#AstronomicalBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalSatellite"/>
+        <Class IRI="#Satellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NuclearWeaponProductionFacility"/>
+        <Class IRI="#WMDWeaponsProductionFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NuclearWeaponResearchFacility"/>
+        <Class IRI="#WMDWeaponsResearchFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oasis"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oasis"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ocean"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ocean"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficeBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OffshoreAnchorage"/>
+        <Class IRI="#Anchorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orbita"/>
+        <Class IRI="#CommunicationSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OuterSpaceRegion"/>
+        <Class IRI="#SpaceRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OverseasArea"/>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OverseasArea"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pampa"/>
+        <Class IRI="#Grassland"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pampa"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkingGarage"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkingLot"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParliamentaryTerritory"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PavedRunway"/>
+        <Class IRI="#Runway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peninsula"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerformanceStage"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerformanceStageWing"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerimeterArea"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermanentCropLand"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermanentResidence"/>
+        <Class IRI="#Residence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PetroleumProductPipeline"/>
+        <Class IRI="#Pipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piedmont"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipeline"/>
+        <Class IRI="#Transitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfCommerce"/>
+        <Class IRI="#PostalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfCommerce"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfWorship"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plain"/>
+        <Class IRI="#LowlandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planet"/>
+        <Class IRI="#NaturalSatellite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plateau"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plateau"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolarClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolarTypeFClimateZone"/>
+        <Class IRI="#PolarClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliceFacility"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PontoonBridge"/>
+        <Class IRI="#MovableBridge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Porch"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortCity"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostalPlace"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostcodeArea"/>
+        <Class IRI="#LocalizablePlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prairie"/>
+        <Class IRI="#Grassland"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prairie"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prison"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicPark"/>
+        <Class IRI="#Park"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadioStation"/>
+        <Class IRI="#BroadcastingStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RailJunction"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RailJunction"/>
+        <Class IRI="#TransitwayJunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RailroadTrack"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Railway"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Railway"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RailwayTerminal"/>
+        <Class IRI="#TransitTerminal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RainForest"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RainForest"/>
+        <Class IRI="#Forest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rapids"/>
+        <Class IRI="#StreamWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealEstate"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reef"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reef"/>
+        <Class IRI="#MaritimeHazard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reservoir"/>
+        <Class IRI="#FreshWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReservoirLake"/>
+        <Class IRI="#Lake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReservoirLake"/>
+        <Class IRI="#Reservoir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residence"/>
+        <Class IRI="#PostalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residence"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidentialBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidentialBuilding"/>
+        <Class IRI="#Residence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RipCurrent"/>
+        <Class IRI="#LittoralCurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#FreshWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#StreamWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverBank"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverBank"/>
+        <Class IRI="#ShoreArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverMouth"/>
+        <Class IRI="#StreamWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverMouth"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverPort"/>
+        <Class IRI="#PortCity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiverSystem"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadJunction"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadJunction"/>
+        <Class IRI="#TransitwayJunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roadway"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roof"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Runway"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaltLake"/>
+        <Class IRI="#LandlockedWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaltLake"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaltWaterArea"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satellite"/>
+        <Class IRI="#AstronomicalBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Savanna"/>
+        <Class IRI="#Grassland"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Savanna"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeaLane"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeaPort"/>
+        <Class IRI="#PortCity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeabedArea"/>
+        <Class IRI="#SubmergedLandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seacoast"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seacoast"/>
+        <Class IRI="#ShoreArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryHighway"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemiaridClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SewageSystem"/>
+        <Class IRI="#Pipeline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShipBerth"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShippingChannel"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShippingLane"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shoal"/>
+        <Class IRI="#MaritimeHazard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShoreArea"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shoreline"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShortwaveRadioStation"/>
+        <Class IRI="#RadioStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sidewalk"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingleFamilyResidence"/>
+        <Class IRI="#PermanentResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlopedArea"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sound"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpaceRegion"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsFacility"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsGround"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stairway"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandardGaugeRailway"/>
+        <Class IRI="#Railway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Star"/>
+        <Class IRI="#AstronomicalBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateOrProvince"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateOrProvince"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaticWaterArea"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StationaryArtifact"/>
+        <Class IRI="#LocalizablePlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steeple"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steppe"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteppeClimateZone"/>
+        <Class IRI="#AridClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steps"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StormFront"/>
+        <Class IRI="#AtmosphericRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strait"/>
+        <Class IRI="#BodyOfWater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreamWaterArea"/>
+        <Class IRI="#FlowRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreamWaterArea"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreamWaterConfluence"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Street"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubmergedLandArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubtropicalDesertClimateZone"/>
+        <Class IRI="#DesertClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subway"/>
+        <Class IRI="#Hole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceGroundArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfacedRoadway"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swamp"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SwimmingPool"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionStation"/>
+        <Class IRI="#BroadcastingStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateHardwoodForest"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateHardwoodForest"/>
+        <Class IRI="#Forest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateRainForest"/>
+        <Class IRI="#RainForest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateRainForest"/>
+        <Class IRI="#TemperateHardwoodForest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateSummerDryClimateZone"/>
+        <Class IRI="#TemperateClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperateWinterDryClimateZone"/>
+        <Class IRI="#TemperateClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporaryResidence"/>
+        <Class IRI="#Residence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialSea"/>
+        <Class IRI="#MaritimeClaimArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialSea"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TidalBore"/>
+        <Class IRI="#LittoralCurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TidalEbb"/>
+        <Class IRI="#LittoralCurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TidalFlow"/>
+        <Class IRI="#LittoralCurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tide"/>
+        <Class IRI="#FlowRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tide"/>
+        <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TollBooth"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tomb"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TouristSite"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trail"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <Class IRI="#TerminalBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainStation"/>
+        <Class IRI="#TransitTerminal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransitRoute"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransitStop"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransitTerminal"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transitway"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransitwayJunction"/>
+        <Class IRI="#Transitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TropicalClimateZone"/>
+        <Class IRI="#ClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TropicalRainForest"/>
+        <Class IRI="#RainForest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tundra"/>
+        <Class IRI="#Biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tundra"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TundraClimateZone"/>
+        <Class IRI="#PolarClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tunnel"/>
+        <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tunnel"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndergroundArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UniformPerimeterArea"/>
+        <Class IRI="#PerimeterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnincorporatedUnitedStatesTerritory"/>
+        <Class IRI="#OverseasArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnpavedRunway"/>
+        <Class IRI="#Runway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnsurfacedRoadway"/>
+        <Class IRI="#Roadway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UplandArea"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valley"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valley"/>
+        <Class IRI="#LowlandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veldt"/>
+        <Class IRI="#Grassland"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veldt"/>
+        <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolcanicCone"/>
+        <Class IRI="#Hill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolcanicCone"/>
+        <Class IRI="#Volcano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolcanicMountain"/>
+        <Class IRI="#Mountain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolcanicMountain"/>
+        <Class IRI="#Volcano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volcano"/>
+        <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VotingPoll"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WMDWeaponsProductionFacility"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WMDWeaponsResearchFacility"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wall"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warehouse"/>
+        <Class IRI="#CommercialBuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterArea"/>
+        <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterCurrent"/>
+        <Class IRI="#FlowRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterCurrent"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterJunction"/>
+        <Class IRI="#TransitwayJunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterJunction"/>
+        <Class IRI="#Waterway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterfall"/>
+        <Class IRI="#StreamWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatershedDivide"/>
+        <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatershedDivide"/>
+        <Class IRI="#UplandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterway"/>
+        <Class IRI="#Transitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterway"/>
+        <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetTropicalClimateZone"/>
+        <Class IRI="#TropicalClimateZone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindFlow"/>
+        <Class IRI="#AirStream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Workshop"/>
+        <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AstronomicalBody"/>
+        <Class IRI="#GeographicArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Nation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Creek"/>
+        <Class IRI="#River"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <Class IRI="#IndependentState"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Field"/>
+        <Class IRI="#Forest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicArea"/>
+        <Class IRI="#SpaceRegion"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#IndoorSpace"/>
         <Class IRI="#OutdoorSpace"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Island"/>
+        <Class IRI="#LandlockedArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PavedRunway"/>
+        <Class IRI="#UnpavedRunway"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StaticWaterArea"/>
+        <Class IRI="#StreamWaterArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StaticWaterArea"/>
+        <Class IRI="#WaterCurrent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SurfacedRoadway"/>
+        <Class IRI="#UnsurfacedRoadway"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#AachenAirport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archipelago"/>
+        <NamedIndividual IRI="#AalandIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#AalandIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#AalborgAirport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#AbadanAirport"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#AdanaTurkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#AddisAbabaEthiopia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#AdenYemen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#AdoraWestBank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#AfulaIsrael"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanState"/>
+        <NamedIndividual IRI="#Alabama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanState"/>
+        <NamedIndividual IRI="#Alaska"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Albania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Algeria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#AmericanSamoa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LandArea"/>
+        <NamedIndividual IRI="#AmericanSamoa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanNation"/>
+        <NamedIndividual IRI="#Andorra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Andorra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Angola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#Anguilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LandArea"/>
+        <NamedIndividual IRI="#Anguilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicArea"/>
+        <NamedIndividual IRI="#AntarcticArea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Antarctica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#Antarctica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#AntiguaAndBarbuda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicArea"/>
+        <NamedIndividual IRI="#ArcticRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Argentina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanState"/>
+        <NamedIndividual IRI="#Arizona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanState"/>
+        <NamedIndividual IRI="#Arkansas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Armenia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#Aruba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LandArea"/>
+        <NamedIndividual IRI="#Aruba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#AshmoreAndCartierIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LandArea"/>
+        <NamedIndividual IRI="#AshmoreAndCartierIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Asia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#AtlantaGeorgia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nation"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#BakerIsland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LandArea"/>
+        <NamedIndividual IRI="#BakerIsland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#BaltimoreMaryland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#BassasDaIndia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Island"/>
+        <NamedIndividual IRI="#BassasDaIndia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanNation"/>
+        <NamedIndividual IRI="#Belgium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#BerlinGermany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
+        <NamedIndividual IRI="#Bermuda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LandArea"/>
+        <NamedIndividual IRI="#Bermuda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#BernSwitzerland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicArea"/>
+        <NamedIndividual IRI="#BetLidJunctionIsrael"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicArea"/>
+        <NamedIndividual IRI="#BosphorousStraitsTurkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#BostonMassachusetts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Island"/>
+        <NamedIndividual IRI="#BouvetIsland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archipelago"/>
+        <NamedIndividual IRI="#BritishVirginIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicArea"/>
+        <NamedIndividual IRI="#BwindiforestUganda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanState"/>
+        <NamedIndividual IRI="#California"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicArea"/>
+        <NamedIndividual IRI="#CaribbeanRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#ChicagoUnitedStates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#ClevelandOhio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanState"/>
+        <NamedIndividual IRI="#Colorado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#ColumbusOhio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#ConfederateStatedOfAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Continents-Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Continents-America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Continents-Asia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Continents-Australia-Oceania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Continents-Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#CopenhagenDenmark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Island"/>
+        <NamedIndividual IRI="#Cuba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanNation"/>
+        <NamedIndividual IRI="#Czechoslovakia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#DallasTexas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanNation"/>
+        <NamedIndividual IRI="#Denmark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanCity"/>
+        <NamedIndividual IRI="#DenverColorado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desert"/>
+        <NamedIndividual IRI="#Deserts-ArabianDesert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desert"/>
+        <NamedIndividual IRI="#Deserts-Asauad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desert"/>
+        <NamedIndividual IRI="#Deserts-Atacama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desert"/>
+        <NamedIndividual IRI="#Deserts-Dschurab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desert"/>
+        <NamedIndividual IRI="#Deserts-ErgdeBilma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atmosphere"/>
+        <NamedIndividual IRI="#EarthsAtmosphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moon"/>
+        <NamedIndividual IRI="#EarthsMoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hemisphere"/>
+        <NamedIndividual IRI="#EasternHemisphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Island"/>
+        <NamedIndividual IRI="#EuropaIsland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanNation"/>
+        <NamedIndividual IRI="#Finland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanNation"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#GazaStrip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Island"/>
+        <NamedIndividual IRI="#GloriosoIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Island"/>
+        <NamedIndividual IRI="#Guam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#HudsonRiver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Indoors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#LondonUnitedKingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#MiddleEastRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#MississippiRiver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#Montenegro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#MoscowRussia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hemisphere"/>
+        <NamedIndividual IRI="#NorthernHemisphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#NothAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Oceania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Outdoors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OverseasArea"/>
+        <NamedIndividual IRI="#Palestine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#PalestinianTerritories"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#ParacelIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#ParisFrance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetEarth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetJupiter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetMars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetMercury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetNeptune"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetPluto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetSaturn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetUranus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Planet"/>
+        <NamedIndividual IRI="#PlanetVenus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#RedRiver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#Rivers-Ajan-Jurjach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#Rivers-Amazonas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanCity"/>
+        <NamedIndividual IRI="#RomeItaly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#Scotland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeopoliticalArea"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Star"/>
+        <NamedIndividual IRI="#Sol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#SouthAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hemisphere"/>
+        <NamedIndividual IRI="#SouthernHemisphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PolarClimateZone"/>
+        <NamedIndividual IRI="#SouthernOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archipelago"/>
+        <NamedIndividual IRI="#USVirginIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archipelago"/>
+        <NamedIndividual IRI="#VirginIslands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hemisphere"/>
+        <NamedIndividual IRI="#WesternHemisphere"/>
+    </ClassAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#contains"/>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -76,14 +3905,14 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isLocatedIn"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#Region"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#longtitude"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#longtitude"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#Region"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#longtitude"/>

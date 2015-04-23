@@ -10,21 +10,31 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-113"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-113">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology reprensents the module of a organism taken from SUMO ontology</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DairyCattle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Human"/>
     </Declaration>
     <Declaration>
@@ -40,8 +50,101 @@
         <Class IRI="#Organism"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Pig"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Woman"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#acquaintance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ancestor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#brother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cohabitant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coworker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#domesticPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#familyRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#friend"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#grandparent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#husband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#legalGuardian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#legalRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mutualAcquaintance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mutualStranger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#neighbor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parasite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relative"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stranger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wife"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Organism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DairyCattle"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Human"/>
         <Class IRI="#Organism"/>
@@ -59,9 +162,271 @@
         <Class IRI="#Human"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pig"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Woman"/>
         <Class IRI="#Human"/>
     </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#mother"/>
+        <ObjectProperty IRI="#father"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#husband"/>
+        <ObjectProperty IRI="#wife"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#cohabitant"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#coworker"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#domesticPartner"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#familyRelation"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#friend"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#legalRelation"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#mutualAcquaintance"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#mutualStranger"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#neighbor"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#relative"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sibling"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#spouse"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#ancestor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#brother"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#sister"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#acquaintance"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ancestor"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#brother"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cohabitant"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coworker"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#domesticPartner"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#familyRelation"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#father"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#friend"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#grandparent"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#husband"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legalGuardian"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legalRelation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mother"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mutualAcquaintance"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mutualStranger"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#neighbor"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#parasite"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#parent"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relative"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sibling"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sister"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#spouse"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stranger"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wife"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#acquaintance"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ancestor"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#brother"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cohabitant"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coworker"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#domesticPartner"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#familyRelation"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#father"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#friend"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#grandparent"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#husband"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#legalGuardian"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#legalRelation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mother"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mutualAcquaintance"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mutualStranger"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#neighbor"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#parasite"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#parent"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relative"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sibling"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sister"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#spouse"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stranger"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wife"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Human</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

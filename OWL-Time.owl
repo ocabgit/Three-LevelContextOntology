@@ -192,6 +192,9 @@
     <Declaration>
         <DataProperty IRI="#years"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#DayOfWeek"/>
         <ObjectOneOf>
@@ -476,24 +479,24 @@
         <ObjectProperty IRI="#before"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#after"/>
         <ObjectProperty IRI="#before"/>
+        <ObjectProperty IRI="#after"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#intervalAfter"/>
         <ObjectProperty IRI="#intervalBefore"/>
+        <ObjectProperty IRI="#intervalAfter"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#intervalContains"/>
         <ObjectProperty IRI="#intervalDuring"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#intervalFinishedBy"/>
         <ObjectProperty IRI="#intervalFinishes"/>
+        <ObjectProperty IRI="#intervalFinishedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#intervalMetBy"/>
         <ObjectProperty IRI="#intervalMeets"/>
+        <ObjectProperty IRI="#intervalMetBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#intervalOverlappedBy"/>
@@ -506,6 +509,10 @@
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#before"/>
     </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#after"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#before"/>
         <Class IRI="#TemporalEntity"/>
@@ -539,7 +546,15 @@
         <Class IRI="#Interval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalAfter"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#intervalBefore"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalContains"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -551,6 +566,10 @@
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalFinishedBy"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#intervalFinishes"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
@@ -559,7 +578,15 @@
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalOverlappedBy"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#intervalOverlaps"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalStartedBy"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -574,6 +601,10 @@
         <ObjectProperty IRI="#unitType"/>
         <Class IRI="#DateTimeDescription"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#after"/>
+        <Class IRI="#TemporalEntity"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#before"/>
         <Class IRI="#TemporalEntity"/>
@@ -607,7 +638,15 @@
         <Class IRI="#Instant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalAfter"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#intervalBefore"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalContains"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -619,6 +658,10 @@
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalFinishedBy"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#intervalFinishes"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
@@ -627,7 +670,15 @@
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalOverlappedBy"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#intervalOverlaps"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalStartedBy"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -778,6 +829,146 @@
         <DataProperty IRI="#years"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#DayOfWeek</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Instant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimePoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Interval</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#ProperInterval</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#TemporalEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#TemporalUnit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#before</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">before, earlier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#days</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DayDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#hours</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HourDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#inside</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">temporalPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalAfter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-after</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalBefore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-before, earlier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalContains</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalDuring</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-during, during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalEquals</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-equals, equal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalFinishedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-finished-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalFinishes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-finishes, finishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalMeets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-meets, meetsTemporally</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalMetBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-met-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalOverlappedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-overlapped-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalOverlaps</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-overlaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalStartedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-started-by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#intervalStarts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-starts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#minutes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MinuteDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#months</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonthDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#seconds</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecondDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#weeks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WeekDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#years</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">YearDuration</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

@@ -10,16 +10,17 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-111"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-111">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a computational entity taken from CONON</Literal>
@@ -40,6 +41,12 @@
         <Class IRI="#CompService"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Middleware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiAgentSystem"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Network"/>
     </Declaration>
     <Declaration>
@@ -47,6 +54,18 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualMachine"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#CompAgent"/>
@@ -65,6 +84,14 @@
         <Class IRI="#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Middleware"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiAgentSystem"/>
+        <Class IRI="#SoftwareAgent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Network"/>
         <Class IRI="#CompEntity"/>
     </SubClassOf>
@@ -76,6 +103,29 @@
         <Class IRI="#Software"/>
         <Class IRI="#CompEntity"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareAgent"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualMachine"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#CompApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">applications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#CompEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputationalEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#Middleware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Software that acts as a bridge between an operating system or database and applications, especially on a network.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

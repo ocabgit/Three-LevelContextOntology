@@ -10,21 +10,130 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-119"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-119">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of time taken from SUMO</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Advent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdventSunday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Afternoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnteMeridiem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AscensionThursday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChristianHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChristmasDay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DayTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DhuAlHijjah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EasterSunday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EidAlFitr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epiphany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epoch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FallSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hanukkah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Holiday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JewishHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeapYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoveableHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NightTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PalmSunday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pentecost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostMeridiem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ramadan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeasonOfYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpringSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SummerSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunrise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thursday"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TimeDuration"/>
     </Declaration>
     <Declaration>
@@ -39,6 +148,287 @@
     <Declaration>
         <Class IRI="#TimePosition"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#USHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USThanksgivingDay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weekend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WinterSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#before"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#beforeOrEqual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#beginFn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#duration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#during"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#earlier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endFn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#finishes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#futureFn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#meetsTemporally"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overlapsTemporally"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#starts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temporalPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeforeCommonEra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommonEra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NegativeInfinity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PositiveInfinity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnixEpoch"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Advent"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Advent"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdventSunday"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdventSunday"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdventSunday"/>
+        <Class IRI="#Sunday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afternoon"/>
+        <Class IRI="#DayTime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnteMeridiem"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AscensionThursday"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AscensionThursday"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AscensionThursday"/>
+        <Class IRI="#Thursday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChristianHoliday"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChristmasDay"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChristmasDay"/>
+        <Class IRI="#Day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChristmasDay"/>
+        <Class IRI="#FixedHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Day"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DayTime"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DhuAlHijjah"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EasterSunday"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EasterSunday"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EasterSunday"/>
+        <Class IRI="#Sunday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EidAlFitr"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epiphany"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epiphany"/>
+        <Class IRI="#FixedHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epoch"/>
+        <Class IRI="#TimePoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FallSeason"/>
+        <Class IRI="#SeasonOfYear"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedHoliday"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hanukkah"/>
+        <Class IRI="#JewishHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hanukkah"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Holiday"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JewishHoliday"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeapYear"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lent"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lent"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morning"/>
+        <Class IRI="#DayTime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveableHoliday"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NightTime"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalmSunday"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalmSunday"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalmSunday"/>
+        <Class IRI="#Sunday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passover"/>
+        <Class IRI="#JewishHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passover"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pentecost"/>
+        <Class IRI="#ChristianHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pentecost"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pentecost"/>
+        <Class IRI="#Sunday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostMeridiem"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ramadan"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeasonOfYear"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpringSeason"/>
+        <Class IRI="#SeasonOfYear"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SummerSeason"/>
+        <Class IRI="#SeasonOfYear"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunday"/>
+        <Class IRI="#Day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunrise"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunset"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thursday"/>
+        <Class IRI="#Day"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#TimeDuration"/>
         <Class IRI="#TimeMeasure"/>
@@ -55,6 +445,170 @@
         <Class IRI="#TimePosition"/>
         <Class IRI="#TimeMeasure"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USHoliday"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USThanksgivingDay"/>
+        <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USThanksgivingDay"/>
+        <Class IRI="#Thursday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USThanksgivingDay"/>
+        <Class IRI="#USHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weekend"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WinterSeason"/>
+        <Class IRI="#SeasonOfYear"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#TimeInterval"/>
+        <NamedIndividual IRI="#BeforeCommonEra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeInterval"/>
+        <NamedIndividual IRI="#CommonEra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimePoint"/>
+        <NamedIndividual IRI="#NegativeInfinity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimePoint"/>
+        <NamedIndividual IRI="#PositiveInfinity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Epoch"/>
+        <NamedIndividual IRI="#UnixEpoch"/>
+    </ClassAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#overlapsTemporally"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#before"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#beforeOrEqual"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#during"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#earlier"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#finishes"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#starts"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#temporalPart"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#before"/>
+        <Class IRI="#TimePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#beforeOrEqual"/>
+        <Class IRI="#TimePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#duration"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#during"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#earlier"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#finishes"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#meetsTemporally"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#overlapsTemporally"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#starts"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temporalPart"/>
+        <Class IRI="#TimePosition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#before"/>
+        <Class IRI="#TimePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#beforeOrEqual"/>
+        <Class IRI="#TimePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#beginFn"/>
+        <Class IRI="#TimePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#duration"/>
+        <Class IRI="#TimeDuration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#during"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#earlier"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#endFn"/>
+        <Class IRI="#TimePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#finishes"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#futureFn"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#meetsTemporally"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#overlapsTemporally"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#starts"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temporalPart"/>
+        <Class IRI="#TimePosition"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 

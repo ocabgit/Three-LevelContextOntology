@@ -10,21 +10,97 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-112"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-112">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a group taken from SUMO</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Adventistsamfundet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgeGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnglicanApostolicEpiscopalFreeChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnglicanChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApostolicChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssociatedPresbyterianChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaptistChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baptistsamfundet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeliefGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CharismaticChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChristianBrethren"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChristianUnion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Church"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollegeChapel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriminalGang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrusadersUnion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DramaticCast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EcumenicalProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EthnicGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvangelicalChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeChurchOfEngland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeChurchOfScotland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeMethodistChurch"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Group"/>
     </Declaration>
     <Declaration>
@@ -34,8 +110,264 @@
         <Class IRI="#GroupOfPeople"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Institute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Katolskakyrkan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocalChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LutheranChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MethodistChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissionOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Missionskyrkan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MissionssaellskapetBibeltrognaVaenner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicalGroup"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Organization"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Ovrigt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pingstroerelsen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PresbyterianChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScottishEpiscopalChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeventhDayAdventistChurch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShaftesburySociety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SvenskaAlliansmissionen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SvenskaKyrkan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trosroerelsen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnionOfWelshIndependents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YWAM_BYFC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ancestorOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#chamberOfLegislature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#religiousAffiliationOfOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#successorOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agnosticism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antisemitism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Atheism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bahaism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buddhism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Christianity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChurchOfEngland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChurchOfJesusChristOfLatterDaySaints"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confucianism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hinduism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Islam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jainism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Judaism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neopaganism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RomanCatholicChurch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sikhism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taoism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zoroastrianism"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adventistsamfundet"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgeGroup"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnglicanApostolicEpiscopalFreeChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnglicanChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApostolicChurch"/>
+        <Class IRI="#CharismaticChurch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociatedPresbyterianChurch"/>
+        <Class IRI="#PresbyterianChurch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaptistChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptistsamfundet"/>
+        <Class IRI="#BaptistChurch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeliefGroup"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CharismaticChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChristianBrethren"/>
+        <Class IRI="#EvangelicalChurch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChristianUnion"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Church"/>
+        <Class IRI="#ReligiousOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollegeChapel"/>
+        <Class IRI="#LocalChurch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriminalGang"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrusadersUnion"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Department"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DramaticCast"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EcumenicalProject"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthnicGroup"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EvangelicalChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyGroup"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeChurchOfEngland"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeChurchOfScotland"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeMethodistChurch"/>
+        <Class IRI="#MethodistChurch"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#GroupOfAnimals"/>
         <Class IRI="#Group"/>
@@ -45,9 +377,259 @@
         <Class IRI="#Group"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Institute"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institution"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jury"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Katolskakyrkan"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lab"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocalChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LutheranChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MethodistChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissionOrganization"/>
+        <Class IRI="#ReligiousOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Missionskyrkan"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MissionssaellskapetBibeltrognaVaenner"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalGroup"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Organization"/>
         <Class IRI="#Group"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ovrigt"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pingstroerelsen"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresbyterianChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousOrganization"/>
+        <Class IRI="#BeliefGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousOrganization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScottishEpiscopalChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeventhDayAdventistChurch"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShaftesburySociety"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialUnit"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsTeam"/>
+        <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SvenskaAlliansmissionen"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SvenskaKyrkan"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trosroerelsen"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnionOfWelshIndependents"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YWAM_BYFC"/>
+        <Class IRI="#Church"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Agnosticism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Antisemitism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Atheism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Bahaism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Buddhism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Christianity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AnglicanChurch"/>
+        <NamedIndividual IRI="#ChurchOfEngland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousOrganization"/>
+        <NamedIndividual IRI="#ChurchOfEngland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Church"/>
+        <NamedIndividual IRI="#ChurchOfJesusChristOfLatterDaySaints"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MissionOrganization"/>
+        <NamedIndividual IRI="#ChurchOfJesusChristOfLatterDaySaints"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Confucianism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Hinduism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Islam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Jainism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Judaism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Neopaganism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousOrganization"/>
+        <NamedIndividual IRI="#RomanCatholicChurch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Shinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Sikhism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Taoism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BeliefGroup"/>
+        <NamedIndividual IRI="#Zoroastrianism"/>
+    </ClassAssertion>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#ancestorOrganization"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#subOrganization"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ancestorOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#chamberOfLegislature"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#religiousAffiliationOfOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#successorOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ancestorOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#chamberOfLegislature"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#religiousAffiliationOfOrganization"/>
+        <Class IRI="#BeliefGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#successorOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 

@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/3/ThreeLevelContextOntology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ThreeLevelContextOntology">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/Service</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Object</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Location</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Group</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/System</Import>
+    <Import>http://www.w3.org/2006/time</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Context modelling is one of the stages during the context life cycle. It has the aim of giving meaning and structure to the collected context’s raw data. Although there are different context models proposed in the literature, we have identified some gaps that are not fully covered, particularly related to the reusability of the models themselves and the lack of consolidated and standardized ontological resources. To tackle this problem, we adopt a three-layered context ontology approach.
+
+One of the purpose of this ontology is to provide structured knowledge of generic contexts responsible of negative or positive effects around the domain of service consumption. Furthermore, the ontology is planned to be used in many use cases and end-users. Given the generic approach of the ontology its use cases and end-users can be varied depending of the entity involved in the interaction with a service and the service itself.</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="#associateInOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompService"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#OperatingSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Group"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#ArtificialSatellite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#BroadcastingStation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#BroadcastingStation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#CommunicationSatellite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#IndoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#OutdoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Region"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#StationaryArtifact"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Organism"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#NetworkResource"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#ManagedEntity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#Service"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#Service"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/timezone#TimeZone"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#NaturalSatellite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#after"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#dayOfWeek"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDateTimeDescription"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDurationDescription"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasEnd"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inDateTime"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalContains"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDuring"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishedBy"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMetBy"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlappedBy"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlaps"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStartedBy"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStarts"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#timeZone"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
+        <ObjectProperty IRI="#hasTimeProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associateInOrganization"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associateInOrganization"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Group"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#day"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#days"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#hour"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTime"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#minute"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#month"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#months"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#second"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#week"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#xsdDateTime"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#year"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.w3.org/2006/time#years"/>
+        <DataProperty IRI="#hasTimeDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

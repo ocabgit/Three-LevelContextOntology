@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location" uri="Location.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity" uri="ManagedEntity.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service" uri="Service.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/System" uri="System.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity" uri="CompEntity.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object" uri="Object.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology" uri="UpperLevelOntology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://sw.opencyc.org/concept/" uri="OntologiesOWL/owl-export-unversioned.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.context.com/ontologies/context.owl" uri="ContextOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="duplicate:http://www.ontologyportal.org/WordNet.owl" uri="OntologiesOWL/Location.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="duplicate:http://www.ontologyportal.org/WordNet.owl" uri="OntologiesOWL/Location.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/0/untitled-ontology-49" uri="OntologiesOWL/SUMO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/1/untitled-ontology-81" uri="OntologiesOWL/OntoModules/UpperOnto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/1/untitled-ontology-82" uri="OntologiesOWL/OntoModules/TimeOnto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState" uri="BiologicalState.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity" uri="CompEntity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group" uri="Group.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location" uri="Location.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object" uri="Object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism" uri="Organism.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time" uri="SUMO-Time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology" uri="UpperLevelOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-114" uri="Proposition.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-120" uri="Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-121" uri="SUMO-Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-123" uri="PersonRole.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-124" uri="Regulation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-125" uri="EnvironmentalConditions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity" uri="ManagedEntity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service" uri="Service.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/System" uri="System.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/ThreeLevelContextOntology" uri="ThreeLevelContextOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://www.w3.org/2006/time" uri="OWL-Time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1429780841701" name="http://xmlns.com/foaf/0.1/" uri="FOAF.owl"/>
+    </group>
+</catalog>

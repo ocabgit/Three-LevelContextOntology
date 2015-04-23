@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109">
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -26,92 +26,329 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of an object taken from SUMO ontology</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Artifact"/>
+        <Class IRI="#Actuator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CommunicationDevice"/>
+        <Class IRI="#ArtificialEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputationalSystem"/>
+        <Class IRI="#CPU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputerHardware"/>
+        <Class IRI="#Camera"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputerNetwork"/>
+        <Class IRI="#CommunicationChannel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputerResource"/>
+        <Class IRI="#EntertainmentDevice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Device"/>
+        <Class IRI="#Equipment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Document"/>
+        <Class IRI="#Handwatch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EngineeringComponent"/>
+        <Class IRI="#Memory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Furniture"/>
+        <Class IRI="#Microphone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NetworkResource"/>
+        <Class IRI="#MotionSensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Object"/>
+        <Class IRI="#Sensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Product"/>
+        <Class IRI="#Server"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunglasses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Furniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#NetworkResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connected"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectedDownstream"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectedEngineeringComponents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#equipmentType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#larger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#older"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#smaller"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Artifact"/>
-        <Class IRI="#Object"/>
+        <Class IRI="#Actuator"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CommunicationDevice"/>
-        <Class IRI="#EngineeringComponent"/>
+        <Class IRI="#ArtificialEntity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComputationalSystem"/>
-        <Class IRI="#Product"/>
+        <Class IRI="#CPU"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComputerHardware"/>
-        <Class IRI="#EngineeringComponent"/>
+        <Class IRI="#Camera"/>
+        <Class IRI="#Equipment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComputerNetwork"/>
-        <Class IRI="#ComputationalSystem"/>
+        <Class IRI="#Camera"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComputerResource"/>
-        <Class IRI="#ComputationalSystem"/>
+        <Class IRI="#CommunicationChannel"/>
+        <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Device"/>
-        <Class IRI="#Artifact"/>
+        <Class IRI="#EntertainmentDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Document"/>
-        <Class IRI="#Artifact"/>
+        <Class IRI="#Equipment"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#EngineeringComponent"/>
-        <Class IRI="#Device"/>
+        <Class IRI="#Handwatch"/>
+        <Class IRI="#Equipment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Furniture"/>
-        <Class IRI="#Artifact"/>
+        <Class IRI="#Memory"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NetworkResource"/>
-        <Class IRI="#ComputerResource"/>
+        <Class IRI="#Microphone"/>
+        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Product"/>
-        <Class IRI="#Artifact"/>
+        <Class IRI="#MotionSensor"/>
+        <Class IRI="#Actuator"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Server"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunglasses"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerNetwork"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerResource"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Furniture"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#NetworkResource"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#larger"/>
+        <ObjectProperty IRI="#smaller"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#connected"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#connectedEngineeringComponents"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#larger"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#part"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#smaller"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connected"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectedDownstream"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectedEngineeringComponents"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#equipmentType"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#larger"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#older"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#smaller"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connected"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectedDownstream"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectedEngineeringComponents"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#equipmentType"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#larger"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#older"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#smaller"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#CPU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Tool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Instrument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware, ComputationalDevice</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

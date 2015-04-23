@@ -58,6 +58,18 @@
     <Declaration>
         <Class IRI="#Time"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enemy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exportPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#importPartner"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Activity"/>
         <Class IRI="#ContextInformation"/>
@@ -94,6 +106,38 @@
         <Class IRI="#Time"/>
         <Class IRI="#ContextInformation"/>
     </SubClassOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#enemy"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enemy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exportPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#importPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enemy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exportPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#importPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Task, Action, Process</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

@@ -10,19 +10,20 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-122"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-122">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a biological state proposed in this work
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of biological states and status proposed in this work
 </Literal>
     </Annotation>
     <Declaration>
@@ -32,6 +33,9 @@
         <Class IRI="#BiologicalState"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#BodyPosition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Cognitive"/>
     </Declaration>
     <Declaration>
@@ -66,12 +70,37 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Tireness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Handstand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kneeling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prostrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sitting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Splitting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Standing"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Attention"/>
         <Class IRI="#Cognitive"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BodyPosition"/>
+        <Class IRI="#BiologicalState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cognitive"/>
         <Class IRI="#PsychologicalState"/>
     </SubClassOf>
@@ -119,6 +148,34 @@
         <Class IRI="#Tireness"/>
         <Class IRI="#PhysiologicalState"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Fist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Handstand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Kneeling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Prostrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Sitting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Splitting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPosition"/>
+        <NamedIndividual IRI="#Standing"/>
+    </ClassAssertion>
 </Ontology>
 
 
