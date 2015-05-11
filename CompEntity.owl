@@ -32,9 +32,6 @@
         <Class IRI="#CompApplication"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CompDevice"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CompEntity"/>
     </Declaration>
     <Declaration>
@@ -74,10 +71,6 @@
     <SubClassOf>
         <Class IRI="#CompApplication"/>
         <Class IRI="#Software"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CompDevice"/>
-        <Class IRI="#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CompService"/>

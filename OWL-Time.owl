@@ -578,6 +578,10 @@
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#intervalMetBy"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#intervalOverlappedBy"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
@@ -667,6 +671,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#intervalMeets"/>
+        <Class IRI="#ProperInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#intervalMetBy"/>
         <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -862,7 +870,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#before</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">before, earlier</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">beforeOrEqual</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
@@ -871,13 +879,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
-        <IRI>#hours</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">HourDuration</Literal>
+        <IRI>#hasBeginning</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">beginFn</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
-        <IRI>#inside</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">temporalPart</Literal>
+        <IRI>#hasEnd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endFn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#hours</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HourDuration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
@@ -912,7 +925,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#intervalFinishes</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">int-finishes, finishes</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-finishes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>

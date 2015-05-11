@@ -21,14 +21,16 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology</Import>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/Service</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Object</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/Service</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Location</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity</Import>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Group</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/System</Import>
     <Import>http://www.w3.org/2006/time</Import>
     <Annotation>
@@ -38,21 +40,79 @@
 One of the purpose of this ontology is to provide structured knowledge of generic contexts responsible of negative or positive effects around the domain of service consumption. Furthermore, the ontology is planned to be used in many use cases and end-users. Given the generic approach of the ontology its use cases and end-users can be varied depending of the entity involved in the interaction with a service and the service itself.</Literal>
     </Annotation>
     <Declaration>
+        <ObjectProperty IRI="#agentOperatesInArea"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#associateInOrganization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTimeProperty"/>
+        <ObjectProperty IRI="#benefits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#citizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#claimedTerritory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executiveBranch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#homeAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inhabits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#judicialBranch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#landlord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leader"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#legislativeBranch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#moves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partiallyFills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postContactSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#properlyFills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targetInAttack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tenant"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasTimeDataProperty"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
-    </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#DeducedActivity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Process"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#ScheduledActivity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
@@ -111,8 +171,32 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeMeasure"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePoint"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePosition"/>
+        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
@@ -174,105 +258,185 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#NaturalSatellite"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </DisjointClasses>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#after"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#dayOfWeek"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDateTimeDescription"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDurationDescription"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasEnd"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#inDateTime"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalContains"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalDuring"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishedBy"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalFinishes"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMetBy"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlappedBy"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalOverlaps"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStartedBy"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStarts"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#timeZone"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-        <ObjectProperty IRI="#hasTimeProperty"/>
-    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#agentOperatesInArea"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#associateInOrganization"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#benefits"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#citizen"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#claimedTerritory"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#GeographicArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executiveBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#homeAddress"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PermanentResidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inhabits"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#judicialBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#landlord"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leader"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#legislativeBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#moves"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Motion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partiallyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possesses"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postContactSite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#properlyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#targetInAttack"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tenant"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#agentOperatesInArea"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#GeographicArea"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#associateInOrganization"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#benefits"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#citizen"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Nation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#claimedTerritory"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executiveBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#homeAddress"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inhabits"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#judicialBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#landlord"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PermanentResidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leader"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#legislativeBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#moves"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partiallyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possesses"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postContactSite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#properlyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#targetInAttack"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tenant"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Residence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="http://www.w3.org/2006/time#day"/>
@@ -342,6 +506,62 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <DataProperty IRI="http://www.w3.org/2006/time#years"/>
         <DataProperty IRI="#hasTimeDataProperty"/>
     </SubDataPropertyOf>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#brother"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#parent"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#brother"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#NegativeInfinity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NegInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#PositiveInfinity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PosInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeMeasure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class is the root of time classes comming from SUMO ontology, the rest of classes into the Time class are comming from the OWL-Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#during</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-during </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#finishes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-finishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#starts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">int-starts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
+        <IRI>http://www.w3.org/2006/time#dayOfWeek</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">day</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

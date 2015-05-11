@@ -10,37 +10,6463 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-120"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-120">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of an activity provided in the CONON ontology</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of an activity provided in CONON and SUMO ontologies</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Activity"/>
+        <Class IRI="#Abort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aborting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accelerating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accrediting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcidRainfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acidification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Advertising"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aerating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Afforestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aftershock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agriculture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirPhotographicReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirTransportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ambulating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ambush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmphibiousReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Appointing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arguing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArmedReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arriving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtPainting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AsexualReproduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssetAllocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtmosphericHazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrophy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthorizationOfTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutomaticTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutonomicProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AvalancheProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baptizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BargainSale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baseball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballHit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballInning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballManeuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballRun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballSingle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballSteal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseballWalk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basketball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bathing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BecomingDrunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeginningOperations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bequeathing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Betting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiochemicalAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalConception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biopsy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Birth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bleeding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blizzard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bloating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blockade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blushing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boarding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bodybuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Borrowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boxing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breathing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broadcasting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessCompetition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CTNwInfraAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calculating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Call"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CancellingAnOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarBombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarDistributionSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarbonCycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarbonDioxideEmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carpentry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carrying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CausingHappiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CausingPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CausingUnhappiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CeasingOperations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentrifugalMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentripetalMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ceremony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeOfPossession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangingClothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargingAFee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalDecomposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalReduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalSynthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chewing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Choreographing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chromatography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circumision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CivilAffairsActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CivilWar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classifying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClearWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Closing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClosingAnAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClosingContract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClosingEyes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoastalFlooding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coloring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Combining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Combustion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Committing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comparing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComposingMusic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerProgramming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concealing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condensing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Congratulating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constructing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContactReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Copying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corresponding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CounterOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Counting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Covering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriminalAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cutting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyclonicStorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Damaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dancing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataCompression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSaving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Death"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deboarding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decelerating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Declaring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decoding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decreasing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DeducedActivity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DefensiveManeuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deforestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeliveringWeaponOfMassDestruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demonstrating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demonstration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeployingWeaponOfMassDestruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deposit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DepositingACheck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desertification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Designating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Designing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopPrograms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopingWeaponOfMassDestruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiagnosticProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dialysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diluting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectActionActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Directing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectionChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disagreeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discovering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DismantlingWeaponOfMassDestruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dismounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisseminateProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disseminating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistributeProducts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Divorcing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dodging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DramaticActing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DramaticPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drawing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrawingACheck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dreaming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dredging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dressing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DriftnetFishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drinking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dripping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drought"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drumming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DualObjectProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ducking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DustStorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DutyTax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EarthTremor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earthquake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Echoing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElNino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Election"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectoralCollegeElection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalPowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalResonance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalSignalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicSignalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emailing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Embracing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmploymentFiring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Encoding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineersProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineersSubprocess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnteringAPin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnteringAPing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escaping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Espionage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evacuation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evaporating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Execution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exfiltration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exhaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experimenting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exporting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expressing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpressingApproval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpressingDisapproval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpressingFarewell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpressingInLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EyeMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacialExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Falling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FallingAsleep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Famine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feeding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FillingAnOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlashFlooding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flooding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Focusing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fogging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Folding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodDistributionOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Football"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FootballManeuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FootballPass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FootballTouchdown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForeignInternalDefense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForestDamage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForestFire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormalMeeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Founding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freezing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreezingRain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreshwaterOverutilization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frightening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frowning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Funding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Funeral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GainingConsciousness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GameCall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GameShot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneralElection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gesture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Getting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Giving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GivingBack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Golf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GolfHole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GolfManeuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grabbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graduation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrassFire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Greeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Growth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guiding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gymnastics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hailing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HairRemoval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandGesture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandgrenadeAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hanging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harvesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeavyRaining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeavySurf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPressureWeatherSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighTide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HigherHighTide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hijacking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeRun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HorseRiding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostageTaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hunting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hurricane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HurricaneSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Icing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imagining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immigrating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impacting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imprisoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InPersonCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncendiaryDeviceAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inclining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncomeTax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Increasing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndustrialPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infiltration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injecting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inserting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Installation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Installing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstrumentalMusic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligenceActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntentionalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntermodalTrip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalDispute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interpreting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interviewing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Investigating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Investing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Irrigating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IslamicMilitancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JoiningAnOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JointOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JointOperationPlanning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Judging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JudicialProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jumping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kicking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kidnapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Killing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kissing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnifeAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandSubsidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandTransportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LandingWaterLand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landslide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laughing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LawEnforcement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LayingEggs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leaving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeavingAnOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalAppeal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalAquittal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalAward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalCharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalConviction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalDecision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalDismissal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalSummons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lending"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lengthening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LetterBombAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Licking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lightning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinguisticCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Liquidation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Listening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoadingWeapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Looking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LosingConsciousness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPressureWeatherSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowTide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowerLowTide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LyingDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lynching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magnetism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mailing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintaining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Making"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Managing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maneuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manufacture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeBoundaryDispute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Massaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Matriculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasuringPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalResonance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memorizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menstruation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Messaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryAssault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryInfiltration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryManeuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mistral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MixedTideProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonophonicMusic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monsoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MortarAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotionDownward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotionUpward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MovingResidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mudflow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mudslide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipoleModeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multitasking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Murder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicalConducting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicalPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicalTone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Naming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negotiating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nodding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Offering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfferingForSale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfferingToPurchase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OlympicGames"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpeningAnAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpeningEyes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationPlanning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpiumPoppyFarming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrchestralConducting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ordering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganOrTissueProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganismProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalMerging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ossification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvercastWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxidation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Painting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParallelResonance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartlyCloudyWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PassingABill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PathologicProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patrol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penalty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerformanceAct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PesticidePollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photographing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysiologicProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pitching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlacingAnOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlacingUnderArrest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pleading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poisoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalCrime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalRevolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyphonicMusic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PopularElection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoststrikeReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pouring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Praying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precipitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreciseDestruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pretending"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessingACheck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proclaiming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProduceStudies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proliferation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PsychologicalOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PsychologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Punching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Punishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pursuing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Putting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuantityChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Questioning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadarReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radiating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingInfrared"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingNuclear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingSound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingSoundUltrasonic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingUltraviolet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingVisibleLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadiatingXRay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadioBroadcasting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RadioEmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RailCarrierControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReachingAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reasoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reciting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReconnaissanceByFire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReconnaissanceInForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecoveringFromIllness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecreationOrExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refinancing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reflecting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReflectingLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReflexiveProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reforestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Registering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regretting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegulatoryProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Releasing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelievingPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remembering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reminding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Removing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemovingClothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repairing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Replication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchingWeaponOfMassDestruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resigning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resonance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retiring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Returning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReusingAResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reversing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ringing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RocketMissileAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rockslide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rollover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rotating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Running"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sabotage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sandstorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sanitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saving"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ScheduledActivity"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Scholarship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Selecting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Selling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sentencing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Separating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeriesResonance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sermon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereThunderstorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SewageDisposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sewing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SexualReproduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShapeChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sharing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShipBerthing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shipping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shooting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shortening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shrugging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SigningADocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siltation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Singing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sirocco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SittingDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlashAndBurnAgriculture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smuggling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoberingUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilDegradation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilErosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilSalination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidWasteDisposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Somersaulting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceTransportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportServe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spraying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Squall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandingUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandoffAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stealing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stepping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stirring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StockMarketTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StormSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strangling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stretching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StrongWind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Substituting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suffocating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suicide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuicideBombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sunlight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supposing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swarming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemDesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SystemSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TactilePerception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TakingOff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TargetThreatReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tasting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamSport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telephoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelevisionBroadcasting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TellingALie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerminalAttackControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerminalGuidance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerminatingEmployment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerritorialDispute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrorism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerroristAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testifying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thanking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TherapeuticProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threatening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Throwing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thunder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thunderstorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TidalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tornado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Touching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tracing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransferringPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Translating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Translocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportViaRoadVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trembling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tremor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trespassing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TropicalCyclone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tsunami"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurningOffDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurningOnDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Typhoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnInstallation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnconventionalWarfare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncovering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ungrasping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnilateralGetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnilateralGiving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Untying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Update"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingAResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingAnAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vacationing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vandalism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicleAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VehicularPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerifyingCardCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViolentContest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViralCellInvasion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VocalMusic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vocalizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolcanicEruption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolcanicGasRelease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WakingUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Walking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#War"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WarmFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Washing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterOverutilization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterPollution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterTransportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterWave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waterspout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherSeason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wedding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Welfare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windstorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Withdrawal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Working"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WrittenCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XRayRadiation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subProcess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AntarcticCircumpolarCurrent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BaseballStrike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExerciseAnOption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FossilFuelPowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HydroElectricPowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NuclearPowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherSourcePowerGeneration"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#DeducedActivity"/>
-        <Class IRI="#Activity"/>
+        <Class IRI="#Abort"/>
+        <Class IRI="#ComputerProcess"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ScheduledActivity"/>
-        <Class IRI="#Activity"/>
+        <Class IRI="#Aborting"/>
+        <Class IRI="#Removing"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accelerating"/>
+        <Class IRI="#Increasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accelerating"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accrediting"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcidRainfall"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acidification"/>
+        <Class IRI="#Combining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Advertising"/>
+        <Class IRI="#Disseminating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aerating"/>
+        <Class IRI="#Combining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afforestation"/>
+        <Class IRI="#Planting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aftershock"/>
+        <Class IRI="#EarthTremor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agriculture"/>
+        <Class IRI="#Maintaining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirPhotographicReconnaissance"/>
+        <Class IRI="#AirReconnaissance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirReconnaissance"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirTransportation"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambulating"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambulating"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambush"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmphibiousReconnaissance"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answering"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Appointing"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arguing"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArmedReconnaissance"/>
+        <Class IRI="#SpecialReconnaissance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arriving"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arson"/>
+        <Class IRI="#Combustion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arson"/>
+        <Class IRI="#Destruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtPainting"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtPainting"/>
+        <Class IRI="#Painting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AsexualReproduction"/>
+        <Class IRI="#Replication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssetAllocation"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtmosphericHazing"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrophy"/>
+        <Class IRI="#Decreasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrophy"/>
+        <Class IRI="#PathologicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attaching"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthorizationOfTransaction"/>
+        <Class IRI="#RegulatoryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutomaticTransaction"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomicProcess"/>
+        <Class IRI="#PhysiologicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AvalancheProcess"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baking"/>
+        <Class IRI="#Cooking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baking"/>
+        <Class IRI="#Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptizing"/>
+        <Class IRI="#Ceremony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptizing"/>
+        <Class IRI="#JoiningAnOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptizing"/>
+        <Class IRI="#ReligiousProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BargainSale"/>
+        <Class IRI="#Offering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barking"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baseball"/>
+        <Class IRI="#TeamSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballHit"/>
+        <Class IRI="#BaseballManeuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballHit"/>
+        <Class IRI="#GameShot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballInning"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballManeuver"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballRun"/>
+        <Class IRI="#BaseballHit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballRun"/>
+        <Class IRI="#Score"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballSingle"/>
+        <Class IRI="#BaseballHit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballSteal"/>
+        <Class IRI="#BaseballManeuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseballWalk"/>
+        <Class IRI="#BaseballManeuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basketball"/>
+        <Class IRI="#TeamSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bathing"/>
+        <Class IRI="#Washing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battle"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BecomingDrunk"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeginningOperations"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bequeathing"/>
+        <Class IRI="#UnilateralGiving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Betting"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiochemicalAttack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalConception"/>
+        <Class IRI="#OrganOrTissueProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalProcess"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biopsy"/>
+        <Class IRI="#DiagnosticProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biopsy"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Birth"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biting"/>
+        <Class IRI="#Grabbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bleeding"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blizzard"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bloating"/>
+        <Class IRI="#Increasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bloating"/>
+        <Class IRI="#PathologicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blockade"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blushing"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boarding"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodyMotion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bodybuilding"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiling"/>
+        <Class IRI="#StateChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bombing"/>
+        <Class IRI="#Destruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Borrowing"/>
+        <Class IRI="#Getting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowing"/>
+        <Class IRI="#Gesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowing"/>
+        <Class IRI="#Inclining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowing"/>
+        <Class IRI="#MotionDownward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boxing"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boxing"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breathing"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breathing"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcasting"/>
+        <Class IRI="#Disseminating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcasting"/>
+        <Class IRI="#RadioEmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burying"/>
+        <Class IRI="#Digging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burying"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessCompetition"/>
+        <Class IRI="#Contest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buying"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CTNwInfraAttack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calculating"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Call"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CancellingAnOrder"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarBombing"/>
+        <Class IRI="#Bombing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarBombing"/>
+        <Class IRI="#TerroristAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarDistributionSystem"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarbonCycle"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarbonDioxideEmission"/>
+        <Class IRI="#Separating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carpentry"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carrying"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catching"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catching"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CausingHappiness"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CausingPain"/>
+        <Class IRI="#CausingUnhappiness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CausingUnhappiness"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CeasingOperations"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CentrifugalMotion"/>
+        <Class IRI="#Rotating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CentripetalMotion"/>
+        <Class IRI="#Rotating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceremony"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceremony"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeOfPossession"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangingClothing"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargingAFee"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAttack"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalDecomposition"/>
+        <Class IRI="#ChemicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalDecomposition"/>
+        <Class IRI="#Separating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalProcess"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalReduction"/>
+        <Class IRI="#ChemicalSynthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalSynthesis"/>
+        <Class IRI="#ChemicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalSynthesis"/>
+        <Class IRI="#Combining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chewing"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Choreographing"/>
+        <Class IRI="#Planning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chromatography"/>
+        <Class IRI="#Separating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circumision"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circumision"/>
+        <Class IRI="#Surgery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CivilAffairsActivity"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CivilWar"/>
+        <Class IRI="#War"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clapping"/>
+        <Class IRI="#HandGesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clapping"/>
+        <Class IRI="#Impacting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clapping"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classifying"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClearWeather"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Closing"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClosingAnAccount"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClosingContract"/>
+        <Class IRI="#Committing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClosingEyes"/>
+        <Class IRI="#Closing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClosingEyes"/>
+        <Class IRI="#EyeMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoastalFlooding"/>
+        <Class IRI="#Flooding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdFront"/>
+        <Class IRI="#WeatherFront"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coloring"/>
+        <Class IRI="#SurfaceChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Combining"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Combustion"/>
+        <Class IRI="#ChemicalDecomposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committing"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comparing"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comparing"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composing"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComposingMusic"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerProcess"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerProgramming"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerResponse"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerTask"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concealing"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condensing"/>
+        <Class IRI="#StateChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confining"/>
+        <Class IRI="#Keeping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Congratulating"/>
+        <Class IRI="#ExpressingApproval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constructing"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContactReconnaissance"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentDevelopment"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contest"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooking"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooling"/>
+        <Class IRI="#Decreasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooperation"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Copying"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Corresponding"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CounterOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Counting"/>
+        <Class IRI="#Calculating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Covering"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creation"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriminalAction"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cutting"/>
+        <Class IRI="#Poking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyclonicStorm"/>
+        <Class IRI="#LowPressureWeatherSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyclonicStorm"/>
+        <Class IRI="#Windstorm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Damaging"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dancing"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataCompression"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSaving"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataTransfer"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Death"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debating"/>
+        <Class IRI="#Contest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debating"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deboarding"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decelerating"/>
+        <Class IRI="#Decreasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decelerating"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deciding"/>
+        <Class IRI="#Selecting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Declaring"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decoding"/>
+        <Class IRI="#Writing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decreasing"/>
+        <Class IRI="#QuantityChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefensiveManeuver"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deforestation"/>
+        <Class IRI="#ForestDamage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deforestation"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliveringWeaponOfMassDestruction"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demonstrating"/>
+        <Class IRI="#Disseminating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demonstration"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeployingWeaponOfMassDestruction"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeployingWeaponOfMassDestruction"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deposit"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepositingACheck"/>
+        <Class IRI="#UsingAnAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desertification"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Designating"/>
+        <Class IRI="#Selecting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Designing"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destruction"/>
+        <Class IRI="#Damaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detaching"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevelopPrograms"/>
+        <Class IRI="#Creation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevelopPrograms"/>
+        <Class IRI="#PsychologicalOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevelopingWeaponOfMassDestruction"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosticProcess"/>
+        <Class IRI="#Investigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dialysis"/>
+        <Class IRI="#Separating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digesting"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digesting"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digging"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digging"/>
+        <Class IRI="#SurfaceChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diluting"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectAction"/>
+        <Class IRI="#SpecialOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectAction"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectActionActivity"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectActionActivity"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectActionActivity"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Directing"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectionChange"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disagreeing"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discovering"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DismantlingWeaponOfMassDestruction"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dismounting"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisseminateProducts"/>
+        <Class IRI="#Disseminating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisseminateProducts"/>
+        <Class IRI="#PsychologicalOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disseminating"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distilling"/>
+        <Class IRI="#Separating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributeProducts"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributeProducts"/>
+        <Class IRI="#PsychologicalOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Divorcing"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dodging"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dodging"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DramaticActing"/>
+        <Class IRI="#Pretending"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DramaticPerformance"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drawing"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drawing"/>
+        <Class IRI="#SurfaceChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrawingACheck"/>
+        <Class IRI="#UsingAnAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dreaming"/>
+        <Class IRI="#Imagining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dredging"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dressing"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DriftnetFishing"/>
+        <Class IRI="#Fishing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drilling"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drilling"/>
+        <Class IRI="#SurfaceChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drinking"/>
+        <Class IRI="#Ingesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dripping"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driving"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drought"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drumming"/>
+        <Class IRI="#Demonstrating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drumming"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drying"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DualObjectProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ducking"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ducking"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ducking"/>
+        <Class IRI="#MotionDownward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DustStorm"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DutyTax"/>
+        <Class IRI="#Tax"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EarthTremor"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EarthTremor"/>
+        <Class IRI="#Tremor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earthquake"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eating"/>
+        <Class IRI="#Ingesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Echoing"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalProcess"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElNino"/>
+        <Class IRI="#WeatherSeason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Election"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectoralCollegeElection"/>
+        <Class IRI="#GeneralElection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalPowerGeneration"/>
+        <Class IRI="#PowerGeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalProcess"/>
+        <Class IRI="#NaturalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalResonance"/>
+        <Class IRI="#ElectricalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalResonance"/>
+        <Class IRI="#Resonance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalSignalling"/>
+        <Class IRI="#Signalling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectronicReconnaissance"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectronicSignalling"/>
+        <Class IRI="#Signalling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emailing"/>
+        <Class IRI="#WrittenCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Embracing"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmploymentFiring"/>
+        <Class IRI="#TerminatingEmployment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encoding"/>
+        <Class IRI="#Writing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineersProcess"/>
+        <Class IRI="#EngineersSubprocess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineersSubprocess"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnteringAPin"/>
+        <Class IRI="#AuthorizationOfTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnteringAPing"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entombing"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalReconnaissance"/>
+        <Class IRI="#SpecialReconnaissance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erosion"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erosion"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Escaping"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Espionage"/>
+        <Class IRI="#Investigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Espionage"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evacuation"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evaporating"/>
+        <Class IRI="#StateChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Execution"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exfiltration"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exfiltration"/>
+        <Class IRI="#UnconventionalWarfare"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exhaling"/>
+        <Class IRI="#Breathing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experimenting"/>
+        <Class IRI="#Investigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explosion"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exporting"/>
+        <Class IRI="#ChangeOfPossession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exporting"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expressing"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpressingApproval"/>
+        <Class IRI="#Expressing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpressingDisapproval"/>
+        <Class IRI="#Expressing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpressingFarewell"/>
+        <Class IRI="#Expressing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpressingInLanguage"/>
+        <Class IRI="#Expressing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpressingInLanguage"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalTransfer"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EyeMotion"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacialExpression"/>
+        <Class IRI="#Gesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Falling"/>
+        <Class IRI="#MotionDownward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Falling"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FallingAsleep"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Famine"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farming"/>
+        <Class IRI="#Working"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feeding"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FillingAnOrder"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilmMaking"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialRequest"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialResponse"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialTransaction"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Financing"/>
+        <Class IRI="#Funding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire"/>
+        <Class IRI="#Combustion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fishing"/>
+        <Class IRI="#Hunting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlashFlooding"/>
+        <Class IRI="#Flooding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flooding"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flooding"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flying"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Focusing"/>
+        <Class IRI="#QuantityChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fogging"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Folding"/>
+        <Class IRI="#ShapeChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodDistributionOperation"/>
+        <Class IRI="#Getting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodDistributionOperation"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodDistributionOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Football"/>
+        <Class IRI="#TeamSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FootballManeuver"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FootballPass"/>
+        <Class IRI="#FootballManeuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FootballTouchdown"/>
+        <Class IRI="#FootballManeuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FootballTouchdown"/>
+        <Class IRI="#Score"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForeignInternalDefense"/>
+        <Class IRI="#Helping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForeignInternalDefense"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForestDamage"/>
+        <Class IRI="#Damaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForestFire"/>
+        <Class IRI="#Combustion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForestFire"/>
+        <Class IRI="#ForestDamage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormalMeeting"/>
+        <Class IRI="#Meeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Founding"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Founding"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freezing"/>
+        <Class IRI="#StateChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreezingRain"/>
+        <Class IRI="#Precipitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreshwaterOverutilization"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction"/>
+        <Class IRI="#MechanicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frightening"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frowning"/>
+        <Class IRI="#FacialExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funding"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funeral"/>
+        <Class IRI="#Ceremony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funeral"/>
+        <Class IRI="#FormalMeeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GainingConsciousness"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Game"/>
+        <Class IRI="#Contest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Game"/>
+        <Class IRI="#RecreationOrExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GameCall"/>
+        <Class IRI="#Deciding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GameCall"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GameShot"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GameShot"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasMotion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneralElection"/>
+        <Class IRI="#Election"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeologicalProcess"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeologicalProcess"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gesture"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gesture"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Getting"/>
+        <Class IRI="#ChangeOfPossession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giving"/>
+        <Class IRI="#ChangeOfPossession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GivingBack"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Golf"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GolfHole"/>
+        <Class IRI="#GolfManeuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GolfManeuver"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grabbing"/>
+        <Class IRI="#Attaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grabbing"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graduation"/>
+        <Class IRI="#LeavingAnOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrassFire"/>
+        <Class IRI="#Combustion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Greeting"/>
+        <Class IRI="#Expressing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Growth"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guiding"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gymnastics"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hailing"/>
+        <Class IRI="#Precipitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HairRemoval"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandGesture"/>
+        <Class IRI="#Gesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandgrenadeAttack"/>
+        <Class IRI="#Bombing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hanging"/>
+        <Class IRI="#Suffocating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harvesting"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hearing"/>
+        <Class IRI="#Perception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <Class IRI="#Increasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeavyRaining"/>
+        <Class IRI="#Raining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeavySurf"/>
+        <Class IRI="#WaterMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeavySurf"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helping"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighPressureWeatherSystem"/>
+        <Class IRI="#WeatherSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighTide"/>
+        <Class IRI="#TidalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HigherHighTide"/>
+        <Class IRI="#HighTide"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hijacking"/>
+        <Class IRI="#Robbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiring"/>
+        <Class IRI="#JoiningAnOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeRun"/>
+        <Class IRI="#BaseballRun"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HorseRiding"/>
+        <Class IRI="#Carrying"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostageTaking"/>
+        <Class IRI="#UnilateralGetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hunting"/>
+        <Class IRI="#Pursuing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hurricane"/>
+        <Class IRI="#TropicalCyclone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hurricane"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HurricaneSeason"/>
+        <Class IRI="#WeatherSeason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITProcess"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Icing"/>
+        <Class IRI="#Freezing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Icing"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imagining"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immigrating"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impacting"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impelling"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imprisoning"/>
+        <Class IRI="#Confining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InPersonCommunication"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncendiaryDeviceAttack"/>
+        <Class IRI="#Combustion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncendiaryDeviceAttack"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclining"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclining"/>
+        <Class IRI="#MotionDownward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncomeTax"/>
+        <Class IRI="#Tax"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Increasing"/>
+        <Class IRI="#QuantityChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicating"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indicating"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndustrialPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infiltration"/>
+        <Class IRI="#JoiningAnOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingesting"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhaling"/>
+        <Class IRI="#Breathing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injecting"/>
+        <Class IRI="#Inserting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injuring"/>
+        <Class IRI="#Damaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injuring"/>
+        <Class IRI="#PathologicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inserting"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Installation"/>
+        <Class IRI="#ITProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Installing"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstrumentalMusic"/>
+        <Class IRI="#Music"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligenceActivities"/>
+        <Class IRI="#Judging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligenceActivities"/>
+        <Class IRI="#UnconventionalWarfare"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntentionalProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntermodalTrip"/>
+        <Class IRI="#Trip"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalChange"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalTransfer"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternationalDispute"/>
+        <Class IRI="#Disagreeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interpreting"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interviewing"/>
+        <Class IRI="#FormalMeeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investigating"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investing"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Irrigating"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IslamicMilitancy"/>
+        <Class IRI="#ReligiousProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JoiningAnOrganization"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JointOperation"/>
+        <Class IRI="#Cooperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JointOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JointOperationPlanning"/>
+        <Class IRI="#OperationPlanning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judging"/>
+        <Class IRI="#Selecting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JudicialProcess"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jumping"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jumping"/>
+        <Class IRI="#MotionUpward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keeping"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kicking"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kidnapping"/>
+        <Class IRI="#Robbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Killing"/>
+        <Class IRI="#Destruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kissing"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnifeAttack"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandSubsidence"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandTransportation"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landing"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LandingWaterLand"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landslide"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laughing"/>
+        <Class IRI="#FacialExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laughing"/>
+        <Class IRI="#Vocalizing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LawEnforcement"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LawEnforcement"/>
+        <Class IRI="#RegulatoryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LayingEggs"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Learning"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leaving"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeavingAnOrganization"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#Demonstrating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#Speaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalAction"/>
+        <Class IRI="#Contest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalAppeal"/>
+        <Class IRI="#JudicialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalAppeal"/>
+        <Class IRI="#Requesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalAquittal"/>
+        <Class IRI="#LegalDecision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalAward"/>
+        <Class IRI="#LegalDecision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalCharge"/>
+        <Class IRI="#LegalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalConviction"/>
+        <Class IRI="#LegalDecision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalDecision"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalDecision"/>
+        <Class IRI="#JudicialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalDismissal"/>
+        <Class IRI="#LegalDecision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalSummons"/>
+        <Class IRI="#JudicialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalSummons"/>
+        <Class IRI="#Ordering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lending"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lengthening"/>
+        <Class IRI="#Increasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LetterBombAttack"/>
+        <Class IRI="#Bombing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Licking"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lightning"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lightning"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinguisticCommunication"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidMotion"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liquidation"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Listening"/>
+        <Class IRI="#Hearing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Listening"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoadingWeapon"/>
+        <Class IRI="#Inserting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Looking"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Looking"/>
+        <Class IRI="#Seeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LosingConsciousness"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowPressureWeatherSystem"/>
+        <Class IRI="#WeatherSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowTide"/>
+        <Class IRI="#TidalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowerLowTide"/>
+        <Class IRI="#LowTide"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LyingDown"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LyingDown"/>
+        <Class IRI="#MotionDownward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lynching"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magnetism"/>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mailing"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintaining"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Making"/>
+        <Class IRI="#Creation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Making"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Managing"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Managing"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maneuver"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manufacture"/>
+        <Class IRI="#Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeBoundaryDispute"/>
+        <Class IRI="#InternationalDispute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Massaging"/>
+        <Class IRI="#TherapeuticProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Massaging"/>
+        <Class IRI="#Touching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mating"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matriculation"/>
+        <Class IRI="#JoiningAnOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measuring"/>
+        <Class IRI="#Calculating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasuringPerformance"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalProcess"/>
+        <Class IRI="#NaturalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalResonance"/>
+        <Class IRI="#MechanicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalResonance"/>
+        <Class IRI="#Resonance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meeting"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melting"/>
+        <Class IRI="#StateChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memorizing"/>
+        <Class IRI="#Learning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menstruation"/>
+        <Class IRI="#OrganOrTissueProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Messaging"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryAssault"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryAssault"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryInfiltration"/>
+        <Class IRI="#MilitaryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryInfiltration"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryManeuver"/>
+        <Class IRI="#Maneuver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryOperation"/>
+        <Class IRI="#MilitaryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryProcess"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryProcess"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mistral"/>
+        <Class IRI="#WindProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MixedTideProcess"/>
+        <Class IRI="#TidalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modeling"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonophonicMusic"/>
+        <Class IRI="#Music"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monsoon"/>
+        <Class IRI="#WeatherSeason"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MortarAttack"/>
+        <Class IRI="#Bombing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motion"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotionDownward"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotionUpward"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mounting"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovingResidence"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mudflow"/>
+        <Class IRI="#Landslide"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mudslide"/>
+        <Class IRI="#Landslide"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultipoleModeling"/>
+        <Class IRI="#Modeling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multitasking"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Murder"/>
+        <Class IRI="#CriminalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Murder"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalConducting"/>
+        <Class IRI="#Directing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalPerformance"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalTone"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Naming"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negotiating"/>
+        <Class IRI="#Contest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negotiating"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nodding"/>
+        <Class IRI="#Gesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Offering"/>
+        <Class IRI="#Committing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfferingForSale"/>
+        <Class IRI="#Offering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfferingToPurchase"/>
+        <Class IRI="#Offering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OlympicGames"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opening"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpeningAnAccount"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpeningEyes"/>
+        <Class IRI="#EyeMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpeningEyes"/>
+        <Class IRI="#Opening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationOrder"/>
+        <Class IRI="#Ordering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationPlanning"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationPlanning"/>
+        <Class IRI="#Planning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpiumPoppyFarming"/>
+        <Class IRI="#Farming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrchestralConducting"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ordering"/>
+        <Class IRI="#Directing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganOrTissueProcess"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organification"/>
+        <Class IRI="#OrganOrTissueProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganismProcess"/>
+        <Class IRI="#PhysiologicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganizationalMerging"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganizationalProcess"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ossification"/>
+        <Class IRI="#OrganOrTissueProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvercastWeather"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxidation"/>
+        <Class IRI="#ChemicalDecomposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Painting"/>
+        <Class IRI="#Coloring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Painting"/>
+        <Class IRI="#Covering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParallelResonance"/>
+        <Class IRI="#ElectricalResonance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartlyCloudyWeather"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PassingABill"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PassingABill"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PathologicProcess"/>
+        <Class IRI="#BiologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patrol"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peeling"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penalty"/>
+        <Class IRI="#ChargingAFee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perception"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance"/>
+        <Class IRI="#Demonstrating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerformanceAct"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PesticidePollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photographing"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysiologicProcess"/>
+        <Class IRI="#BiologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pitching"/>
+        <Class IRI="#GameShot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pitching"/>
+        <Class IRI="#Throwing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlacingAnOrder"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlacingUnderArrest"/>
+        <Class IRI="#LawEnforcement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlacingUnderArrest"/>
+        <Class IRI="#LegalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlacingUnderArrest"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planning"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planting"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pleading"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poaching"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poisoning"/>
+        <Class IRI="#Injuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poking"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalCrime"/>
+        <Class IRI="#CriminalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalCrime"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalProcess"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalRevolution"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalRevolution"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polling"/>
+        <Class IRI="#Investigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pollution"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyphonicMusic"/>
+        <Class IRI="#Music"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PopularElection"/>
+        <Class IRI="#GeneralElection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoststrikeReconnaissance"/>
+        <Class IRI="#SpecialReconnaissance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pouring"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pouring"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerGeneration"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Praying"/>
+        <Class IRI="#ReligiousProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Praying"/>
+        <Class IRI="#Requesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precipitation"/>
+        <Class IRI="#Falling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precipitation"/>
+        <Class IRI="#WaterMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precipitation"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreciseDestruction"/>
+        <Class IRI="#Destruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreciseDestruction"/>
+        <Class IRI="#DirectActionActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Predicting"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pretending"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessingACheck"/>
+        <Class IRI="#AuthorizationOfTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proclaiming"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proclaiming"/>
+        <Class IRI="#Lecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProduceStudies"/>
+        <Class IRI="#Creation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProduceStudies"/>
+        <Class IRI="#PsychologicalOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proliferation"/>
+        <Class IRI="#Increasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PsychologicalOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PsychologicalProcess"/>
+        <Class IRI="#BiologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicProgram"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Publication"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Publication"/>
+        <Class IRI="#Manufacture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Punching"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Punishing"/>
+        <Class IRI="#RegulatoryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pursuing"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Putting"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuantityChange"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Questioning"/>
+        <Class IRI="#Directing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racing"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadarReconnaissance"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radiating"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingElectromagnetic"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingInfrared"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingInfrared"/>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingLight"/>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingNuclear"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingSound"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingSoundUltrasonic"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingUltraviolet"/>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingVisibleLight"/>
+        <Class IRI="#RadiatingLight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadiatingXRay"/>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadioBroadcasting"/>
+        <Class IRI="#Broadcasting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadioEmission"/>
+        <Class IRI="#RadiatingElectromagnetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RailCarrierControl"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raining"/>
+        <Class IRI="#Precipitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raping"/>
+        <Class IRI="#CriminalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raping"/>
+        <Class IRI="#Mating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReachingAgreement"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reading"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reasoning"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reciting"/>
+        <Class IRI="#Speaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReconnaissanceByFire"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReconnaissanceInForce"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReconnaissanceOperation"/>
+        <Class IRI="#Investigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReconnaissanceOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecoveringFromIllness"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecreationOrExercise"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refinancing"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reflecting"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReflectingLight"/>
+        <Class IRI="#RadiatingLight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReflectingLight"/>
+        <Class IRI="#Reflecting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReflexiveProcess"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reforestation"/>
+        <Class IRI="#Planting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Registering"/>
+        <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Registering"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regretting"/>
+        <Class IRI="#ExpressingDisapproval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryProcess"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Releasing"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelievingPain"/>
+        <Class IRI="#TherapeuticProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousProcess"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remembering"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reminding"/>
+        <Class IRI="#Requesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Removing"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemovingClothing"/>
+        <Class IRI="#Uncovering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renting"/>
+        <Class IRI="#Borrowing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renting"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repairing"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Replication"/>
+        <Class IRI="#OrganismProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requesting"/>
+        <Class IRI="#Directing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchingWeaponOfMassDestruction"/>
+        <Class IRI="#Investigating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resigning"/>
+        <Class IRI="#TerminatingEmployment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resolution"/>
+        <Class IRI="#Deciding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resonance"/>
+        <Class IRI="#NaturalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retiring"/>
+        <Class IRI="#Resigning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Returning"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReusingAResource"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reversing"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ringing"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robbing"/>
+        <Class IRI="#Stealing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RocketMissileAttack"/>
+        <Class IRI="#Bombing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rockslide"/>
+        <Class IRI="#Landslide"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rollover"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotating"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rowing"/>
+        <Class IRI="#WaterTransportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Running"/>
+        <Class IRI="#Ambulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sabotage"/>
+        <Class IRI="#Damaging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sabotage"/>
+        <Class IRI="#UnconventionalWarfare"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sales"/>
+        <Class IRI="#Working"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salination"/>
+        <Class IRI="#Combining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sandstorm"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sanitation"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saving"/>
+        <Class IRI="#Increasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scholarship"/>
+        <Class IRI="#Funding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Score"/>
+        <Class IRI="#GameShot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seating"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seeing"/>
+        <Class IRI="#Perception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Selecting"/>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Selling"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sentencing"/>
+        <Class IRI="#LegalDecision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Separating"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeriesResonance"/>
+        <Class IRI="#ElectricalResonance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sermon"/>
+        <Class IRI="#Lecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serving"/>
+        <Class IRI="#Working"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereThunderstorm"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SewageDisposal"/>
+        <Class IRI="#Sanitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sewing"/>
+        <Class IRI="#Attaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SexualReproduction"/>
+        <Class IRI="#Replication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShapeChange"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sharing"/>
+        <Class IRI="#ChangeOfPossession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShipBerthing"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shipping"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shooting"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shortening"/>
+        <Class IRI="#Decreasing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shrugging"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shrugging"/>
+        <Class IRI="#Gesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Signalling"/>
+        <Class IRI="#Guiding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SigningADocument"/>
+        <Class IRI="#Committing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siltation"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Singing"/>
+        <Class IRI="#Music"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Singing"/>
+        <Class IRI="#Speaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Singing"/>
+        <Class IRI="#VocalMusic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinking"/>
+        <Class IRI="#Falling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sirocco"/>
+        <Class IRI="#WindProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SittingDown"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SittingDown"/>
+        <Class IRI="#MotionDownward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlashAndBurnAgriculture"/>
+        <Class IRI="#Agriculture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleeting"/>
+        <Class IRI="#Precipitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smelling"/>
+        <Class IRI="#Perception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smiling"/>
+        <Class IRI="#FacialExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoking"/>
+        <Class IRI="#RecreationOrExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smuggling"/>
+        <Class IRI="#CriminalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smuggling"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snowing"/>
+        <Class IRI="#Precipitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoberingUp"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialInteraction"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialParty"/>
+        <Class IRI="#Meeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialParty"/>
+        <Class IRI="#RecreationOrExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilDegradation"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilErosion"/>
+        <Class IRI="#Erosion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilSalination"/>
+        <Class IRI="#Salination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soldering"/>
+        <Class IRI="#Attaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidWasteDisposal"/>
+        <Class IRI="#Sanitation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Somersaulting"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpaceTransportation"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speaking"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speaking"/>
+        <Class IRI="#Vocalizing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialOperation"/>
+        <Class IRI="#MilitaryOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialReconnaissance"/>
+        <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialReconnaissance"/>
+        <Class IRI="#SpecialOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spitting"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportServe"/>
+        <Class IRI="#GameShot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spraying"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spraying"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squall"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandingUp"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandingUp"/>
+        <Class IRI="#MotionUpward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandoffAttack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandoffAttack"/>
+        <Class IRI="#DirectActionActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Starving"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateChange"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stating"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stealing"/>
+        <Class IRI="#CriminalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stealing"/>
+        <Class IRI="#UnilateralGetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stepping"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stirring"/>
+        <Class IRI="#Combining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stirring"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StockMarketTransaction"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stoning"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StormSystem"/>
+        <Class IRI="#WeatherSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strangling"/>
+        <Class IRI="#Grabbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stretching"/>
+        <Class IRI="#Lengthening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stretching"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrongWind"/>
+        <Class IRI="#WindProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Substituting"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Substituting"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suffocating"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suicide"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuicideBombing"/>
+        <Class IRI="#Bombing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuicideBombing"/>
+        <Class IRI="#Killing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sunlight"/>
+        <Class IRI="#RadiatingLight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supposing"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceChange"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgery"/>
+        <Class IRI="#TherapeuticProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swarming"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweeping"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swimming"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemDesign"/>
+        <Class IRI="#EngineersSubprocess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystemSpecification"/>
+        <Class IRI="#EngineersSubprocess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TactilePerception"/>
+        <Class IRI="#Perception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TakingOff"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TargetThreatReconnaissance"/>
+        <Class IRI="#SpecialReconnaissance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tasting"/>
+        <Class IRI="#Perception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tax"/>
+        <Class IRI="#ChargingAFee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamSport"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Telephoning"/>
+        <Class IRI="#Speaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelevisionBroadcasting"/>
+        <Class IRI="#Broadcasting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TellingALie"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalAttackControl"/>
+        <Class IRI="#Classifying"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalAttackControl"/>
+        <Class IRI="#DirectActionActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalAttackControl"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalGuidance"/>
+        <Class IRI="#Classifying"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalGuidance"/>
+        <Class IRI="#DirectActionActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminalGuidance"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerminatingEmployment"/>
+        <Class IRI="#LeavingAnOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialDispute"/>
+        <Class IRI="#InternationalDispute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrorism"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerroristAttack"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testifying"/>
+        <Class IRI="#Stating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thanking"/>
+        <Class IRI="#ExpressingApproval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TherapeuticProcess"/>
+        <Class IRI="#Repairing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threatening"/>
+        <Class IRI="#Committing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Throwing"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Throwing"/>
+        <Class IRI="#Impelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thunder"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thunder"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thunderstorm"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TidalProcess"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tilling"/>
+        <Class IRI="#Digging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tilling"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tilling"/>
+        <Class IRI="#SurfaceChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tornado"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Touching"/>
+        <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tracing"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tracing"/>
+        <Class IRI="#SurfaceChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transaction"/>
+        <Class IRI="#ChangeOfPossession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transaction"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transfer"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransferringPosition"/>
+        <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Translating"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Translating"/>
+        <Class IRI="#DualObjectProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Translocation"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportViaRoadVehicle"/>
+        <Class IRI="#LandTransportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportViaRoadVehicle"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transportation"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trembling"/>
+        <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trembling"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trembling"/>
+        <Class IRI="#Tremor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tremor"/>
+        <Class IRI="#Rotating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trespassing"/>
+        <Class IRI="#CriminalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trespassing"/>
+        <Class IRI="#Translocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trip"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TropicalCyclone"/>
+        <Class IRI="#CyclonicStorm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tsunami"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurningOffDevice"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurningOnDevice"/>
+        <Class IRI="#InternalChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tying"/>
+        <Class IRI="#Attaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Typhoon"/>
+        <Class IRI="#TropicalCyclone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnInstallation"/>
+        <Class IRI="#ITProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnconventionalWarfare"/>
+        <Class IRI="#Helping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnconventionalWarfare"/>
+        <Class IRI="#SpecialOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncovering"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ungrasping"/>
+        <Class IRI="#Detaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnilateralGetting"/>
+        <Class IRI="#Getting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnilateralGiving"/>
+        <Class IRI="#Giving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Untying"/>
+        <Class IRI="#Detaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Update"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Update"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserRequest"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingAResource"/>
+        <Class IRI="#ComputerProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingAnAccount"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vacationing"/>
+        <Class IRI="#RecreationOrExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vandalism"/>
+        <Class IRI="#Destruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicleAttack"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VehicularPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerifyingCardCode"/>
+        <Class IRI="#AuthorizationOfTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViolentContest"/>
+        <Class IRI="#Contest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViralCellInvasion"/>
+        <Class IRI="#BiologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VocalMusic"/>
+        <Class IRI="#Music"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vocalizing"/>
+        <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vocalizing"/>
+        <Class IRI="#RadiatingSound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolcanicEruption"/>
+        <Class IRI="#GeologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolcanicGasRelease"/>
+        <Class IRI="#VolcanicEruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voting"/>
+        <Class IRI="#Deciding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wading"/>
+        <Class IRI="#Walking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WakingUp"/>
+        <Class IRI="#PsychologicalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Walking"/>
+        <Class IRI="#Ambulating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#War"/>
+        <Class IRI="#ViolentContest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WarmFront"/>
+        <Class IRI="#WeatherFront"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Washing"/>
+        <Class IRI="#Removing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterMotion"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterOverutilization"/>
+        <Class IRI="#SocialInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterPollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterTransportation"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterWave"/>
+        <Class IRI="#LiquidMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waterspout"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waving"/>
+        <Class IRI="#HandGesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherFront"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherProcess"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherSeason"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherSystem"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#Ceremony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#Declaring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weeping"/>
+        <Class IRI="#FacialExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Welfare"/>
+        <Class IRI="#Funding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wetting"/>
+        <Class IRI="#Putting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wind"/>
+        <Class IRI="#GasMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindProcess"/>
+        <Class IRI="#WeatherProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windstorm"/>
+        <Class IRI="#WindProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winking"/>
+        <Class IRI="#ClosingEyes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winking"/>
+        <Class IRI="#Gesture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Withdrawal"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Working"/>
+        <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writing"/>
+        <Class IRI="#ContentDevelopment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrittenCommunication"/>
+        <Class IRI="#LinguisticCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XRayRadiation"/>
+        <Class IRI="#Radiating"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AsexualReproduction"/>
+        <Class IRI="#SexualReproduction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Attaching"/>
+        <Class IRI="#Detaching"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AutonomicProcess"/>
+        <Class IRI="#IntentionalProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BaseballHit"/>
+        <Class IRI="#BaseballSteal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BaseballHit"/>
+        <Class IRI="#BaseballWalk"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BaseballSteal"/>
+        <Class IRI="#BaseballWalk"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BecomingDrunk"/>
+        <Class IRI="#SoberingUp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BeginningOperations"/>
+        <Class IRI="#CeasingOperations"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CentrifugalMotion"/>
+        <Class IRI="#CentripetalMotion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalReduction"/>
+        <Class IRI="#Oxidation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClosingEyes"/>
+        <Class IRI="#OpeningEyes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Combining"/>
+        <Class IRI="#Separating"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cooling"/>
+        <Class IRI="#Heating"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Covering"/>
+        <Class IRI="#Uncovering"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Damaging"/>
+        <Class IRI="#Repairing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Decoding"/>
+        <Class IRI="#Encoding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Deposit"/>
+        <Class IRI="#Withdrawal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dreaming"/>
+        <Class IRI="#IntentionalProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExternalTransfer"/>
+        <Class IRI="#InternalTransfer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FallingAsleep"/>
+        <Class IRI="#WakingUp"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FormalMeeting"/>
+        <Class IRI="#SocialParty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GainingConsciousness"/>
+        <Class IRI="#LosingConsciousness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeologicalProcess"/>
+        <Class IRI="#IntentionalProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IntentionalProcess"/>
+        <Class IRI="#NaturalProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IntentionalProcess"/>
+        <Class IRI="#Trembling"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IntentionalProcess"/>
+        <Class IRI="#WeatherProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#JoiningAnOrganization"/>
+        <Class IRI="#LeavingAnOrganization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MotionDownward"/>
+        <Class IRI="#MotionUpward"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OrganOrTissueProcess"/>
+        <Class IRI="#OrganismProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PathologicProcess"/>
+        <Class IRI="#PhysiologicProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RadiatingInfrared"/>
+        <Class IRI="#RadiatingLight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RadiatingInfrared"/>
+        <Class IRI="#RadioEmission"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RadiatingLight"/>
+        <Class IRI="#RadiatingUltraviolet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RadiatingUltraviolet"/>
+        <Class IRI="#RadiatingVisibleLight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RadiatingUltraviolet"/>
+        <Class IRI="#XRayRadiation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tying"/>
+        <Class IRI="#Untying"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#WaterMotion"/>
+        <NamedIndividual IRI="#AntarcticCircumpolarCurrent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BaseballManeuver"/>
+        <NamedIndividual IRI="#BaseballStrike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinancialTransaction"/>
+        <NamedIndividual IRI="#ExerciseAnOption"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerGeneration"/>
+        <NamedIndividual IRI="#FossilFuelPowerGeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectricalPowerGeneration"/>
+        <NamedIndividual IRI="#HydroElectricPowerGeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerGeneration"/>
+        <NamedIndividual IRI="#NuclearPowerGeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PowerGeneration"/>
+        <NamedIndividual IRI="#OtherSourcePowerGeneration"/>
+    </ClassAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#relatedEvent"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#subProcess"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causes"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedEvent"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subProcess"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causes"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedEvent"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subProcess"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 

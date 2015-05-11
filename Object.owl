@@ -252,8 +252,8 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#larger"/>
         <ObjectProperty IRI="#smaller"/>
+        <ObjectProperty IRI="#larger"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#connected"/>
@@ -347,7 +347,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware, ComputationalDevice</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware, ComputationalDevice, CompDevice</Literal>
     </AnnotationAssertion>
 </Ontology>
 

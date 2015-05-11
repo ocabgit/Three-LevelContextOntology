@@ -164,15 +164,6 @@
         <Class IRI="#Year"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#before"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#beforeOrEqual"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#beginFn"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#duration"/>
     </Declaration>
     <Declaration>
@@ -182,16 +173,10 @@
         <ObjectProperty IRI="#earlier"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#endFn"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#finishes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#futureFn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#meetsTemporally"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#overlapsTemporally"/>
@@ -497,12 +482,6 @@
         <ObjectProperty IRI="#overlapsTemporally"/>
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#before"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#beforeOrEqual"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
         <ObjectProperty IRI="#during"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
@@ -518,14 +497,6 @@
         <ObjectProperty IRI="#temporalPart"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#before"/>
-        <Class IRI="#TimePoint"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#beforeOrEqual"/>
-        <Class IRI="#TimePoint"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#duration"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyDomain>
@@ -539,10 +510,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#finishes"/>
-        <Class IRI="#TimeInterval"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#meetsTemporally"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -558,18 +525,6 @@
         <Class IRI="#TimePosition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#before"/>
-        <Class IRI="#TimePoint"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#beforeOrEqual"/>
-        <Class IRI="#TimePoint"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#beginFn"/>
-        <Class IRI="#TimePoint"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#duration"/>
         <Class IRI="#TimeDuration"/>
     </ObjectPropertyRange>
@@ -582,19 +537,11 @@
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#endFn"/>
-        <Class IRI="#TimePoint"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#finishes"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#futureFn"/>
-        <Class IRI="#TimeInterval"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#meetsTemporally"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

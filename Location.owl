@@ -1160,10 +1160,49 @@
         <Class IRI="#Workshop"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#administrativeCenter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#capitalCity"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diplomaticRelations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#geographicSubregion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#internationalDispute"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postDistrict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postPostcodeArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postStreet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#primaryGeopoliticalSubdivision"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#longtitude"/>
@@ -1235,6 +1274,12 @@
         <NamedIndividual IRI="#AntiguaAndBarbuda"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ArabianSea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AralSea"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ArcticRegion"/>
     </Declaration>
     <Declaration>
@@ -1250,6 +1295,9 @@
         <NamedIndividual IRI="#Armenia"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ArticOcean"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Aruba"/>
     </Declaration>
     <Declaration>
@@ -1262,10 +1310,16 @@
         <NamedIndividual IRI="#AtlantaGeorgia"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AtlanticOcean"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Australia"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BakerIsland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BalticSea"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BaltimoreMaryland"/>
@@ -1275,6 +1329,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Belgium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeringSea"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BerlinGermany"/>
@@ -1287,6 +1344,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BetLidJunctionIsrael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlackSea"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BosphorousStraitsTurkey"/>
@@ -1308,6 +1368,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CaribbeanRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaribbeanSea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaspianSea"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ChicagoUnitedStates"/>
@@ -1400,13 +1466,49 @@
         <NamedIndividual IRI="#GloriosoIslands"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GreatSaltLake"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Guam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GulfOfAden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GulfOfMexico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GulfOfOman"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HudsonRiver"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#IndianOcean"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Indoors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KokoNor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LakeBakhtegan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lakes-Arresee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lakes-BarragedeMbakaou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lakes-Bodensee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lakes-CaspianSea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lakes-ChicamaugalLake"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LondonUnitedKingdom"/>
@@ -1424,16 +1526,49 @@
         <NamedIndividual IRI="#MoscowRussia"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Mountains-Aconcagua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mountains-Bjelucha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mountains-BlueMountainPeak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mountains-BorahPeak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mountains-BoundaryPeak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NorthAtlanticOcean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NorthPacificOcean"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NorthernHemisphere"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#NorthwestPassage"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NothAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NothernSeaRoute"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Oceania"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Outdoors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OzoneShield"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PacificOcean"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Palestine"/>
@@ -1446,6 +1581,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ParisFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PersianGulf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PlanetEarth"/>
@@ -1502,6 +1640,15 @@
         <NamedIndividual IRI="#SouthAmerica"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SouthAtlanticOcean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthPacificOcean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthSandwichTrench"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SouthernHemisphere"/>
     </Declaration>
     <Declaration>
@@ -1515,6 +1662,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WesternHemisphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WorldOcean"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AMRadioStation"/>
@@ -1587,6 +1740,10 @@
     <SubClassOf>
         <Class IRI="#ArchipelagicArea"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchipelagicArea"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Archipelago"/>
@@ -1669,6 +1826,10 @@
         <Class IRI="#Ecosystem"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Biome"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BodyOfWater"/>
         <Class IRI="#WaterArea"/>
     </SubClassOf>
@@ -1702,6 +1863,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Building"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
         <Class IRI="#StationaryArtifact"/>
     </SubClassOf>
     <SubClassOf>
@@ -1715,6 +1880,10 @@
     <SubClassOf>
         <Class IRI="#BusStop"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusStop"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Butte"/>
@@ -1765,6 +1934,10 @@
         <Class IRI="#Hole"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cave"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CaveMatrix"/>
         <Class IRI="#LandForm"/>
     </SubClassOf>
@@ -1787,6 +1960,10 @@
     <SubClassOf>
         <Class IRI="#Checkpoint"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chimney"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Chimney"/>
@@ -1819,6 +1996,10 @@
     <SubClassOf>
         <Class IRI="#ClimateZone"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClimateZone"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Closet"/>
@@ -1921,6 +2102,10 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CultivatedLandArea"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Curb"/>
         <Class IRI="#StationaryArtifact"/>
     </SubClassOf>
@@ -1947,6 +2132,10 @@
     <SubClassOf>
         <Class IRI="#Desert"/>
         <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desert"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DesertClimateZone"/>
@@ -2102,6 +2291,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FlowRegion"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowRegion"/>
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
@@ -2109,8 +2302,16 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Forest"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FreshWaterArea"/>
         <Class IRI="#WaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garage"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Garage"/>
@@ -2139,6 +2340,10 @@
     <SubClassOf>
         <Class IRI="#Grassland"/>
         <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grassland"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gulf"/>
@@ -2257,12 +2462,24 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IrrigatedLand"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Island"/>
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Island"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Isthmus"/>
         <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isthmus"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#JetStream"/>
@@ -2277,8 +2494,16 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Jungle"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Kitchen"/>
         <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Laboratory"/>
@@ -2313,6 +2538,10 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LandlockedArea"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LandlockedWater"/>
         <Class IRI="#BodyOfWater"/>
     </SubClassOf>
@@ -2341,6 +2570,10 @@
         <Class IRI="#GeographicArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LittoralZone"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LocalizablePlace"/>
         <Class IRI="#GeographicArea"/>
     </SubClassOf>
@@ -2355,6 +2588,10 @@
     <SubClassOf>
         <Class IRI="#MaritimeClaimArea"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeClaimArea"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MaritimeContiguousZone"/>
@@ -2426,11 +2663,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MilitaryInstallation"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryInstallation"/>
         <Class IRI="#PostalPlace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MilitaryInstallation"/>
         <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mine"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mine"/>
@@ -2451,6 +2696,10 @@
     <SubClassOf>
         <Class IRI="#Mountain"/>
         <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mountain"/>
@@ -2513,6 +2762,10 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Oasis"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Ocean"/>
         <Class IRI="#BodyOfWater"/>
     </SubClassOf>
@@ -2555,6 +2808,10 @@
     <SubClassOf>
         <Class IRI="#Park"/>
         <Class IRI="#LandArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ParkingGarage"/>
@@ -2610,6 +2867,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PlaceOfCommerce"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfCommerce"/>
         <Class IRI="#PostalPlace"/>
     </SubClassOf>
     <SubClassOf>
@@ -2654,11 +2915,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Porch"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Porch"/>
         <Class IRI="#StationaryArtifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PortCity"/>
         <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortCity"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostalPlace"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PostalPlace"/>
@@ -2675,6 +2948,10 @@
     <SubClassOf>
         <Class IRI="#Prairie"/>
         <Class IRI="#Plain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prison"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Prison"/>
@@ -2751,6 +3028,10 @@
     <SubClassOf>
         <Class IRI="#ReservoirLake"/>
         <Class IRI="#Reservoir"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residence"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Residence"/>
@@ -2833,8 +3114,20 @@
         <Class IRI="#LandTransitway"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Roadway"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roof"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Roof"/>
         <Class IRI="#StationaryArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Room"/>
@@ -2843,6 +3136,10 @@
     <SubClassOf>
         <Class IRI="#Runway"/>
         <Class IRI="#LandTransitway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Runway"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SaltLake"/>
@@ -2929,12 +3226,24 @@
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ShoreArea"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Shoreline"/>
         <Class IRI="#LandArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Shoreline"/>
+        <Class IRI="#OutdoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ShortwaveRadioStation"/>
         <Class IRI="#RadioStation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sidewalk"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sidewalk"/>
@@ -2991,6 +3300,10 @@
     <SubClassOf>
         <Class IRI="#StationaryArtifact"/>
         <Class IRI="#LocalizablePlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steeple"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Steeple"/>
@@ -3198,6 +3511,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tunnel"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tunnel"/>
         <Class IRI="#LandTransitway"/>
     </SubClassOf>
     <SubClassOf>
@@ -3207,6 +3524,10 @@
     <SubClassOf>
         <Class IRI="#UndergroundArea"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndergroundArea"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UniformPerimeterArea"/>
@@ -3263,6 +3584,10 @@
     <SubClassOf>
         <Class IRI="#Volcano"/>
         <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volcano"/>
+        <Class IRI="#OutdoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VotingPoll"/>
@@ -3334,11 +3659,31 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Workshop"/>
+        <Class IRI="#IndoorSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Workshop"/>
         <Class IRI="#StationaryArtifact"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#ApartmentBuilding"/>
+        <Class IRI="#SingleFamilyResidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#AstronomicalBody"/>
         <Class IRI="#GeographicArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Barn"/>
+        <Class IRI="#ResidentialBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Building"/>
+        <Class IRI="#Room"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CondominiumBuilding"/>
+        <Class IRI="#SingleFamilyResidence"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Continent"/>
@@ -3353,8 +3698,20 @@
         <Class IRI="#IndependentState"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Dormitory"/>
+        <Class IRI="#SingleFamilyResidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FarmBuilding"/>
+        <Class IRI="#ResidentialBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Field"/>
         <Class IRI="#Forest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FreshWaterArea"/>
+        <Class IRI="#SaltWaterArea"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#GeographicArea"/>
@@ -3493,6 +3850,14 @@
         <NamedIndividual IRI="#AntiguaAndBarbuda"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Sea"/>
+        <NamedIndividual IRI="#ArabianSea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltLake"/>
+        <NamedIndividual IRI="#AralSea"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GeographicArea"/>
         <NamedIndividual IRI="#ArcticRegion"/>
     </ClassAssertion>
@@ -3511,6 +3876,10 @@
     <ClassAssertion>
         <Class IRI="#Nation"/>
         <NamedIndividual IRI="#Armenia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ocean"/>
+        <NamedIndividual IRI="#ArticOcean"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
@@ -3537,6 +3906,10 @@
         <NamedIndividual IRI="#AtlantaGeorgia"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Ocean"/>
+        <NamedIndividual IRI="#AtlanticOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Nation"/>
         <NamedIndividual IRI="#Australia"/>
     </ClassAssertion>
@@ -3547,6 +3920,10 @@
     <ClassAssertion>
         <Class IRI="#LandArea"/>
         <NamedIndividual IRI="#BakerIsland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea"/>
+        <NamedIndividual IRI="#BalticSea"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AmericanCity"/>
@@ -3563,6 +3940,10 @@
     <ClassAssertion>
         <Class IRI="#EuropeanNation"/>
         <NamedIndividual IRI="#Belgium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea"/>
+        <NamedIndividual IRI="#BeringSea"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EuropeanCity"/>
@@ -3583,6 +3964,10 @@
     <ClassAssertion>
         <Class IRI="#GeographicArea"/>
         <NamedIndividual IRI="#BetLidJunctionIsrael"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea"/>
+        <NamedIndividual IRI="#BlackSea"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GeographicArea"/>
@@ -3611,6 +3996,14 @@
     <ClassAssertion>
         <Class IRI="#GeographicArea"/>
         <NamedIndividual IRI="#CaribbeanRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sea"/>
+        <NamedIndividual IRI="#CaribbeanSea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltLake"/>
+        <NamedIndividual IRI="#CaspianSea"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AmericanCity"/>
@@ -3733,16 +4126,76 @@
         <NamedIndividual IRI="#GloriosoIslands"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SaltLake"/>
+        <NamedIndividual IRI="#GreatSaltLake"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Island"/>
         <NamedIndividual IRI="#Guam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gulf"/>
+        <NamedIndividual IRI="#GulfOfAden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltWaterArea"/>
+        <NamedIndividual IRI="#GulfOfAden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gulf"/>
+        <NamedIndividual IRI="#GulfOfMexico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltWaterArea"/>
+        <NamedIndividual IRI="#GulfOfMexico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gulf"/>
+        <NamedIndividual IRI="#GulfOfOman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltWaterArea"/>
+        <NamedIndividual IRI="#GulfOfOman"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#River"/>
         <NamedIndividual IRI="#HudsonRiver"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Ocean"/>
+        <NamedIndividual IRI="#IndianOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Region"/>
         <NamedIndividual IRI="#Indoors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltLake"/>
+        <NamedIndividual IRI="#KokoNor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltLake"/>
+        <NamedIndividual IRI="#LakeBakhtegan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lake"/>
+        <NamedIndividual IRI="#Lakes-Arresee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lake"/>
+        <NamedIndividual IRI="#Lakes-BarragedeMbakaou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lake"/>
+        <NamedIndividual IRI="#Lakes-Bodensee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lake"/>
+        <NamedIndividual IRI="#Lakes-CaspianSea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lake"/>
+        <NamedIndividual IRI="#Lakes-ChicamaugalLake"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EuropeanCity"/>
@@ -3765,12 +4218,56 @@
         <NamedIndividual IRI="#MoscowRussia"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Mountains-Aconcagua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Mountains-Bjelucha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Mountains-BlueMountainPeak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Mountains-BorahPeak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Mountains-BoundaryPeak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyOfWater"/>
+        <NamedIndividual IRI="#NorthAtlanticOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltWaterArea"/>
+        <NamedIndividual IRI="#NorthAtlanticOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyOfWater"/>
+        <NamedIndividual IRI="#NorthPacificOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltWaterArea"/>
+        <NamedIndividual IRI="#NorthPacificOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Hemisphere"/>
         <NamedIndividual IRI="#NorthernHemisphere"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Waterway"/>
+        <NamedIndividual IRI="#NorthwestPassage"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Continent"/>
         <NamedIndividual IRI="#NothAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Waterway"/>
+        <NamedIndividual IRI="#NothernSeaRoute"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Continent"/>
@@ -3779,6 +4276,14 @@
     <ClassAssertion>
         <Class IRI="#Region"/>
         <NamedIndividual IRI="#Outdoors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AtmosphericRegion"/>
+        <NamedIndividual IRI="#OzoneShield"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ocean"/>
+        <NamedIndividual IRI="#PacificOcean"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#OverseasArea"/>
@@ -3795,6 +4300,14 @@
     <ClassAssertion>
         <Class IRI="#EuropeanCity"/>
         <NamedIndividual IRI="#ParisFrance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gulf"/>
+        <NamedIndividual IRI="#PersianGulf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaltWaterArea"/>
+        <NamedIndividual IRI="#PersianGulf"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Planet"/>
@@ -3833,6 +4346,10 @@
         <NamedIndividual IRI="#PlanetVenus"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BodyOfWater"/>
+        <NamedIndividual IRI="#PuertoRico"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#River"/>
         <NamedIndividual IRI="#RedRiver"/>
     </ClassAssertion>
@@ -3865,8 +4382,24 @@
         <NamedIndividual IRI="#SouthAmerica"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BodyOfWater"/>
+        <NamedIndividual IRI="#SouthAtlanticOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyOfWater"/>
+        <NamedIndividual IRI="#SouthPacificOcean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hole"/>
+        <NamedIndividual IRI="#SouthSandwichTrench"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Hemisphere"/>
         <NamedIndividual IRI="#SouthernHemisphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ocean"/>
+        <NamedIndividual IRI="#SouthernOcean"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#PolarClimateZone"/>
@@ -3884,28 +4417,135 @@
         <Class IRI="#Hemisphere"/>
         <NamedIndividual IRI="#WesternHemisphere"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyOfWater"/>
+        <NamedIndividual IRI="#WorldOcean"/>
+    </ClassAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#contains"/>
         <ObjectProperty IRI="#isLocatedIn"/>
     </InverseObjectProperties>
-    <AsymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#diplomaticRelations"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
         <ObjectProperty IRI="#contains"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#isLocatedIn"/>
-    </AsymmetricObjectProperty>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#geographicSubregion"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+    </TransitiveObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#isLocatedIn"/>
     </TransitiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#contains"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#isLocatedIn"/>
-    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#administrativeCenter"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#capitalCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#diplomaticRelations"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#geographicSubregion"/>
+        <Class IRI="#GeographicArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#internationalDispute"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postCity"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postCountry"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postDistrict"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postPostcodeArea"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postStreet"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#primaryGeopoliticalSubdivision"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isLocatedIn"/>
-        <Class IRI="#Region"/>
+        <ObjectProperty IRI="#administrativeCenter"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#capitalCity"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#diplomaticRelations"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#geographicSubregion"/>
+        <Class IRI="#GeographicArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#internationalDispute"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postCountry"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postDistrict"/>
+        <Class IRI="#StateOrProvince"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postPostcodeArea"/>
+        <Class IRI="#PostcodeArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postStreet"/>
+        <Class IRI="#Roadway"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#primaryGeopoliticalSubdivision"/>
+        <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#longtitude"/>
@@ -3918,6 +4558,21 @@
         <DataProperty IRI="#longtitude"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#IndoorSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indoor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#OfficeBuilding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#OutdoorSpace</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Outdoor</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
