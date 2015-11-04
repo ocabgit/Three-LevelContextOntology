@@ -10,25 +10,236 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-114"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-114">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of proposition taken from SUMO ontology and it is used to conceptualize the procedures such as computer programs, etc.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#ComputerProgram"/>
+        <Class IRI="#Agreement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OperatingSystem"/>
+        <Class IRI="#AlgebraicEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ambition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppliedComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BankStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BesselsEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CONPLAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CONPLANwithTPFDD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassificationScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CodeMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CodingScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlDesignMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CounterTerrorismStrategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrencyCodeMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeductiveArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeliveryMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DifferentialEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discretization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EconomicIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalEngineeringMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergingTechnologiesField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EncodingProcedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Envisions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explanation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FieldOfStudy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstOrderDifferentialEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FourierAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FourierSynthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicCodeMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HigherOrderDifferentialEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InductiveArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inflation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvalidDeductiveArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LanguageCodeMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalOpinion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LicenseAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinearEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MathematicalMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeEncodingScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeEnrichedText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeMultipart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MimeVideo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewtonsFirstLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewtonsLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewtonsSecondLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewtonsThirdLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonlinearEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OPLAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrdinaryDifferentialEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orthography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartialDifferentialEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaymentMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Procedure"/>
@@ -37,24 +248,799 @@
         <Class IRI="#Proposition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SoftwareSystem"/>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pwm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegionalLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestrictedSuffrage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RootLocus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScientificLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceLevelAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialScience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsPlay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuffrageLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TheoreticalComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValidDeductiveArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VanderpolsEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VoterAgeRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDesire"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGoal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubPlan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDesireOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGoalOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AirPollution-NitrogenOxidesProtocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AirPollution-PeristentOrganicPollutantsProtocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AirPollution-Sulphur85Protocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AirPollution-Sulphur94Protocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AirPollution-VolatileOrganicCompoundsProtocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AirPollutionConvention"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlgorithmsAndDataStructures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anthropology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArtificialIntelligence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chemistry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CompulsorySuffrageLaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Economics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Electronics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExclusiveMaleSuffrage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FieldOfLaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ISO-3166-1-alpha-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ISO-4217-A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ISO-639-1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteriorDesign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternetOfThings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Linguistics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Literature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mathematics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MedicalScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MilitaryScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Philosophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Physics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Physiology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoliticalScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Psychology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SmartCities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoftwareEngineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Theology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheoryOfComputation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UniversalSuffrageLaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VoterCitizenshipRequirement"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#ComputerProgram"/>
+        <Class IRI="#Agreement"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlgebraicEquation"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambition"/>
+        <Class IRI="#Envisions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AppliedComputerScience"/>
+        <Class IRI="#ComputerScience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Argument"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BankStatement"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BesselsEquation"/>
+        <Class IRI="#NonlinearEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BesselsEquation"/>
+        <Class IRI="#OrdinaryDifferentialEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CONPLAN"/>
+        <Class IRI="#OperationPlan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CONPLANwithTPFDD"/>
+        <Class IRI="#CONPLAN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassificationScheme"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeMap"/>
+        <Class IRI="#ClassificationScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodingScheme"/>
         <Class IRI="#Procedure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OperatingSystem"/>
-        <Class IRI="#SoftwareSystem"/>
+        <Class IRI="#ComputerScience"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constitution"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlDesignMethod"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CounterTerrorismStrategy"/>
+        <Class IRI="#OperationPlan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CurrencyCodeMap"/>
+        <Class IRI="#CodeMap"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeductiveArgument"/>
+        <Class IRI="#Argument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliveryMethod"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desire"/>
+        <Class IRI="#Envisions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diet"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DifferentialEquation"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discretization"/>
+        <Class IRI="#MathematicalMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EconomicIndicator"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalCourse"/>
+        <Class IRI="#EducationalProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalProgram"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalEngineeringMethod"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergingTechnologiesField"/>
+        <Class IRI="#FieldOfStudy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EncodingProcedure"/>
+        <Class IRI="#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Envisions"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equation"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explanation"/>
+        <Class IRI="#DeductiveArgument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FieldOfStudy"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstOrderDifferentialEquation"/>
+        <Class IRI="#DifferentialEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourierAnalysis"/>
+        <Class IRI="#MathematicalMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourierSynthesis"/>
+        <Class IRI="#MathematicalMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeographicCodeMap"/>
+        <Class IRI="#CodeMap"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Envisions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HigherOrderDifferentialEquation"/>
+        <Class IRI="#DifferentialEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InductiveArgument"/>
+        <Class IRI="#Argument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inflation"/>
+        <Class IRI="#EconomicIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternationalAgreement"/>
+        <Class IRI="#Agreement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvalidDeductiveArgument"/>
+        <Class IRI="#DeductiveArgument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LanguageCodeMap"/>
+        <Class IRI="#CodeMap"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalOpinion"/>
+        <Class IRI="#Argument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LicenseAgreement"/>
+        <Class IRI="#Agreement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinearEquation"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MathematicalMethod"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class IRI="#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeApplication"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeAudio"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeEncodingScheme"/>
+        <Class IRI="#CodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeEnrichedText"/>
+        <Class IRI="#MimeText"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeImage"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeMessage"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeMultipart"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeText"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MimeVideo"/>
+        <Class IRI="#MimeEncodingScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewtonsFirstLaw"/>
+        <Class IRI="#NewtonsLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewtonsLaw"/>
+        <Class IRI="#ScientificLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewtonsSecondLaw"/>
+        <Class IRI="#NewtonsLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewtonsThirdLaw"/>
+        <Class IRI="#NewtonsLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonlinearEquation"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OPLAN"/>
+        <Class IRI="#OperationPlan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Objective"/>
+        <Class IRI="#Envisions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ontology"/>
+        <Class IRI="#ClassificationScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationPlan"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrdinaryDifferentialEquation"/>
+        <Class IRI="#DifferentialEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthography"/>
+        <Class IRI="#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartialDifferentialEquation"/>
+        <Class IRI="#DifferentialEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaymentMethod"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Procedure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Procedure"/>
         <Class IRI="#Proposition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SoftwareSystem"/>
-        <Class IRI="#ComputerProgram"/>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Envisions"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pwm"/>
+        <Class IRI="#ElectricalEngineeringMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegionalLaw"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestrictedSuffrage"/>
+        <Class IRI="#SuffrageLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootLocus"/>
+        <Class IRI="#ControlDesignMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Science"/>
+        <Class IRI="#FieldOfStudy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScientificLaw"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceLevelAgreement"/>
+        <Class IRI="#Agreement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialScience"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsPlay"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuffrageLaw"/>
+        <Class IRI="#Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxonomy"/>
+        <Class IRI="#ClassificationScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technique"/>
+        <Class IRI="#Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TheoreticalComputerScience"/>
+        <Class IRI="#ComputerScience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValidDeductiveArgument"/>
+        <Class IRI="#DeductiveArgument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VanderpolsEquation"/>
+        <Class IRI="#NonlinearEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VanderpolsEquation"/>
+        <Class IRI="#OrdinaryDifferentialEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VoterAgeRequirement"/>
+        <Class IRI="#SuffrageLaw"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CONPLAN"/>
+        <Class IRI="#OPLAN"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Agreement"/>
+        <NamedIndividual IRI="#AirPollution-NitrogenOxidesProtocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agreement"/>
+        <NamedIndividual IRI="#AirPollution-PeristentOrganicPollutantsProtocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agreement"/>
+        <NamedIndividual IRI="#AirPollution-Sulphur85Protocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agreement"/>
+        <NamedIndividual IRI="#AirPollution-Sulphur94Protocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agreement"/>
+        <NamedIndividual IRI="#AirPollution-VolatileOrganicCompoundsProtocol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agreement"/>
+        <NamedIndividual IRI="#AirPollutionConvention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TheoreticalComputerScience"/>
+        <NamedIndividual IRI="#AlgorithmsAndDataStructures"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialScience"/>
+        <NamedIndividual IRI="#Anthropology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#Architecture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AppliedComputerScience"/>
+        <NamedIndividual IRI="#ArtificialIntelligence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Biology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Chemistry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SuffrageLaw"/>
+        <NamedIndividual IRI="#CompulsorySuffrageLaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialScience"/>
+        <NamedIndividual IRI="#Economics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#Electronics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestrictedSuffrage"/>
+        <NamedIndividual IRI="#ExclusiveMaleSuffrage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#FieldOfLaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#History"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeographicCodeMap"/>
+        <NamedIndividual IRI="#ISO-3166-1-alpha-2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CurrencyCodeMap"/>
+        <NamedIndividual IRI="#ISO-4217-A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LanguageCodeMap"/>
+        <NamedIndividual IRI="#ISO-639-1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#InteriorDesign"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmergingTechnologiesField"/>
+        <NamedIndividual IRI="#InternetOfThings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialScience"/>
+        <NamedIndividual IRI="#Linguistics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#Literature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#Mathematics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#MedicalScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#MilitaryScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClassificationScheme"/>
+        <NamedIndividual IRI="#Ontologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#Philosophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Physics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Physiology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialScience"/>
+        <NamedIndividual IRI="#PoliticalScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialScience"/>
+        <NamedIndividual IRI="#Psychology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmergingTechnologiesField"/>
+        <NamedIndividual IRI="#SmartCities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AppliedComputerScience"/>
+        <NamedIndividual IRI="#SoftwareEngineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ComputerScience"/>
+        <NamedIndividual IRI="#SoftwareEngineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldOfStudy"/>
+        <NamedIndividual IRI="#Theology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TheoreticalComputerScience"/>
+        <NamedIndividual IRI="#TheoryOfComputation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SuffrageLaw"/>
+        <NamedIndividual IRI="#UniversalSuffrageLaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SuffrageLaw"/>
+        <NamedIndividual IRI="#VoterCitizenshipRequirement"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDesire"/>
+        <ObjectProperty IRI="#isDesireOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasGoal"/>
+        <ObjectProperty IRI="#isGoalOf"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasGoal"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isGoalOf"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSubField"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSubPlan"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasGoal"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isGoalOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubField"/>
+        <Class IRI="#FieldOfStudy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubPlan"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDesireOf"/>
+        <Class IRI="#Desire"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGoalOf"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDesire"/>
+        <Class IRI="#Desire"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGoal"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubField"/>
+        <Class IRI="#FieldOfStudy"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#hasGoal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasIntention</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

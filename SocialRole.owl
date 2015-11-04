@@ -1,0 +1,1159 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represent the module of a social role taken from SUMO ontology.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chauffeur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civilian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollegeStudentPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommissionedOfficerRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Companion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyGradeRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnlistedSoldierRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntertainmentProfession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FieldGradeOfficerRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmMakingProfession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlagOfficerRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForeignServicePosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullTimePosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentSecretary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Investor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Janitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuniorNCORank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManualLabor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModellingPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motorman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonCommissionedOfficerRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccupationalRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccupationalTrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartTimePosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductExpert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requestor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalesPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeniorNCORank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServicePosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkilledOccupation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staffer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TheaterProfession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USMilitaryRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USWarrantOfficerRank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnskilledOccupation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnerOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accountant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ambassador"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attorney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttorneyGeneral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Banker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BusinessPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carpenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Celebrity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chairman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChargeDAffaires"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CivilianInternee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cleric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClericalSecretary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CollegeFreshman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CollegeJunior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CollegeSenior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CollegeSophomore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CombatantCommander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comedian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Consul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConsulGeneral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coroner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deacon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dentist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diplomat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiplomaticAgent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DisplacedPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dissident"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Enemy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evacuee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Expelle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FarmHand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FilmDirector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FilmProducer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FirstMate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GameReferee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GovernmentDeputy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GovernmentPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Governor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HumanSlave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternallyDisplacedPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternetUser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Journalist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Judge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Knight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MedicalDoctor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MilitaryPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MusicalConductor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NewsReporter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Performer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pharmacist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoliceOfficer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PolicePerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Potter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivateDetective"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PublicDefender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PublicProsecutor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Researcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sailor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SecretaryOfTheInterior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SecretaryOfTheTreasury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soldier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StoreOwner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheaterProfession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Treasurer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank08"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRank09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankE1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankE2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankE5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankE6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankE7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankE8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankW01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankW02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankW03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankWO2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankWO3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankWO4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USMilitaryRankWO5"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Audience"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chauffeur"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chauffeur"/>
+        <Class IRI="#PartTimePosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civilian"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollegeStudentPosition"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommissionedOfficerRank"/>
+        <Class IRI="#MilitaryRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Companion"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyGradeRank"/>
+        <Class IRI="#CommissionedOfficerRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driver"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Profession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnlistedSoldierRank"/>
+        <Class IRI="#MilitaryRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntertainmentProfession"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvPerson"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FieldGradeOfficerRank"/>
+        <Class IRI="#CommissionedOfficerRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilmMakingProfession"/>
+        <Class IRI="#EntertainmentProfession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlagOfficerRank"/>
+        <Class IRI="#CommissionedOfficerRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForeignServicePosition"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullTimePosition"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentOfficer"/>
+        <Class IRI="#Profession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentSecretary"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investor"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Janitor"/>
+        <Class IRI="#UnskilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JuniorNCORank"/>
+        <Class IRI="#NonCommissionedOfficerRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maid"/>
+        <Class IRI="#ServicePosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Profession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManualLabor"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryRank"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModellingPosition"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorman"/>
+        <Class IRI="#Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonCommissionedOfficerRank"/>
+        <Class IRI="#EnlistedSoldierRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccupationalRole"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccupationalTrade"/>
+        <Class IRI="#ManualLabor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccupationalTrade"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartTimePosition"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Position"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateRank"/>
+        <Class IRI="#EnlistedSoldierRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductExpert"/>
+        <Class IRI="#SalesPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profession"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provider"/>
+        <Class IRI="#ServicePosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousPosition"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requestor"/>
+        <Class IRI="#PartTimePosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalesPosition"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeniorNCORank"/>
+        <Class IRI="#NonCommissionedOfficerRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServicePosition"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkilledOccupation"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speaker"/>
+        <Class IRI="#PartTimePosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsPosition"/>
+        <Class IRI="#SkilledOccupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staffer"/>
+        <Class IRI="#PartTimePosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teacher"/>
+        <Class IRI="#Profession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TheaterProfession"/>
+        <Class IRI="#EntertainmentProfession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USMilitaryRank"/>
+        <Class IRI="#MilitaryRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USWarrantOfficerRank"/>
+        <Class IRI="#CommissionedOfficerRank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnskilledOccupation"/>
+        <Class IRI="#ManualLabor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitor"/>
+        <Class IRI="#SocialRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#FullTimePosition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#OccupationalTrade"/>
+        <Class IRI="#Profession"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SkilledOccupation"/>
+        <Class IRI="#UnskilledOccupation"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Accountant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntertainmentProfession"/>
+        <NamedIndividual IRI="#Actor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ForeignServicePosition"/>
+        <NamedIndividual IRI="#Ambassador"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntertainmentProfession"/>
+        <NamedIndividual IRI="#Artist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Attorney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOfficer"/>
+        <NamedIndividual IRI="#AttorneyGeneral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#Banker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalRole"/>
+        <NamedIndividual IRI="#BusinessPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalTrade"/>
+        <NamedIndividual IRI="#Carpenter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Celebrity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#Chairman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ForeignServicePosition"/>
+        <NamedIndividual IRI="#ChargeDAffaires"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#CivilianInternee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Cleric"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPosition"/>
+        <NamedIndividual IRI="#Cleric"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#ClericalSecretary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#Coach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CollegeStudentPosition"/>
+        <NamedIndividual IRI="#CollegeFreshman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CollegeStudentPosition"/>
+        <NamedIndividual IRI="#CollegeJunior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CollegeStudentPosition"/>
+        <NamedIndividual IRI="#CollegeSenior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CollegeStudentPosition"/>
+        <NamedIndividual IRI="#CollegeSophomore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#CombatantCommander"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntertainmentProfession"/>
+        <NamedIndividual IRI="#Comedian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ForeignServicePosition"/>
+        <NamedIndividual IRI="#Consul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ForeignServicePosition"/>
+        <NamedIndividual IRI="#ConsulGeneral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOfficer"/>
+        <NamedIndividual IRI="#Coroner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartTimePosition"/>
+        <NamedIndividual IRI="#Deacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPosition"/>
+        <NamedIndividual IRI="#Deacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Dentist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalRole"/>
+        <NamedIndividual IRI="#Diplomat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ForeignServicePosition"/>
+        <NamedIndividual IRI="#DiplomaticAgent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#DisplacedPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Dissident"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Enemy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Evacuee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Expelle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalTrade"/>
+        <NamedIndividual IRI="#FarmHand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FilmMakingProfession"/>
+        <NamedIndividual IRI="#FilmDirector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FilmMakingProfession"/>
+        <NamedIndividual IRI="#FilmProducer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#FirstMate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#GameReferee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#GovernmentDeputy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalRole"/>
+        <NamedIndividual IRI="#GovernmentPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#Governor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#HumanSlave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#InternallyDisplacedPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#InternetUser"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Journalist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOfficer"/>
+        <NamedIndividual IRI="#Judge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Knight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#Manager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#MedicalDoctor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalRole"/>
+        <NamedIndividual IRI="#MilitaryPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntertainmentProfession"/>
+        <NamedIndividual IRI="#MusicalConductor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#NewsReporter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntertainmentProfession"/>
+        <NamedIndividual IRI="#Performer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Pharmacist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalTrade"/>
+        <NamedIndividual IRI="#Plumber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOfficer"/>
+        <NamedIndividual IRI="#PoliceOfficer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#PoliceOfficer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalRole"/>
+        <NamedIndividual IRI="#PolicePerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalTrade"/>
+        <NamedIndividual IRI="#Potter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#PrivateDetective"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOfficer"/>
+        <NamedIndividual IRI="#PublicDefender"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOfficer"/>
+        <NamedIndividual IRI="#PublicProsecutor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Researcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#Sailor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentSecretary"/>
+        <NamedIndividual IRI="#SecretaryOfTheInterior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentSecretary"/>
+        <NamedIndividual IRI="#SecretaryOfTheTreasury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#Soldier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OccupationalRole"/>
+        <NamedIndividual IRI="#StoreOwner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialRole"/>
+        <NamedIndividual IRI="#Student"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profession"/>
+        <NamedIndividual IRI="#Teacher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#TheaterProfession"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SkilledOccupation"/>
+        <NamedIndividual IRI="#Treasurer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompanyGradeRank"/>
+        <NamedIndividual IRI="#USMilitaryRank01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompanyGradeRank"/>
+        <NamedIndividual IRI="#USMilitaryRank02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompanyGradeRank"/>
+        <NamedIndividual IRI="#USMilitaryRank03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldGradeOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRank04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldGradeOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRank05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldGradeOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRank06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlagOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRank07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlagOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRank08"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlagOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRank09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivateRank"/>
+        <NamedIndividual IRI="#USMilitaryRankE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USMilitaryRank"/>
+        <NamedIndividual IRI="#USMilitaryRankE1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivateRank"/>
+        <NamedIndividual IRI="#USMilitaryRankE2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USMilitaryRank"/>
+        <NamedIndividual IRI="#USMilitaryRankE2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorNCORank"/>
+        <NamedIndividual IRI="#USMilitaryRankE5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorNCORank"/>
+        <NamedIndividual IRI="#USMilitaryRankE6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorNCORank"/>
+        <NamedIndividual IRI="#USMilitaryRankE7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorNCORank"/>
+        <NamedIndividual IRI="#USMilitaryRankE8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USWarrantOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankW01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USWarrantOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankW02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#USWarrantOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankW03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CommissionedOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankWO2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CommissionedOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankWO3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CommissionedOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankWO4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CommissionedOfficerRank"/>
+        <NamedIndividual IRI="#USMilitaryRankWO5"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <ObjectProperty IRI="#hasOwner"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnerOf"/>
+        <Class IRI="#Owner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOwner"/>
+        <Class IRI="#Owner"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnvPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is neither a User nor an Owner but relevant</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

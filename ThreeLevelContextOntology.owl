@@ -21,18 +21,30 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity</Import>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity</Import>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Object</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/Service</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/6/AirPollutantAgent</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Location</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/System</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation</Import>
+    <Import>http://www.w3.org/2006/time</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Object</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Group</Import>
     <Import>http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism</Import>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/3/System</Import>
-    <Import>http://www.w3.org/2006/time</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/6/SocialEnvironment</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Context modelling is one of the stages during the context life cycle. It has the aim of giving meaning and structure to the collected context’s raw data. Although there are different context models proposed in the literature, we have identified some gaps that are not fully covered, particularly related to the reusability of the models themselves and the lack of consolidated and standardized ontological resources. To tackle this problem, we adopt a three-layered context ontology approach.
@@ -40,79 +52,75 @@
 One of the purpose of this ontology is to provide structured knowledge of generic contexts responsible of negative or positive effects around the domain of service consumption. Furthermore, the ontology is planned to be used in many use cases and end-users. Given the generic approach of the ontology its use cases and end-users can be varied depending of the entity involved in the interaction with a service and the service itself.</Literal>
     </Annotation>
     <Declaration>
-        <ObjectProperty IRI="#agentOperatesInArea"/>
+        <AnnotationProperty IRI="#mbox"/>
     </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#associateInOrganization"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#benefits"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#citizen"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#claimedTerritory"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#executiveBranch"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#fills"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#homeAddress"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#inhabits"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#judicialBranch"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#landlord"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#leader"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#legislativeBranch"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#moves"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#partiallyFills"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#possesses"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#postContactSite"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#properlyFills"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#targetInAttack"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#tenant"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Action"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Bleeding"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#Symptoms"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#DeducedActivity"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Earthquake"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#NaturalDisasterOccurrences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Event"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Flooding"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#NaturalDisasterOccurrences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#PhysiologicProcess"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#PhysiologicalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Pollution"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#EnvironmentalConditions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Process"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#PsychologicalProcess"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#PsychologicalState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#ScheduledActivity"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Task"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#VolcanicEruption"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#NaturalDisasterOccurrences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#BiologicalState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#States&amp;Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#BiologicalState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#CurrentStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#BiologicalState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#PastStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#HealthConditions"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#NaturalDisasterOccurrences"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
@@ -124,15 +132,55 @@ One of the purpose of this ontology is to provide structured knowledge of generi
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompService"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#Service"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#ComputerAndRelatedServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#ComputerPassword"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#SecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#ComputerProgram"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#ImageFile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#OperatingSystem"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#Software"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#WebPage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#WebDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#EnvironmentalConditions"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#RoadConditions"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#FutureStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#WeatherConditions"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#FutureStatus"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Group"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#AirStream"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance#Air"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#ArtificialSatellite"/>
@@ -151,7 +199,19 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hotel"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#TourismAndTravelRelatedServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hotel"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#IndoorSpace"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#LocationCoordinates"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
     </SubClassOf>
     <SubClassOf>
@@ -159,7 +219,15 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PostalPlace"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#ContactSite"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Region"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#RelativeLocation"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
     </SubClassOf>
     <SubClassOf>
@@ -167,8 +235,48 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#TelephonyDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#ContactSite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#TimeManagementTool"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Organism"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#Proposition"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#RegionalLaw"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation#Law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#ScientificLaw"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation#Law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SuffrageLaw"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation#Law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation#Regulation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#RelativeTime"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
@@ -187,24 +295,12 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#System"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Tool"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#NetworkResource"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#Network"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
@@ -231,6 +327,90 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#CommunityProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#DeviceProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#LocationProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#NetworkProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#ObjectProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#ServiceProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#SocialRole"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Broker"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#Profession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#TourismAndTravelRelatedServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/AirPollutantAgent#AirPollutantAgent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#OnlineAccount"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/SocialEnvironment#SocialEnvironment"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#ContinuosState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#States&amp;Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#CurrentStatus"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#States&amp;Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#DiscreteState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#States&amp;Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#FutureStatus"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#States&amp;Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#PastStatus"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#States&amp;Status"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
     </SubClassOf>
@@ -255,180 +435,1569 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Time"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#MedicalClinic"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Residence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#NaturalSatellite"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Residence"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#MobileResidence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Project"/>
+    </DisjointClasses>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#Ontologies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <NamedIndividual IRI="http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#runsOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#RealPlayer4.01"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#Windows98"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#depicts"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#/images/Bulldog.jpg"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Bulldog"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#depiction"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Bulldog"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#/images/Bulldog.jpg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#phdFundedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#CONACyT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasCurrentProject"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#SUPERSEDE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasInterestOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SoftwareEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasInterestOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasInterestOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasInterestOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#InternetOfThings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#hasAccount"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#cabrera.bejar82@gmail.com"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#homepage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~ocabrera/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#image"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#/images/Ocabrera.jpg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#knows"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#David_Ameller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#knows"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Silverio_Martínez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#knows"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Marc_Oriol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#knows"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Franco_Bedoya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isBuying"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Peter_Jovanovic"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#MovieTicket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#performsAction"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Peter_Jovanovic"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Buying"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasCurrentProject"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Xavier_Franch"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#RISCOSS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasCurrentProject"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Xavier_Franch"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#SUPERSEDE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#page"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#Ontologies"/>
+        <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isTopicAddressedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+        <NamedIndividual IRI="http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isTopicAddressedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+        <NamedIndividual IRI="http://www.smart-cities.eu/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isTopicAddressedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+        <NamedIndividual IRI="http://www.smartcityexpo.com/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isTopicAddressedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+        <NamedIndividual IRI="http://www.smartcities.es/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#hasAccountServiceHomepage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#cabrera.bejar82@gmail.com"/>
+        <NamedIndividual IRI="https://mail.google.com/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <NamedIndividual IRI="http://www.smart-cities.eu/"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <NamedIndividual IRI="http://www.smartcities.es/"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <NamedIndividual IRI="http://www.smartcityexpo.com/"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#SmartCities"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#age"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#aimChatID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Racso8AIM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#birthday"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">02/08</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#familyName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Cabrera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#firstName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Oscar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#geekcode"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">GCSd-s:aC++UL++++P++L++</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#gender"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#givenName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Oscar Jair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#givenName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Oscar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#icqChatID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Racso8ICQ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Oscar Jair Cabrera Bejar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#sha1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">cf2f4bd069302febd8d7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#title"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar"/>
+        <Literal datatypeIRI="&xsd;string">Mr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#accountName"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#cabrera.bejar82@gmail.com"/>
+        <Literal datatypeIRI="&xsd;string">cabrera.bejar82</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasStateOfProcess"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasNetworkProfile"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasProfile"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#hasEnvironmentalConditions"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasEnvironment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#isClimateConditionOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isEnvironmentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasDeviceProfile"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasProfile"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPersonalProfile"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasProfile"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPhysiologicalState"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPsychologicalState"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasServiceProfile"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasProfile"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#thumbnail"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#dislikes"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#hasMember"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#isMemberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#page"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#agentOperatesInArea"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasEvent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#associateInOrganization"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#benefits"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Process"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#citizen"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasPerformance"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#claimedTerritory"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#GeographicArea"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasTask"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#executiveBranch"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#isInvitedSpeakerOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#Speaker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasAvailableNetwork"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasCPU"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasSoftware"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isCPUOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#CPU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isRunningOn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#ComputerProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#hasAirTemperature"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#hasClimateCondition"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#hasEnvironmentalConditions"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#associateInOrganization"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#isFundedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#isFundedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#isFundedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#isFundedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#phdFundedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#existsIn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#existsIn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#existsIn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasCoordinates"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasCoordinates"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasCurrentLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasCurrentLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasRelativeLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isCurrentLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasCommunicationChannel"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasCommunicationChannel"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasCommunicationChannel"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#fills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasCommunicationChannel"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#homeAddress"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PermanentResidence"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasCommunicationChannel"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#inhabits"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasInformation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasObject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasObject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasObject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasObject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isDisplayedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#ContextInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isDisplayedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#AudiovisualServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isFunctionalityOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#DeviceFunctionalitiesInf"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isInformationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#ContextInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isTopicAddressedIn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isUserOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#arrested"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#PlacingUnderArrest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasInterestOn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isAccessRightOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#AccessRights"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isActivityOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isEmotionalStateOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#EmotionalState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isExecutedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isPhysicalFeatureOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserPhysicalFeaturesInf"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isPreferenceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserPreferencesInf"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isPreferredCurrencyOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Currency"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isPreferredDeliveryMethodOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#DeliveryMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isPreferredLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isPreferredPaymentMethodOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#PaymentMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isUserCapabilityOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserBackgroundSkillsCapabilitiesInf"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isUserIDOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#hasDesire"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#hasGoal"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasAgent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasEnvironment"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Organism"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#judicialBranch"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasEnvironment"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasEnvironment"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasResource"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasResource"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#landlord"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasResource"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#leader"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#legislativeBranch"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasRole"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#moves"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Motion"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasRole"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#partiallyFills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#possesses"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#requires"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#requires"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasContact"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasRequirement"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasRequirement"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasRequirement"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isContactOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isContactOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Contacts"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isScheduledActivityOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#ScheduledActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasService"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasService"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasService"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasService"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasService"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isSubscribedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isSubscribedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isSubscribedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isSubscribedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isSubscribedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#runs"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#runs"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#PDA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#hasSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#hasSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#hasSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#hasSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#hasSystem"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#hasAddress"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postContactSite"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PostalPlace"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#hasOwner"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Residence"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#properlyFills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#hasOwner"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Animal"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#targetInAttack"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Process"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#hasOwner"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#tenant"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#depiction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#depicts"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#hasAccount"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#hasAccount"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#hasAccount"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#homepage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#image"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#isMemberOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#isPrimaryTopicOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#jabberID"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePoint"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#knows"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#logo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#made"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#maker"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#mbox_sha1sum"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#msnChatID"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#openid"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#page"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#personalMailbox"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#primaryTopic"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#publications"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#schoolHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#thumbnail"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#tipjar"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#topicInterest"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#weblog"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#workInfoHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#workplaceHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#agentOperatesInArea"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#GeographicArea"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#associateInOrganization"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Group"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#benefits"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#benefits"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#citizen"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#changesLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#detainee"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#electionForOrganization"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#electionForPosition"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#SocialRole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#flowCurrent"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#WaterArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasExpectedAudience"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#Audience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasInvitedSpeaker"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#Speaker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasResponseTime"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeDuration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#hasStateOfProcess"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#ProcessStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#invadingVirus"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Virus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#isContestOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#isEventOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#isTaskOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#moves"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasCPU"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#CPU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasDependencyDelay"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeDuration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#hasNetworkProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#NetworkProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isAvailableNetworkOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isCPUOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isCompatibleWith"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isPasswordOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#ComputerUser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#isRunningOn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#isClimateConditionOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#employs"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#hasExecutiveBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#hasJudicialBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#hasLeader"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#hasLegislativeBranch"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#claimedTerritoryBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#contains"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasCurrentLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasTenant"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isCurrentLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isCurrentLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isPopulatedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#isRelativeLocationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#fills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasDeviceFunctionality"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#DeviceFunctionalitiesInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasDeviceProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#DeviceProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasFunctionality"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#DeviceFunctionalitiesInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasInformation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#ContextInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#hasTopic"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isConnectedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#CompNetwork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isContactSiteOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isDeviceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isInformationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isInsuredBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isObjectOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isObjectOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isObjectOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isObjectOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isSignedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isUsedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#isViewedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#partiallyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#properlyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#believes"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#believes"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#defines"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Agenda"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#defines"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Contacts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#defines"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserPreferencesInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#desiresToAchieve"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#Envisions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#desiresToAchieve"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#executes"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasAccessRights"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#AccessRights"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasAccessTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasAgenda"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Agenda"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasBirthdate"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#Day"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasBirthplace"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasCurrentProject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasDeathdate"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#Day"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasDeathplace"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasEmotionalState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#EmotionalState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasExpertise"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#FieldOfStudy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasHistoricalInformation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserHistoricalInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasInterestOn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasMood"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#Humour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPastProject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPersonalProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPhysicalFeature"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserPhysicalFeaturesInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPhysiologicalState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#PhysiologicalState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPostContactSite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#ContactSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPreference"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserPreferencesInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPreferredCurrency"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Currency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPreferredDeliveryMethod"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#DeliveryMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPreferredLocation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPreferredPaymentMethod"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#PaymentMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasPsychologicalState"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState#PsychologicalState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasSkilledOccupation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#SkilledOccupation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasUserCapability"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserBackgroundSkillsCapabilitiesInf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasUserID"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#UserID"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#inhabits"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isBuying"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isCitizenOf"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Nation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#claimedTerritory"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#executiveBranch"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#fills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#homeAddress"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#inhabits"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#judicialBranch"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#landlord"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isLandlordOf"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#PermanentResidence"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#leader"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#isMedicalPatientOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#CareOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#performsAction"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#performsActivity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#wears"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Clothing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#isDesireOf"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#legislativeBranch"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#isGoalOf"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#moves"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation#forbids"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#partiallyFills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation#permits"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#possesses"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#agentOperatesInArea"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#GeographicArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#postContactSite"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#changesStateStatus"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#changesStateStatus"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasAnniversary"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasEnvisions"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition#Envisions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#interactsWith"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#interactsWith"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isEnvironmentOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isEnvironmentOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isEnvironmentOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isPerformedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isResourceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isResourceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isResourceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isRoleOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isRoleOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#isSupervisedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#needs"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#properlyFills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Hole"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#needs"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#targetInAttack"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#possesses"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#tenant"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#consistsOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Reminder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#consistsOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Schedule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasContact"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasContact"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Contacts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasScheduledActivity"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#ScheduledActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isContactOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isListedOn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isRequirementOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isRequirementOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#isRequirementOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#hasServiceProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#ServiceProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isRankedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isRankedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isServiceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isServiceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isServiceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isServiceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#isServiceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#runsOn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service#runsOn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#PDA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#isSystemOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#isSystemOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#isSystemOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#isSystemOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System#isSystemOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#isIPAddressOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#isOwnerOf"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Residence"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimePoint"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#isOwnerOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole#isOwnerOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#dislikes"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#likes"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#depiction"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#depicts"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#hasAccountServiceHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#homepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#image"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#isMemberOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#GroupOfPeople"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#isMemberOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#isPrimaryTopicOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#knows"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#logo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#made"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#maker"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#openid"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#page"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#primaryTopic"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#publications"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#schoolHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#thumbnail"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#tipjar"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#topicInterest"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#weblog"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#workInfoHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#workplaceHomepage"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
@@ -438,95 +2007,145 @@ One of the purpose of this ontology is to provide structured knowledge of generi
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalMeets"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#TimeInterval"/>
     </ObjectPropertyRange>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#day"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#days"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#hour"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTime"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#minute"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#month"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#months"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#second"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#week"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#xsdDateTime"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#year"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://www.w3.org/2006/time#years"/>
-        <DataProperty IRI="#hasTimeDataProperty"/>
-    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#age"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#birthday"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#familyName"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#firstName"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#geekcode"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#gender"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#lastName"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#myersBriggs"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#surname"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF#title"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+    </DataPropertyDomain>
     <DLSafeRule>
         <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#Office"/>
+                <Variable IRI="urn:swrl#o"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object#MobileCellPhone"/>
+                <Variable IRI="urn:swrl#m"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+                <Variable IRI="urn:swrl#h"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#Activity"/>
+                <Variable IRI="urn:swrl#ac"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#Agenda"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#brother"/>
-                <Variable IRI="urn:swrl#y"/>
-                <Variable IRI="urn:swrl#z"/>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+                <Variable IRI="urn:swrl#h"/>
+                <Variable IRI="urn:swrl#o"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#parent"/>
-                <Variable IRI="urn:swrl#x"/>
-                <Variable IRI="urn:swrl#y"/>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+                <Variable IRI="urn:swrl#m"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status#Status-Off"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity#hasScheduledActivity"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Variable IRI="urn:swrl#ac"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#brother"/>
-                <Variable IRI="urn:swrl#x"/>
-                <Variable IRI="urn:swrl#z"/>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+                <Variable IRI="urn:swrl#h"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Working"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Human"/>
+                <Variable IRI="urn:swrl#h"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice#Automobile"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location#hasLocation"/>
+                <Variable IRI="urn:swrl#h"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#performsActivity"/>
+                <Variable IRI="urn:swrl#a"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Accelerating"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology#hasStatusState"/>
+                <Variable IRI="urn:swrl#a"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation#On"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#performsActivity"/>
+                <Variable IRI="urn:swrl#h"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#Driving"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions#SurfaceAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TemperatureMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#mbox"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#Oscar_Cabrera_Bejar</IRI>
+        <IRI>mailto:cabrera.bejar82@gmail.com</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity#synonym"/>
+        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism#hasSkilledOccupation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCapability</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity#synonym"/>
         <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time#NegativeInfinity</IRI>

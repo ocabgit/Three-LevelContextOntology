@@ -16,10 +16,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a service from which we can represent the elements involved in the following definitions:
@@ -29,8 +30,293 @@ Service is a means of delivering value to customers by facilitating outcomes cus
 Service (work done by one person or group that benefits another) &quot;budget separately for goods and services&quot;</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#AudiovisualServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerAndRelatedServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConstructionAndRelatedEngineeringServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistributionServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineeringServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthRelatedAndSocialServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HospitalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaritimeTransportServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryEducationServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProfessionalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecreationalCulturalAndSportingServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RetailingServices"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Service"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#SewageServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaxationServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelecommunicationServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TourismAndTravelRelatedServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VideoService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasServiceConsumer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasServiceProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasServiceProvider"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRankedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isServiceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isServiceProviderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubscribedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runsOn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VideoHosting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VideoStreaming"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AudiovisualServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerAndRelatedServices"/>
+        <Class IRI="#BusinessServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstructionAndRelatedEngineeringServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributionServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineeringServices"/>
+        <Class IRI="#ProfessionalServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthRelatedAndSocialServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HospitalServices"/>
+        <Class IRI="#HealthRelatedAndSocialServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageService"/>
+        <Class IRI="#AudiovisualServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalServices"/>
+        <Class IRI="#ProfessionalServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaritimeTransportServices"/>
+        <Class IRI="#TransportServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#RecreationalCulturalAndSportingServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostalServices"/>
+        <Class IRI="#CommunicationServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryEducationServices"/>
+        <Class IRI="#EducationalServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProfessionalServices"/>
+        <Class IRI="#BusinessServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecreationalCulturalAndSportingServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RetailingServices"/>
+        <Class IRI="#DistributionServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SewageServices"/>
+        <Class IRI="#EnvironmentalServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaxationServices"/>
+        <Class IRI="#ProfessionalServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelecommunicationServices"/>
+        <Class IRI="#CommunicationServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TourismAndTravelRelatedServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportServices"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VideoService"/>
+        <Class IRI="#AudiovisualServices"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#VideoService"/>
+        <NamedIndividual IRI="#VideoHosting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VideoService"/>
+        <NamedIndividual IRI="#VideoStreaming"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasService"/>
+        <ObjectProperty IRI="#isServiceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasServiceProvider"/>
+        <ObjectProperty IRI="#isServiceProviderOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#runsOn"/>
+        <ObjectProperty IRI="#runs"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasServiceConsumer"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasServiceProfile"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasServiceProvider"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRankedBy"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isServiceOf"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runsOn"/>
+        <Class IRI="#AudiovisualServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasService"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isServiceProviderOf"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubscribedTo"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runs"/>
+        <Class IRI="#AudiovisualServices"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 

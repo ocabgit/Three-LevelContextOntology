@@ -26,13 +26,202 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology reprensents the module of a organism taken from SUMO ontology</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Amphibian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anaconda"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntInsect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antelope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AquaticMammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arachnid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arthropod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buffalo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bull"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BumbleBee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carnivore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cattle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chordopoxvirinae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdBloodedVertebrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConstrictorSnake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coral"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cow"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CrimeanCongoHemorrhagicFeverVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crustacean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DNAVirus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DairyCattle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DengueFeverVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticCat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticDog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Donkey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Duck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EasternEquineEncephalitisVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EbolaVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elephant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvelopedVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtracellularEnvelopedVirionVaccinia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FemaleCow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlexalVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlyInsect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FootAndMouthVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastropod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grasshopper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuanaritoVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuernseyCattle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HIVVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HendraVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HepatitisAVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HepatitisBVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HepatitisCVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HepatitisVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herbivore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HerpesBVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hominid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoofedMammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Human"/>
@@ -44,58 +233,493 @@
         <Class IRI="#HumanYouth"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Insect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntracellularEnvelopedVirionVaccinia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntracellularMatureVirionVaccinia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invertebrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JapaneseEncephalitisVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuninVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KyasanurForestDiseaseVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaCrosseVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LassaVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Livestock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Locust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachupoVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarburgVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marsupial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microorganism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mixomatosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mollusk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monkey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonkeypoxVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Myriapod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NipahVirus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Organism"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Orthopoxvirus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Pig"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pigeon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poultry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poxviridae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgenyVacciniaVirusImmature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueenInsect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RNAVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rabbit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rattlesnake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reindeer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rodent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rooster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rotavirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SabiaVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaintLouisEncephalitisVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SenepolCattle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sheep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Squirrel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TickBorneEncephalitisVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurkeyBird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Turtle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnenvelopedVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VacciniaVirion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VacciniaVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VariolaMajor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VariolaMinor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VenezuelanEquineEncephalitisVirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vertebrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViralAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Virus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirusDoubleStranded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirusSingleStranded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WarmBloodedVertebrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterBuffalo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WestNileVirus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Woman"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#acquaintance"/>
+        <Class IRI="#WorkerInsect"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ancestor"/>
+        <Class IRI="#Worm"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#brother"/>
+        <Class IRI="#YellowFeverVirus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#arrested"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#believes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#cohabitant"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#coworker"/>
+        <ObjectProperty IRI="#defines"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#domesticPartner"/>
+        <ObjectProperty IRI="#desiresToAchieve"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#familyRelation"/>
+        <ObjectProperty IRI="#executes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#father"/>
+        <ObjectProperty IRI="#hasAccessRights"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#friend"/>
+        <ObjectProperty IRI="#hasAccessTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#grandparent"/>
+        <ObjectProperty IRI="#hasAcquaintance"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#husband"/>
+        <ObjectProperty IRI="#hasAgenda"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#legalGuardian"/>
+        <ObjectProperty IRI="#hasAncestor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#legalRelation"/>
+        <ObjectProperty IRI="#hasBehaviourWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#mother"/>
+        <ObjectProperty IRI="#hasBirthdate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBirthplace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColleague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeathdate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeathplace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDomesticPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmotionalState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpertise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFamilyRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFriend"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunctionalRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrandparent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHistoricalInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHusband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInterestOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalGuardian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLoveRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParasite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPastProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPersonalProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysiologicalState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostContactSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreferredCurrency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreferredDeliveryMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreferredLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreferredPaymentMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPsychologicalState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRestriction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkilledOccupation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSocialRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUserCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUserID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWife"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inhabits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAccessRightOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAccompaniedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBuying"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isChildOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCitizenOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isColleagueOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCoworkerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEmotionalStateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEngagedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHusbandOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLandlordOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMedicalPatientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNeighborOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPhysicalFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreferredCurrencyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreferredDeliveryMethodOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreferredLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPreferredPaymentMethodOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSiblingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStrangerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUserCapabilityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUserIDOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWifeOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#mutualAcquaintance"/>
@@ -104,46 +728,383 @@
         <ObjectProperty IRI="#mutualStranger"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#neighbor"/>
+        <ObjectProperty IRI="#performsAction"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#parasite"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#parent"/>
+        <ObjectProperty IRI="#performsActivity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#relative"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sibling"/>
+        <ObjectProperty IRI="#wears"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sister"/>
+        <DataProperty IRI="#profession"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#spouse"/>
+        <NamedIndividual IRI="#AlaskanKleeKai"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#stranger"/>
+        <NamedIndividual IRI="#AlaskanMalamute"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#wife"/>
+        <NamedIndividual IRI="#Bulldog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carles_Farré"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carme_Quer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Claudia_Ayala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cristina_Gómez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cristina_Palomares"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#David_Ameller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dolors_Costal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jordi_Marco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lidia_Lopez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marc_Oriol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marc_Rodriguez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oscar_Cabrera_Bejar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oscar_Franco_Bedoya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peter_Jovanovic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Silverio_Martínez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xavier_Franch"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Amphibian"/>
+        <Class IRI="#ColdBloodedVertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaconda"/>
+        <Class IRI="#ConstrictorSnake"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Animal"/>
         <Class IRI="#Organism"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AntInsect"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antelope"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ape"/>
+        <Class IRI="#Primate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AquaticMammal"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arachnid"/>
+        <Class IRI="#Arthropod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arthropod"/>
+        <Class IRI="#Invertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bee"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#WarmBloodedVertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buffalo"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bull"/>
         <Class IRI="#Cow"/>
-        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BumbleBee"/>
+        <Class IRI="#Bee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calf"/>
+        <Class IRI="#Cow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camel"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camel"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canine"/>
+        <Class IRI="#Carnivore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carnivore"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cattle"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cattle"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#Poultry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chordopoxvirinae"/>
+        <Class IRI="#Poxviridae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdBloodedVertebrate"/>
+        <Class IRI="#Vertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstrictorSnake"/>
+        <Class IRI="#Snake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coral"/>
+        <Class IRI="#Invertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#DomesticAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrimeanCongoHemorrhagicFeverVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crustacean"/>
+        <Class IRI="#Arthropod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DNAVirus"/>
+        <Class IRI="#Virus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DairyCattle"/>
+        <Class IRI="#Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deer"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deer"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DengueFeverVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticAnimal"/>
         <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticCat"/>
+        <Class IRI="#DomesticAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticCat"/>
+        <Class IRI="#Feline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticDog"/>
+        <Class IRI="#Canine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticDog"/>
+        <Class IRI="#DomesticAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Donkey"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Donkey"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Duck"/>
+        <Class IRI="#Poultry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EasternEquineEncephalitisVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EbolaVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elephant"/>
+        <Class IRI="#Herbivore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvelopedVirus"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtracellularEnvelopedVirionVaccinia"/>
+        <Class IRI="#VacciniaVirion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feline"/>
+        <Class IRI="#Carnivore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FemaleCow"/>
+        <Class IRI="#Cow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#ColdBloodedVertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlexalVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlyInsect"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FootAndMouthVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fox"/>
+        <Class IRI="#Canine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastropod"/>
+        <Class IRI="#Mollusk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goat"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goat"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goose"/>
+        <Class IRI="#Poultry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grasshopper"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuanaritoVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuernseyCattle"/>
+        <Class IRI="#Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HIVVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hen"/>
+        <Class IRI="#Chicken"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HendraVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HepatitisAVirus"/>
+        <Class IRI="#HepatitisVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HepatitisBVirus"/>
+        <Class IRI="#HepatitisVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HepatitisCVirus"/>
+        <Class IRI="#HepatitisVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HepatitisVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herbivore"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HerpesBVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hominid"/>
+        <Class IRI="#Primate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoofedMammal"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Hominid"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Human"/>
@@ -158,180 +1119,931 @@
         <Class IRI="#Human"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Man"/>
-        <Class IRI="#Human"/>
+        <Class IRI="#Insect"/>
+        <Class IRI="#Arthropod"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pig"/>
+        <Class IRI="#IntracellularEnvelopedVirionVaccinia"/>
+        <Class IRI="#VacciniaVirion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntracellularMatureVirionVaccinia"/>
+        <Class IRI="#VacciniaVirion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invertebrate"/>
         <Class IRI="#Animal"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#JapaneseEncephalitisVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JuninVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KyasanurForestDiseaseVirus"/>
+        <Class IRI="#TickBorneEncephalitisVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaCrosseVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lamb"/>
+        <Class IRI="#Sheep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LassaVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Livestock"/>
+        <Class IRI="#DomesticAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Locust"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachupoVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#WarmBloodedVertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarburgVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marsupial"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microorganism"/>
+        <Class IRI="#Organism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mixomatosis"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mollusk"/>
+        <Class IRI="#Invertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monkey"/>
+        <Class IRI="#Primate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonkeypoxVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moth"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <Class IRI="#Rodent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mule"/>
+        <Class IRI="#DomesticAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mule"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Myriapod"/>
+        <Class IRI="#Arthropod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NipahVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthopoxvirus"/>
+        <Class IRI="#Chordopoxvirinae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pig"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pig"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pigeon"/>
+        <Class IRI="#Bird"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poultry"/>
+        <Class IRI="#Bird"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poultry"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poxviridae"/>
+        <Class IRI="#DNAVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primate"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProgenyVacciniaVirusImmature"/>
+        <Class IRI="#VacciniaVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QueenInsect"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RNAVirus"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rabbit"/>
+        <Class IRI="#Rodent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rat"/>
+        <Class IRI="#Rodent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rattlesnake"/>
+        <Class IRI="#Snake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reindeer"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reindeer"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reptile"/>
+        <Class IRI="#ColdBloodedVertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rodent"/>
+        <Class IRI="#Mammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rooster"/>
+        <Class IRI="#Chicken"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotavirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SabiaVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaintLouisEncephalitisVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SenepolCattle"/>
+        <Class IRI="#Cattle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheep"/>
+        <Class IRI="#DomesticAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheep"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheep"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snake"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squirrel"/>
+        <Class IRI="#Rodent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TickBorneEncephalitisVirus"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toad"/>
+        <Class IRI="#Amphibian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurkeyBird"/>
+        <Class IRI="#Poultry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turtle"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turtle"/>
+        <Class IRI="#Reptile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnenvelopedVirus"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VacciniaVirion"/>
+        <Class IRI="#VacciniaVirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VacciniaVirus"/>
+        <Class IRI="#Orthopoxvirus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariolaMajor"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariolaMinor"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VenezuelanEquineEncephalitisVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vertebrate"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViralAgent"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Virus"/>
+        <Class IRI="#Microorganism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirusDoubleStranded"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirusSingleStranded"/>
+        <Class IRI="#Virus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulture"/>
+        <Class IRI="#Bird"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WarmBloodedVertebrate"/>
+        <Class IRI="#Vertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterBuffalo"/>
+        <Class IRI="#HoofedMammal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterBuffalo"/>
+        <Class IRI="#Livestock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WestNileVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Woman"/>
         <Class IRI="#Human"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerInsect"/>
+        <Class IRI="#Insect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worm"/>
+        <Class IRI="#Invertebrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YellowFeverVirus"/>
+        <Class IRI="#ViralAgent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Mammal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Buffalo"/>
+        <Class IRI="#DomesticAnimal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Canine"/>
+        <Class IRI="#Feline"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Carnivore"/>
+        <Class IRI="#Herbivore"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdBloodedVertebrate"/>
+        <Class IRI="#WarmBloodedVertebrate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DomesticAnimal"/>
+        <Class IRI="#Human"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#QueenInsect"/>
+        <Class IRI="#WorkerInsect"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DomesticDog"/>
+        <NamedIndividual IRI="#AlaskanKleeKai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DomesticDog"/>
+        <NamedIndividual IRI="#AlaskanMalamute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DomesticDog"/>
+        <NamedIndividual IRI="#Bulldog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Carles_Farré"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Carme_Quer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Claudia_Ayala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Cristina_Gómez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Cristina_Palomares"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#David_Ameller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Dolors_Costal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Jordi_Marco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Lidia_Lopez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Marc_Oriol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Marc_Rodriguez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Oscar_Cabrera_Bejar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Oscar_Franco_Bedoya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Peter_Jovanovic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Silverio_Martínez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Xavier_Franch"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAccessRights"/>
+        <ObjectProperty IRI="#hasRestriction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFunctionalRelationshipWith"/>
+        <ObjectProperty IRI="#hasRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLoveRelationshipWith"/>
+        <ObjectProperty IRI="#hasRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPreferredCurrency"/>
+        <ObjectProperty IRI="#hasPreference"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPreferredDeliveryMethod"/>
+        <ObjectProperty IRI="#hasPreference"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPreferredLocation"/>
+        <ObjectProperty IRI="#hasPreference"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPreferredPaymentMethod"/>
+        <ObjectProperty IRI="#hasPreference"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSocialRelationshipWith"/>
+        <ObjectProperty IRI="#hasRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPreferredCurrencyOf"/>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPreferredDeliveryMethodOf"/>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPreferredLocationOf"/>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPreferredPaymentMethodOf"/>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#performsAction"/>
+        <ObjectProperty IRI="#performsActivity"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#mother"/>
-        <ObjectProperty IRI="#father"/>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <ObjectProperty IRI="#executes"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#husband"/>
-        <ObjectProperty IRI="#wife"/>
+        <ObjectProperty IRI="#isAccessRightOf"/>
+        <ObjectProperty IRI="#hasAccessRights"/>
     </InverseObjectProperties>
-    <SymmetricObjectProperty>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasChild"/>
+        <ObjectProperty IRI="#isChildOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isColleagueOf"/>
+        <ObjectProperty IRI="#hasColleague"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEmotionalState"/>
+        <ObjectProperty IRI="#isEmotionalStateOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFriend"/>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasHusband"/>
+        <ObjectProperty IRI="#isHusbandOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#isParentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPhysicalFeatureOf"/>
+        <ObjectProperty IRI="#hasPhysicalFeature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPreference"/>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPreferredCurrencyOf"/>
+        <ObjectProperty IRI="#hasPreferredCurrency"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPreferredDeliveryMethod"/>
+        <ObjectProperty IRI="#isPreferredDeliveryMethodOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPreferredLocationOf"/>
+        <ObjectProperty IRI="#hasPreferredLocation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPreferredPaymentMethodOf"/>
+        <ObjectProperty IRI="#hasPreferredPaymentMethod"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <ObjectProperty IRI="#hasSibling"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasUserCapability"/>
+        <ObjectProperty IRI="#isUserCapabilityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isUserIDOf"/>
+        <ObjectProperty IRI="#hasUserID"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasWife"/>
+        <ObjectProperty IRI="#isWifeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#performsActivity"/>
+        <ObjectProperty IRI="#isActivityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasHistoricalInformation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isEngagedTo"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasAncestor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasBrother"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSibling"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSister"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isAccompaniedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSiblingOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#believes"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#cohabitant"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#coworker"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#domesticPartner"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#familyRelation"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#friend"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#legalRelation"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#mutualAcquaintance"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#mutualStranger"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#neighbor"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#relative"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#sibling"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#spouse"/>
-    </SymmetricObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#ancestor"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#brother"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#sister"/>
-    </TransitiveObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#acquaintance"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#ancestor"/>
+        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#desiresToAchieve"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executes"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccessRights"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccessTo"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcquaintance"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAgenda"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAncestor"/>
         <Class IRI="#Organism"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#brother"/>
-        <Class IRI="#Man"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#cohabitant"/>
+        <ObjectProperty IRI="#hasBehaviourWith"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#coworker"/>
+        <ObjectProperty IRI="#hasBirthdate"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#domesticPartner"/>
+        <ObjectProperty IRI="#hasBirthplace"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBirthplace"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#familyRelation"/>
+        <ObjectProperty IRI="#hasBrother"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasColleague"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentProject"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeathdate"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeathplace"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDomesticPartner"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmotionalState"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExpertise"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFamilyRelation"/>
         <Class IRI="#Organism"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#father"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#friend"/>
+        <ObjectProperty IRI="#hasFriend"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#grandparent"/>
+        <ObjectProperty IRI="#hasFunctionalRelationshipWith"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#husband"/>
-        <Class IRI="#Man"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#legalGuardian"/>
+        <ObjectProperty IRI="#hasGrandparent"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#legalRelation"/>
+        <ObjectProperty IRI="#hasHistoricalInformation"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#mother"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#mutualAcquaintance"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#mutualStranger"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#neighbor"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#parasite"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#parent"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#relative"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#sibling"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#sister"/>
+        <ObjectProperty IRI="#hasHusband"/>
         <Class IRI="#Woman"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#spouse"/>
+        <ObjectProperty IRI="#hasInterestOn"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#stranger"/>
+        <ObjectProperty IRI="#hasLegalGuardian"/>
         <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#wife"/>
+        <ObjectProperty IRI="#hasLegalRelation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLoveRelationshipWith"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMood"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOccupation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParasite"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPastProject"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPersonalProfile"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalFeature"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysiologicalState"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPostContactSite"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreference"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreferredCurrency"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreferredDeliveryMethod"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreferredLocation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreferredPaymentMethod"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPsychologicalState"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelationshipWith"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRestriction"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSibling"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSister"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSkilledOccupation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSocialRelationshipWith"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUserCapability"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUserID"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWife"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inhabits"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAccompaniedBy"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBuying"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isChildOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCitizenOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isColleagueOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCoworkerOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEngagedTo"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHusbandOf"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLandlordOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMedicalPatientOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNeighborOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isParentOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStrangerOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWifeOf"/>
         <Class IRI="#Woman"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mutualAcquaintance"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mutualStranger"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsAction"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsActivity"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relative"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wears"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wears"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#acquaintance"/>
+        <ObjectProperty IRI="#arrested"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#ancestor"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#brother"/>
+        <ObjectProperty IRI="#believes"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -339,44 +2051,188 @@
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#coworker"/>
+        <ObjectProperty IRI="#hasAcquaintance"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#domesticPartner"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#familyRelation"/>
+        <ObjectProperty IRI="#hasAncestor"/>
         <Class IRI="#Organism"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#father"/>
+        <ObjectProperty IRI="#hasBehaviourWith"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrother"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColleague"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDomesticPartner"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFamilyRelation"/>
         <Class IRI="#Organism"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#friend"/>
+        <ObjectProperty IRI="#hasFriend"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#grandparent"/>
+        <ObjectProperty IRI="#hasGrandparent"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#husband"/>
+        <ObjectProperty IRI="#hasHusband"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalGuardian"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalRelation"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParasite"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelationshipWith"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSibling"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSister"/>
         <Class IRI="#Woman"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#legalGuardian"/>
+        <ObjectProperty IRI="#hasSpouse"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#legalRelation"/>
+        <ObjectProperty IRI="#hasWife"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAccessRightOf"/>
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#mother"/>
+        <ObjectProperty IRI="#isAccompaniedBy"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isActivityOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isChildOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isColleagueOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCoworkerOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEmotionalStateOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEngagedTo"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFatherOf"/>
         <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHusbandOf"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNeighborOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isParentOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPhysicalFeatureOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPreferenceOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPreferredCurrencyOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPreferredDeliveryMethodOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPreferredLocationOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPreferredPaymentMethodOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSiblingOf"/>
+        <Class IRI="#Organism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStrangerOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUserCapabilityOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUserIDOf"/>
+        <Class IRI="#Human"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWifeOf"/>
+        <Class IRI="#Man"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#mutualAcquaintance"/>
@@ -387,45 +2243,26 @@
         <Class IRI="#Human"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#neighbor"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#parasite"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#parent"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#relative"/>
         <Class IRI="#Organism"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#sibling"/>
-        <Class IRI="#Organism"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#sister"/>
+    <DataPropertyDomain>
+        <DataProperty IRI="#profession"/>
         <Class IRI="#Human"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#spouse"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#stranger"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#wife"/>
-        <Class IRI="#Man"/>
-    </ObjectPropertyRange>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#profession"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#Human</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#hasAccessTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAuthorizedToUse</Literal>
     </AnnotationAssertion>
 </Ontology>
 

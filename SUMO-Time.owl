@@ -26,6 +26,9 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of time taken from SUMO</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#AdHocTime"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Advent"/>
     </Declaration>
     <Declaration>
@@ -38,7 +41,13 @@
         <Class IRI="#AnteMeridiem"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#April"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AscensionThursday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#August"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ChristianHoliday"/>
@@ -47,10 +56,16 @@
         <Class IRI="#ChristmasDay"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Day"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DayTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#December"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DhuAlHijjah"/>
@@ -71,7 +86,13 @@
         <Class IRI="#FallSeason"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#February"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FixedHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Future"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hanukkah"/>
@@ -80,13 +101,37 @@
         <Class IRI="#Holiday"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndefiniteTime"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#JewishHoliday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#July"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#June"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LeapYear"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#March"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#May"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Month"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Morning"/>
@@ -98,10 +143,19 @@
         <Class IRI="#NightTime"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#November"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#October"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PalmSunday"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Passover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Past"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pentecost"/>
@@ -110,10 +164,22 @@
         <Class IRI="#PostMeridiem"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Present"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Ramadan"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RelativeTime"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SeasonOfYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Second"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#September"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpringSeason"/>
@@ -155,6 +221,9 @@
         <Class IRI="#USThanksgivingDay"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Week"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Weekend"/>
     </Declaration>
     <Declaration>
@@ -164,13 +233,22 @@
         <Class IRI="#Year"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#duration"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#during"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#earlier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsBeforeStartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsLaterThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsSameTimeAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsSoonerThan"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#finishes"/>
@@ -179,10 +257,34 @@
         <ObjectProperty IRI="#futureFn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEndTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExecutionTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeToFinish"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#overlapsTemporally"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#starts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsAfterEndOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsLaterThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsSameTimeAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsSoonerThan"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#temporalPart"/>
@@ -203,6 +305,10 @@
         <NamedIndividual IRI="#UnixEpoch"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#AdHocTime"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Advent"/>
         <Class IRI="#ChristianHoliday"/>
     </SubClassOf>
@@ -231,6 +337,10 @@
         <Class IRI="#TimeInterval"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#April"/>
+        <Class IRI="#Month"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AscensionThursday"/>
         <Class IRI="#ChristianHoliday"/>
     </SubClassOf>
@@ -241,6 +351,10 @@
     <SubClassOf>
         <Class IRI="#AscensionThursday"/>
         <Class IRI="#Thursday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#August"/>
+        <Class IRI="#Month"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChristianHoliday"/>
@@ -259,12 +373,20 @@
         <Class IRI="#FixedHoliday"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Date"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Day"/>
         <Class IRI="#TimeInterval"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DayTime"/>
         <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#December"/>
+        <Class IRI="#Month"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DhuAlHijjah"/>
@@ -303,8 +425,16 @@
         <Class IRI="#SeasonOfYear"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#February"/>
+        <Class IRI="#Month"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FixedHoliday"/>
         <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Future"/>
+        <Class IRI="#RelativeTime"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hanukkah"/>
@@ -319,8 +449,24 @@
         <Class IRI="#TimeInterval"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Hour"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndefiniteTime"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#JewishHoliday"/>
         <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#July"/>
+        <Class IRI="#Month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#June"/>
+        <Class IRI="#Month"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LeapYear"/>
@@ -335,6 +481,22 @@
         <Class IRI="#MoveableHoliday"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#March"/>
+        <Class IRI="#Month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#May"/>
+        <Class IRI="#Month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minute"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Month"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Morning"/>
         <Class IRI="#DayTime"/>
     </SubClassOf>
@@ -345,6 +507,14 @@
     <SubClassOf>
         <Class IRI="#NightTime"/>
         <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#November"/>
+        <Class IRI="#Month"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#October"/>
+        <Class IRI="#Month"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PalmSunday"/>
@@ -365,6 +535,10 @@
     <SubClassOf>
         <Class IRI="#Passover"/>
         <Class IRI="#MoveableHoliday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Past"/>
+        <Class IRI="#RelativeTime"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pentecost"/>
@@ -383,12 +557,24 @@
         <Class IRI="#TimeInterval"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Present"/>
+        <Class IRI="#RelativeTime"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Ramadan"/>
         <Class IRI="#TimeInterval"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SeasonOfYear"/>
         <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Second"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#September"/>
+        <Class IRI="#Month"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpringSeason"/>
@@ -447,6 +633,10 @@
         <Class IRI="#USHoliday"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Week"/>
+        <Class IRI="#TimeInterval"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Weekend"/>
         <Class IRI="#TimeInterval"/>
     </SubClassOf>
@@ -478,6 +668,38 @@
         <Class IRI="#Epoch"/>
         <NamedIndividual IRI="#UnixEpoch"/>
     </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsBeforeStartOf"/>
+        <ObjectProperty IRI="#hasEndTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsLaterThan"/>
+        <ObjectProperty IRI="#hasEndTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsSameTimeAs"/>
+        <ObjectProperty IRI="#hasEndTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsSoonerThan"/>
+        <ObjectProperty IRI="#hasEndTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsAfterEndOf"/>
+        <ObjectProperty IRI="#starts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsLaterThan"/>
+        <ObjectProperty IRI="#starts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsSameTimeAs"/>
+        <ObjectProperty IRI="#starts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsSoonerThan"/>
+        <ObjectProperty IRI="#starts"/>
+    </SubObjectPropertyOf>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#overlapsTemporally"/>
     </SymmetricObjectProperty>
@@ -497,10 +719,6 @@
         <ObjectProperty IRI="#temporalPart"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#duration"/>
-        <Class IRI="#TimeInterval"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#during"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyDomain>
@@ -510,6 +728,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#finishes"/>
+        <Class IRI="#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDuration"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -525,10 +747,6 @@
         <Class IRI="#TimePosition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#duration"/>
-        <Class IRI="#TimeDuration"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#during"/>
         <Class IRI="#TimeInterval"/>
     </ObjectPropertyRange>
@@ -543,6 +761,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#futureFn"/>
         <Class IRI="#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDuration"/>
+        <Class IRI="#TimeDuration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#overlapsTemporally"/>

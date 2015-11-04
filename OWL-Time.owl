@@ -91,6 +91,12 @@
         <ObjectProperty IRI="#hasEnd"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasTimeZone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnitType"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#inDateTime"/>
     </Declaration>
     <Declaration>
@@ -134,12 +140,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#intervalStarts"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#timeZone"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#unitType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#day"/>
@@ -229,7 +229,7 @@
     <SubClassOf>
         <Class IRI="#DateTimeDescription"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#unitType"/>
+            <ObjectProperty IRI="#hasUnitType"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -241,7 +241,7 @@
     <SubClassOf>
         <Class IRI="#DateTimeDescription"/>
         <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="#timeZone"/>
+            <ObjectProperty IRI="#hasTimeZone"/>
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -353,7 +353,7 @@
     <SubClassOf>
         <Class IRI="#January"/>
         <ObjectHasValue>
-            <ObjectProperty IRI="#unitType"/>
+            <ObjectProperty IRI="#hasUnitType"/>
             <NamedIndividual IRI="#unitMonth"/>
         </ObjectHasValue>
     </SubClassOf>
@@ -538,16 +538,20 @@
         <Class IRI="#TemporalEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeZone"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnitType"/>
+        <Class IRI="#DateTimeDescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#inDateTime"/>
         <Class IRI="#Instant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#inside"/>
         <Class IRI="#Interval"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#intervalAfter"/>
-        <Class IRI="#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#intervalBefore"/>
@@ -596,14 +600,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#intervalStarts"/>
         <Class IRI="#ProperInterval"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#timeZone"/>
-        <Class IRI="#DateTimeDescription"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#unitType"/>
-        <Class IRI="#DateTimeDescription"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#after"/>
@@ -634,16 +630,20 @@
         <Class IRI="#Instant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeZone"/>
+        <Class IRI="zone#TimeZone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUnitType"/>
+        <Class IRI="#TemporalUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#inDateTime"/>
         <Class IRI="#DateTimeDescription"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#inside"/>
         <Class IRI="#Instant"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#intervalAfter"/>
-        <Class IRI="#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#intervalBefore"/>
@@ -692,14 +692,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#intervalStarts"/>
         <Class IRI="#ProperInterval"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#timeZone"/>
-        <Class IRI="zone#TimeZone"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#unitType"/>
-        <Class IRI="#TemporalUnit"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#day"/>

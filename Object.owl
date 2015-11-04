@@ -21,6 +21,8 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance</Import>
+    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of an object taken from SUMO ontology</Literal>
@@ -29,7 +31,13 @@
         <Class IRI="#Actuator"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Apron"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ArtificialEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belt"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CPU"/>
@@ -38,7 +46,46 @@
         <Class IRI="#Camera"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Camp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cloak"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collar"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CommunicationChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContactSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Correspondence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailMessage"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EntertainmentDevice"/>
@@ -47,7 +94,34 @@
         <Class IRI="#Equipment"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FaxMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FaxMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Footwear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glove"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Handwatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalSchedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Letter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Memory"/>
@@ -56,7 +130,37 @@
         <Class IRI="#Microphone"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MobileCellPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileResidence"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MotionSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PDA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalProfileDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicSchedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReceiverDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reminder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sandal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sensor"/>
@@ -65,10 +169,52 @@
         <Class IRI="#Server"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Shirt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shoe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleeve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sock"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sunglasses"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Telephone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelephonyDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ticket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TieClothing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeManagementTool"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trousers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Veil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebDocument"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
@@ -77,16 +223,7 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerNetwork"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerResource"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
@@ -101,37 +238,133 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Furniture"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#NetworkResource"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#connected"/>
+        <ObjectProperty IRI="#fills"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#connectedDownstream"/>
+        <ObjectProperty IRI="#hasCommunicationChannel"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#connectedEngineeringComponents"/>
+        <ObjectProperty IRI="#hasDevice"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#equipmentType"/>
+        <ObjectProperty IRI="#hasDeviceFunctionality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#larger"/>
+        <ObjectProperty IRI="#hasDeviceProfile"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#older"/>
+        <ObjectProperty IRI="#hasEquipmentType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#part"/>
+        <ObjectProperty IRI="#hasFunctionality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#smaller"/>
+        <ObjectProperty IRI="#hasInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttachedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContactSiteOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDeviceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDisplayedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFunctionalityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInformationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInsuredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLargerThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isObjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOlderThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSignedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSmallerThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTopicAddressedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUserOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isViewedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partiallyFills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#properlyFills"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#communicationChannelID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#communicationChannelType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deviceID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deviceType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#/images/Bulldog.jpg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#/images/Ocabrera.jpg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#/images/Ohernan.jpg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MovieTicket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDA-AcerN30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDA-AcerN310"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDA-Jornada820"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#definition"/>
@@ -139,13 +372,24 @@
     <Declaration>
         <AnnotationProperty IRI="#synonym"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#term_status"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Actuator"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Apron"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArtificialEntity"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belt"/>
+        <Class IRI="#Clothing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CPU"/>
@@ -153,15 +397,67 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Camera"/>
-        <Class IRI="#Equipment"/>
+        <Class IRI="#ElectricDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Camera"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camp"/>
+        <Class IRI="#MobileResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certificate"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cloak"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothing"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coat"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collar"/>
+        <Class IRI="#Clothing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CommunicationChannel"/>
         <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#ElectricDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContactSite"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contract"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Correspondence"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dress"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailMessage"/>
+        <Class IRI="#Correspondence"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EntertainmentDevice"/>
@@ -172,8 +468,44 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FaxMachine"/>
+        <Class IRI="#TelephonyDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FaxMessage"/>
+        <Class IRI="#Correspondence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedPhone"/>
+        <Class IRI="#Telephone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Footwear"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glove"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Handwatch"/>
         <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hat"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#VisualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalSchedule"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Letter"/>
+        <Class IRI="#Correspondence"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Memory"/>
@@ -184,8 +516,60 @@
         <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MobileCellPhone"/>
+        <Class IRI="#MobileDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileCellPhone"/>
+        <Class IRI="#Telephone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileDevice"/>
+        <Class IRI="#ReceiverDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileResidence"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MotionSensor"/>
         <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PDA"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PDA"/>
+        <Class IRI="#MobileDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalProfileDocument"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicSchedule"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReceiverDevice"/>
+        <Class IRI="#ElectricDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReceiverDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reminder"/>
+        <Class IRI="#TimeManagementTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sandal"/>
+        <Class IRI="#Shoe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schedule"/>
+        <Class IRI="#TimeManagementTool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sensor"/>
@@ -196,12 +580,68 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Shirt"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shoe"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleeve"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sock"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Sunglasses"/>
         <Class IRI="#Equipment"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Telephone"/>
+        <Class IRI="#TelephonyDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelephonyDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tent"/>
+        <Class IRI="#MobileResidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ticket"/>
+        <Class IRI="#Certificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TieClothing"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeManagementTool"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Tool"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trousers"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veil"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualObject"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebDocument"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
@@ -212,20 +652,8 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerNetwork"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerResource"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputationalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
@@ -244,100 +672,305 @@
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#NetworkResource"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerResource"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance#Substance"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice#TransportationDevice"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Image"/>
+        <NamedIndividual IRI="#/images/Bulldog.jpg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Image"/>
+        <NamedIndividual IRI="#/images/Ocabrera.jpg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Image"/>
+        <NamedIndividual IRI="#/images/Ohernan.jpg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#MovieTicket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PDA"/>
+        <NamedIndividual IRI="#PDA-AcerN30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PDA"/>
+        <NamedIndividual IRI="#PDA-AcerN310"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PDA"/>
+        <NamedIndividual IRI="#PDA-Jornada820"/>
+    </ClassAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#smaller"/>
-        <ObjectProperty IRI="#larger"/>
+        <ObjectProperty IRI="#hasDevice"/>
+        <ObjectProperty IRI="#isDeviceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFunctionalityOf"/>
+        <ObjectProperty IRI="#hasFunctionality"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInformation"/>
+        <ObjectProperty IRI="#isInformationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectProperty IRI="#isObjectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTopicAddressedIn"/>
+        <ObjectProperty IRI="#hasTopic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSmallerThan"/>
+        <ObjectProperty IRI="#isLargerThan"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <ObjectProperty IRI="#isUserOf"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="#connected"/>
+        <ObjectProperty IRI="#isConnectedTo"/>
     </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#connectedEngineeringComponents"/>
-    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasDevice"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isDeviceOf"/>
+    </AsymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#larger"/>
+        <ObjectProperty IRI="#isLargerThan"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#part"/>
+        <ObjectProperty IRI="#isPartOf"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#smaller"/>
+        <ObjectProperty IRI="#isSmallerThan"/>
     </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDevice"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isDeviceOf"/>
+    </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#connected"/>
+        <ObjectProperty IRI="#fills"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#connectedDownstream"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="#hasDeviceFunctionality"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#connectedEngineeringComponents"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
+        <ObjectProperty IRI="#hasDeviceProfile"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#equipmentType"/>
+        <ObjectProperty IRI="#hasEquipmentType"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#larger"/>
+        <ObjectProperty IRI="#hasFunctionality"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInformation"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopic"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#older"/>
+        <ObjectProperty IRI="#isContactSiteOf"/>
+        <Class IRI="#ContactSite"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDeviceOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInsuredBy"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLargerThan"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#part"/>
+        <ObjectProperty IRI="#isObjectOf"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#smaller"/>
+        <ObjectProperty IRI="#isOlderThan"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSignedBy"/>
+        <Class IRI="#Certificate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSmallerThan"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isViewedBy"/>
+        <Class IRI="#VisualObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partiallyFills"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#properlyFills"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#connected"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <ObjectProperty IRI="#hasCommunicationChannel"/>
+        <Class IRI="#CommunicationChannel"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#connectedDownstream"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#connectedEngineeringComponents"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#equipmentType"/>
+        <ObjectProperty IRI="#hasDevice"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#larger"/>
+        <ObjectProperty IRI="#hasEquipmentType"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObject"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#older"/>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="#EmailMessage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#part"/>
+        <ObjectProperty IRI="#isDisplayedBy"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFunctionalityOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInformationOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLargerThan"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#smaller"/>
+        <ObjectProperty IRI="#isOlderThan"/>
         <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSmallerThan"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTopicAddressedIn"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUserOf"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#communicationChannelID"/>
+        <Class IRI="#CommunicationChannel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#communicationChannelType"/>
+        <Class IRI="#CommunicationChannel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deviceID"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deviceType"/>
+        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#communicationChannelID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#communicationChannelType"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deviceID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deviceType"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
         <IRI>#CPU</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#term_status"/>
+        <IRI>#PersonalProfileDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersonalProfileDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A personal profile RDF document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PersonalProfileDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PersonalProfileDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Schedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Timetable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
@@ -346,8 +979,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isControlledBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
         <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware, ComputationalDevice, CompDevice</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware, ComputationalDevice, CompDevice, Computer</Literal>
     </AnnotationAssertion>
 </Ontology>
 

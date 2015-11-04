@@ -53,6 +53,9 @@
         <Class IRI="#BeliefGroup"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CareOrganization"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CharismaticChurch"/>
     </Declaration>
     <Declaration>
@@ -65,7 +68,16 @@
         <Class IRI="#Church"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CityGovernment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CollegeChapel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consulate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsulateGeneral"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CriminalGang"/>
@@ -77,10 +89,16 @@
         <Class IRI="#Department"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DiplomaticOrganization"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DramaticCast"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EcumenicalProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Embassy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EthnicGroup"/>
@@ -92,6 +110,9 @@
         <Class IRI="#FamilyGroup"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FederalHousingAdministration"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#FreeChurchOfEngland"/>
     </Declaration>
     <Declaration>
@@ -101,6 +122,15 @@
         <Class IRI="#FreeMethodistChurch"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentCabinet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentOrganization"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Group"/>
     </Declaration>
     <Declaration>
@@ -108,6 +138,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#GroupOfPeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HospitalOrganization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Institute"/>
@@ -131,6 +164,9 @@
         <Class IRI="#LutheranChurch"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MedicalClinic"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MethodistChurch"/>
     </Declaration>
     <Declaration>
@@ -146,6 +182,9 @@
         <Class IRI="#MusicalGroup"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NationalGovernment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Organization"/>
     </Declaration>
     <Declaration>
@@ -155,10 +194,19 @@
         <Class IRI="#Pingstroerelsen"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PoliceOrganization"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PresbyterianChurch"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Public"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicLibrary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicSchool"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ReligiousOrganization"/>
@@ -179,6 +227,9 @@
         <Class IRI="#SportsTeam"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#StateGovernment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SvenskaAlliansmissionen"/>
     </Declaration>
     <Declaration>
@@ -194,22 +245,46 @@
         <Class IRI="#YWAM_BYFC"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <ObjectProperty IRI="#associateInOrganization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ancestorOrganization"/>
+        <ObjectProperty IRI="#employs"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#chamberOfLegislature"/>
+        <ObjectProperty IRI="#hasAffiliatedOrganization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#religiousAffiliationOfOrganization"/>
+        <ObjectProperty IRI="#hasAncestorOrganization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#subOrganization"/>
+        <ObjectProperty IRI="#hasExecutiveBranch"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#successorOrganization"/>
+        <ObjectProperty IRI="#hasJudicialBranch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLeader"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegislativeBranch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReligiousAffiliationOfOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuccessorOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#phdFundedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Agnosticism"/>
@@ -227,6 +302,9 @@
         <NamedIndividual IRI="#Buddhism"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CONACyT"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Christianity"/>
     </Declaration>
     <Declaration>
@@ -237,6 +315,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Confucianism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DepartmentOfHomelandSecurity"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Hinduism"/>
@@ -254,6 +335,15 @@
         <NamedIndividual IRI="#Neopaganism"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Organizations-Interpol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Organizations-UNESCO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Organizations-UNICEF"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RomanCatholicChurch"/>
     </Declaration>
     <Declaration>
@@ -264,6 +354,18 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Taoism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USCustomsAndBorderProtection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USStateDepartment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnitedStatesDepartamentOfAgriculture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnitedStatesPostalService"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Zoroastrianism"/>
@@ -305,6 +407,10 @@
         <Class IRI="#GroupOfPeople"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CareOrganization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CharismaticChurch"/>
         <Class IRI="#Church"/>
     </SubClassOf>
@@ -321,8 +427,20 @@
         <Class IRI="#ReligiousOrganization"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CityGovernment"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CollegeChapel"/>
         <Class IRI="#LocalChurch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consulate"/>
+        <Class IRI="#DiplomaticOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsulateGeneral"/>
+        <Class IRI="#DiplomaticOrganization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CriminalGang"/>
@@ -337,12 +455,20 @@
         <Class IRI="#Organization"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DiplomaticOrganization"/>
+        <Class IRI="#GovernmentOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DramaticCast"/>
         <Class IRI="#GroupOfPeople"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EcumenicalProject"/>
         <Class IRI="#Church"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Embassy"/>
+        <Class IRI="#DiplomaticOrganization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EthnicGroup"/>
@@ -357,6 +483,10 @@
         <Class IRI="#GroupOfPeople"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FederalHousingAdministration"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FreeChurchOfEngland"/>
         <Class IRI="#Church"/>
     </SubClassOf>
@@ -369,12 +499,28 @@
         <Class IRI="#MethodistChurch"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Government"/>
+        <Class IRI="#GovernmentOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentCabinet"/>
+        <Class IRI="#GovernmentOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentOrganization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GroupOfAnimals"/>
         <Class IRI="#Group"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GroupOfPeople"/>
         <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HospitalOrganization"/>
+        <Class IRI="#CareOrganization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Institute"/>
@@ -405,6 +551,10 @@
         <Class IRI="#Church"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MedicalClinic"/>
+        <Class IRI="#CareOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MethodistChurch"/>
         <Class IRI="#Church"/>
     </SubClassOf>
@@ -425,6 +575,10 @@
         <Class IRI="#GroupOfPeople"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NationalGovernment"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Organization"/>
         <Class IRI="#Group"/>
     </SubClassOf>
@@ -437,12 +591,24 @@
         <Class IRI="#Church"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PoliceOrganization"/>
+        <Class IRI="#GovernmentOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PresbyterianChurch"/>
         <Class IRI="#Church"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Public"/>
         <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicLibrary"/>
+        <Class IRI="#GovernmentOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicSchool"/>
+        <Class IRI="#GovernmentOrganization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReligiousOrganization"/>
@@ -471,6 +637,10 @@
     <SubClassOf>
         <Class IRI="#SportsTeam"/>
         <Class IRI="#GroupOfPeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateGovernment"/>
+        <Class IRI="#Government"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SvenskaAlliansmissionen"/>
@@ -513,6 +683,10 @@
         <NamedIndividual IRI="#Buddhism"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#GovernmentOrganization"/>
+        <NamedIndividual IRI="#CONACyT"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#BeliefGroup"/>
         <NamedIndividual IRI="#Christianity"/>
     </ClassAssertion>
@@ -537,6 +711,10 @@
         <NamedIndividual IRI="#Confucianism"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#GovernmentOrganization"/>
+        <NamedIndividual IRI="#DepartmentOfHomelandSecurity"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#BeliefGroup"/>
         <NamedIndividual IRI="#Hinduism"/>
     </ClassAssertion>
@@ -557,6 +735,18 @@
         <NamedIndividual IRI="#Neopaganism"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Organizations-Interpol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Organizations-UNESCO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Organizations-UNICEF"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ReligiousOrganization"/>
         <NamedIndividual IRI="#RomanCatholicChurch"/>
     </ClassAssertion>
@@ -573,61 +763,109 @@
         <NamedIndividual IRI="#Taoism"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PoliceOrganization"/>
+        <NamedIndividual IRI="#USCustomsAndBorderProtection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Government"/>
+        <NamedIndividual IRI="#USStateDepartment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOrganization"/>
+        <NamedIndividual IRI="#UnitedStatesDepartamentOfAgriculture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentOrganization"/>
+        <NamedIndividual IRI="#UnitedStatesPostalService"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#BeliefGroup"/>
         <NamedIndividual IRI="#Zoroastrianism"/>
     </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#phdFundedBy"/>
+        <ObjectProperty IRI="#isFundedBy"/>
+    </SubObjectPropertyOf>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#ancestorOrganization"/>
+        <ObjectProperty IRI="#hasAncestorOrganization"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#subOrganization"/>
+        <ObjectProperty IRI="#hasSubOrganization"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <ObjectProperty IRI="#employs"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#ancestorOrganization"/>
+        <ObjectProperty IRI="#hasAffiliatedOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#chamberOfLegislature"/>
+        <ObjectProperty IRI="#hasAncestorOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#religiousAffiliationOfOrganization"/>
+        <ObjectProperty IRI="#hasExecutiveBranch"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#subOrganization"/>
+        <ObjectProperty IRI="#hasJudicialBranch"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#successorOrganization"/>
+        <ObjectProperty IRI="#hasLeader"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegislativeBranch"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMember"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReligiousAffiliationOfOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuccessorOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <ObjectProperty IRI="#associateInOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#ancestorOrganization"/>
+        <ObjectProperty IRI="#hasAffiliatedOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#chamberOfLegislature"/>
+        <ObjectProperty IRI="#hasAncestorOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#religiousAffiliationOfOrganization"/>
+        <ObjectProperty IRI="#hasReligiousAffiliationOfOrganization"/>
         <Class IRI="#BeliefGroup"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#subOrganization"/>
+        <ObjectProperty IRI="#hasSubOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#successorOrganization"/>
+        <ObjectProperty IRI="#hasSuccessorOrganization"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFundedBy"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#phdFundedBy"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
 </Ontology>

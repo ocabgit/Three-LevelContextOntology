@@ -10,21 +10,25 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-124"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-124">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of regulation in the environment, it is proposed in this work</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Law"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Legislation"/>
     </Declaration>
     <Declaration>
@@ -39,6 +43,16 @@
     <Declaration>
         <Class IRI="#Standard"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forbids"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#permits"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Law"/>
+        <Class IRI="#Regulation"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Legislation"/>
         <Class IRI="#Regulation"/>
@@ -55,6 +69,14 @@
         <Class IRI="#Standard"/>
         <Class IRI="#Regulation"/>
     </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#forbids"/>
+        <Class IRI="#Regulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#permits"/>
+        <Class IRI="#Regulation"/>
+    </ObjectPropertyDomain>
 </Ontology>
 
 

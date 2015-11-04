@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent">
+        <rdfs:comment>Commercial agent is a module taken from SUMO ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Agency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Agency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookPublisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookPublisher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookSeller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookSeller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Cafeteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Cafeteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIIRailroad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIIRailroad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIRailroad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIRailroad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIRailroad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIRailroad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommonCarrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommonCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ContractCarrier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ContractCarrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ContractCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Crematorium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Crematorium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#DrugStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#DrugStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#EntertainmentCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#EntertainmentCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FamilyBusiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FamilyBusiness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Partnership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FinancialCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FinancialCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FuneralArranger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FuneralArranger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#GroceryStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#GroceryStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#InsuranceCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#InsuranceCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Partnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Partnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#PeriodicalPublisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#PeriodicalPublisher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Proprietorship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Proprietorship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Manufacturer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RecordingCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RecordingCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#WholesaleStore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#SavingsAndLoan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#SavingsAndLoan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FinancialCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ShoppingMall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ShoppingMall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Tavern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Tavern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#WholesaleStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#WholesaleStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Agency"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#AzurmendiRestaurant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#AzurmendiRestaurant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

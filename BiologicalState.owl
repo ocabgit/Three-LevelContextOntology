@@ -27,22 +27,136 @@
 </Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#AbdominalPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Addiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Allergies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alzheimer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Angry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asthma"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Attention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BackPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalMeasurements"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BiologicalState"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#BipolarDisorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodInStool"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BodyPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreastCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreathingProblems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burns"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CervicalCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChestPain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cognitive"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Colds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confusion"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ConsciousnessAttribute"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Cough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DarkUrine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diseases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earache"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricShock"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#EmotionalState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrequentUrination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GastroesophagealRefluxDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HIV/AIDS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Happy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Headache"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HealthConditions"/>
@@ -51,7 +165,40 @@
         <Class IRI="#HeartRate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Memory"/>
+        <Class IRI="#Hepatitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lightheadedness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LossOfAppetite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LungCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemoryChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeckPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Osteoporosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvarianCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parkinson"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Perception"/>
@@ -60,22 +207,79 @@
         <Class IRI="#PhysiologicalState"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProstateCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PsychologicalAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PsychologicalDysfunction"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PsychologicalState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rashes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scalds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SexuallyTransmittedDiseases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkinCancer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SkinConductance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SkinProblems"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#StateOfMind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tireness"/>
+        <Class IRI="#SwollenFeet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tiredness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrinaryProblems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VaginalDischarge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vertigo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vomiting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asleep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Awake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drugged"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Fist"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Handstand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Happiness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Kneeling"/>
@@ -87,30 +291,197 @@
         <NamedIndividual IRI="#Sitting"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Sober"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Splitting"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Standing"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Surprise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unconscious"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unhappiness"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbdominalPain"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Addiction"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Allergies"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alzheimer"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anger"/>
+        <Class IRI="#EmotionalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Angry"/>
+        <Class IRI="#Humour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anxiety"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asthma"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Attention"/>
         <Class IRI="#Cognitive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Autism"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackPain"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalMeasurements"/>
+        <Class IRI="#BiologicalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BipolarDisorder"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodInStool"/>
+        <Class IRI="#Symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BodyPosition"/>
         <Class IRI="#BiologicalState"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BreastCancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreathingProblems"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burns"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cancer"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CervicalCancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChestPain"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cognitive"/>
         <Class IRI="#PsychologicalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colds"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confusion"/>
+        <Class IRI="#Symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ConsciousnessAttribute"/>
         <Class IRI="#StateOfMind"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cough"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DarkUrine"/>
+        <Class IRI="#UrinaryProblems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diabetes"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diseases"/>
+        <Class IRI="#HealthConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dizziness"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earache"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricShock"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EmotionalState"/>
         <Class IRI="#StateOfMind"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fatigue"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fever"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flu"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrequentUrination"/>
+        <Class IRI="#UrinaryProblems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GastroesophagealRefluxDisease"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HIV/AIDS"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Happy"/>
+        <Class IRI="#Humour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hate"/>
+        <Class IRI="#EmotionalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Headache"/>
+        <Class IRI="#Symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HealthConditions"/>
@@ -118,11 +489,55 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HeartRate"/>
-        <Class IRI="#HealthConditions"/>
+        <Class IRI="#BiologicalMeasurements"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Memory"/>
+        <Class IRI="#Hepatitis"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humour"/>
+        <Class IRI="#EmotionalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lightheadedness"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LossOfAppetite"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LungCancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemoryChange"/>
         <Class IRI="#Cognitive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeckPain"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neurosis"/>
+        <Class IRI="#PsychologicalDysfunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Osteoporosis"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvarianCancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parkinson"/>
+        <Class IRI="#Diseases"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Perception"/>
@@ -133,21 +548,93 @@
         <Class IRI="#BiologicalState"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ProstateCancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PsychologicalAttribute"/>
+        <Class IRI="#PsychologicalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PsychologicalDysfunction"/>
+        <Class IRI="#PsychologicalAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PsychologicalState"/>
         <Class IRI="#BiologicalState"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Psychosis"/>
+        <Class IRI="#PsychologicalDysfunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rashes"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scalds"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SexuallyTransmittedDiseases"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkinCancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SkinConductance"/>
-        <Class IRI="#PhysiologicalState"/>
+        <Class IRI="#BiologicalMeasurements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkinProblems"/>
+        <Class IRI="#Symptoms"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StateOfMind"/>
-        <Class IRI="#PsychologicalState"/>
+        <Class IRI="#PsychologicalAttribute"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tireness"/>
-        <Class IRI="#PhysiologicalState"/>
+        <Class IRI="#SwollenFeet"/>
+        <Class IRI="#Symptoms"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptoms"/>
+        <Class IRI="#HealthConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tiredness"/>
+        <Class IRI="#BiologicalMeasurements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrinaryProblems"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VaginalDischarge"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vertigo"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vomiting"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ConsciousnessAttribute"/>
+        <NamedIndividual IRI="#Asleep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConsciousnessAttribute"/>
+        <NamedIndividual IRI="#Awake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConsciousnessAttribute"/>
+        <NamedIndividual IRI="#Drugged"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BodyPosition"/>
         <NamedIndividual IRI="#Fist"/>
@@ -155,6 +642,10 @@
     <ClassAssertion>
         <Class IRI="#BodyPosition"/>
         <NamedIndividual IRI="#Handstand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmotionalState"/>
+        <NamedIndividual IRI="#Happiness"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BodyPosition"/>
@@ -169,6 +660,10 @@
         <NamedIndividual IRI="#Sitting"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ConsciousnessAttribute"/>
+        <NamedIndividual IRI="#Sober"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#BodyPosition"/>
         <NamedIndividual IRI="#Splitting"/>
     </ClassAssertion>
@@ -176,6 +671,28 @@
         <Class IRI="#BodyPosition"/>
         <NamedIndividual IRI="#Standing"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmotionalState"/>
+        <NamedIndividual IRI="#Surprise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConsciousnessAttribute"/>
+        <NamedIndividual IRI="#Unconscious"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EmotionalState"/>
+        <NamedIndividual IRI="#Unhappiness"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#Fatigue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tireness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HeartRate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The rate at which the heart beats; usually measured to obtain a quick evaluation of a person&apos;s health.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

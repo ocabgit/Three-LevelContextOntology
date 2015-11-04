@@ -1,0 +1,2454 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AbrinToxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actinium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AerosolParticulate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AerosolizedAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AerosolizedBacillusAnthracis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aflatoxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alcohol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlcoholicBeverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alkaloid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aluminum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Americium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AminoAcid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmphipathicMolecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antibiotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antibody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antigen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntigenA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntigenB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antimony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arsenic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arsine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asbestos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asphalt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Astatine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomicGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtomicNucleus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atropine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BZGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bacitracin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Batrachotoxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bauxite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Berkelium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiochemicalAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlisterAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodTypeA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodTypeAB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodTypeB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodTypeO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodySubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BotulinumToxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brandy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrownCoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cannabis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carbohydrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cellulose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalAcid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalSalt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChlorineGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chloropicrin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChokingAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cholesterol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chromite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciprofloxacin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cocaine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompoundSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConductorSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConjugatedSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conotoxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlledSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CopperOre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyanogenChloride"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DDT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DNAMolecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DNAPolymerase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defoliant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Depressant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DepressantDrug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detergent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diacetoxyscirpenol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diamond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DieselFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimercaprol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diphosgene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistilledAlcoholicBeverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doxycycline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effluent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electricity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElementalSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enzyme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpsilonToxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplosiveSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fallout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FatTissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fertilizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fluorine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FossilFuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freshwater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fuel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GSeriesNerveAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gallium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasMixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gasoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gemstone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeneRegulatoryProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gravel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenhouseGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Groundwater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GumArabic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GunPowder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hallucinogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hashish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heroin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hormone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HormoneTSH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydrocarbon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrogenCyanide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrophilicLipidHead"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrophobicLipidTail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iceberg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IllicitDrug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IllicitSyntheticDrug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncapacitatingAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InitiatorProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InsulatorSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insulin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IronOre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ivory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keflex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Krypton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeadOre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lewisite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LifeThreateningAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LipidMembraneMolecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lipoprotein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquefiedPetroleumGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidBodySubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidMixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lithium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magnesium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manganese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marijuana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mercury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetallicAlloy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Methamphetamine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mineral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MustardGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mycotoxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narcotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nectar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NerveAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neutron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nickel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NickelOre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nitrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NitrogenMustardGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoxiousSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OilPaint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OralAntibiotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganicCompound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxygen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penicillin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Petroleum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PetroleumLubricant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PetroleumProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phosgene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhosgeneOxime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phosphate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhosphoricAcid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlantSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plastic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotableWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potassium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreciousGemstone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PureSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pyrethrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PyridostigmineBromide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RNAMolecule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RNAProcessingEnzyme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadyMixConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReceptorProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RefinedPetroleumProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RicinToxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rubber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalineSolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sarin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saxitoxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeaIce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemipreciousGemstone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sewage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShigaToxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SignalingProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Silver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skull"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sodium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SodiumChloride"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilSolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialPurposeProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaphylococcalEnterotoxinB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stimulant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StimulantDrug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StructuralProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubatomicParticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Substance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sulphur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SulphurMustardGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surfactant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suspension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyntheticSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T2Toxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tabun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Talc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TearSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tendon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tetrodotoxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThyroidHormone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Titanium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tooth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TopicalAntibiotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toxin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportProtein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uranium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VSeriesNerveAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViralGenome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirionEnzyme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VitF2Protein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vitamin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vollum1B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterCloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WatercolorPaint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Whiskey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zinc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZincOre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OzoneShield"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Permafrost"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbrinToxin"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbrinToxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actinium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AerosolParticulate"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AerosolizedAgent"/>
+        <Class IRI="#BiochemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AerosolizedBacillusAnthracis"/>
+        <Class IRI="#AerosolizedAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aflatoxin"/>
+        <Class IRI="#Mycotoxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air"/>
+        <Class IRI="#GasMixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alcohol"/>
+        <Class IRI="#OrganicCompound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlcoholicBeverage"/>
+        <Class IRI="#Beverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlcoholicBeverage"/>
+        <Class IRI="#Depressant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alkaloid"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alkaloid"/>
+        <Class IRI="#ChemicalBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alumina"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aluminum"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Americium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AminoAcid"/>
+        <Class IRI="#ChemicalAcid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AminoAcid"/>
+        <Class IRI="#OrganicCompound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmphipathicMolecule"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalSubstance"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antibiotic"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antibody"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antigen"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntigenA"/>
+        <Class IRI="#Antigen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntigenB"/>
+        <Class IRI="#Antigen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antimony"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Argon"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arsenic"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arsine"/>
+        <Class IRI="#BloodAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asbestos"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asphalt"/>
+        <Class IRI="#RefinedPetroleumProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Astatine"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atom"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomicGroup"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtomicNucleus"/>
+        <Class IRI="#SubatomicParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atropine"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BZGas"/>
+        <Class IRI="#IncapacitatingAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bacitracin"/>
+        <Class IRI="#TopicalAntibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barite"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barite"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Barium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Batrachotoxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Batrachotoxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bauxite"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beer"/>
+        <Class IRI="#AlcoholicBeverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Berkelium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiochemicalAgent"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalAgent"/>
+        <Class IRI="#BiochemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlisterAgent"/>
+        <Class IRI="#ChemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodAgent"/>
+        <Class IRI="#ChemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodTypeA"/>
+        <Class IRI="#Blood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodTypeAB"/>
+        <Class IRI="#Blood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodTypeB"/>
+        <Class IRI="#Blood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodTypeO"/>
+        <Class IRI="#Blood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodySubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bone"/>
+        <Class IRI="#AnimalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bone"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BotulinumToxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BotulinumToxin"/>
+        <Class IRI="#LifeThreateningAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BotulinumToxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brandy"/>
+        <Class IRI="#DistilledAlcoholicBeverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brass"/>
+        <Class IRI="#MetallicAlloy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrownCoal"/>
+        <Class IRI="#Coal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSGas"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSGas"/>
+        <Class IRI="#IncapacitatingAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cannabis"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbohydrate"/>
+        <Class IRI="#Nutrient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbon"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cellulose"/>
+        <Class IRI="#Carbohydrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cellulose"/>
+        <Class IRI="#PlantSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cement"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAcid"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAgent"/>
+        <Class IRI="#BiochemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAgent"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAgent"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalBase"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalProduct"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalSalt"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChlorineGas"/>
+        <Class IRI="#ChokingAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chloropicrin"/>
+        <Class IRI="#ChokingAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChokingAgent"/>
+        <Class IRI="#ChemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cholesterol"/>
+        <Class IRI="#AnimalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cholesterol"/>
+        <Class IRI="#Steroid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chromite"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chromite"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <Class IRI="#OralAntibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clay"/>
+        <Class IRI="#Soil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cloud"/>
+        <Class IRI="#GasMixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coal"/>
+        <Class IRI="#FossilFuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coal"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coal"/>
+        <Class IRI="#Rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cocaine"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cocaine"/>
+        <Class IRI="#Narcotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee"/>
+        <Class IRI="#Beverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompoundSubstance"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concrete"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConductorSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConjugatedSubstance"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conotoxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conotoxin"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conotoxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlledSubstance"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CopperOre"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyanogenChloride"/>
+        <Class IRI="#BloodAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DDT"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DNAMolecule"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DNAPolymerase"/>
+        <Class IRI="#Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defoliant"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depressant"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepressantDrug"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detergent"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detergent"/>
+        <Class IRI="#Surfactant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diacetoxyscirpenol"/>
+        <Class IRI="#Mycotoxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diamond"/>
+        <Class IRI="#Carbon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diamond"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DieselFuel"/>
+        <Class IRI="#FossilFuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimercaprol"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diphosgene"/>
+        <Class IRI="#ChokingAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistilledAlcoholicBeverage"/>
+        <Class IRI="#AlcoholicBeverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dough"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycline"/>
+        <Class IRI="#OralAntibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Effluent"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electricity"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electron"/>
+        <Class IRI="#SubatomicParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElementalSubstance"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enzyme"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpsilonToxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpsilonToxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplosiveSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fallout"/>
+        <Class IRI="#Powder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FatTissue"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flour"/>
+        <Class IRI="#Powder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fluorine"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fog"/>
+        <Class IRI="#WaterCloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FossilFuel"/>
+        <Class IRI="#Fuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FossilFuel"/>
+        <Class IRI="#PetroleumProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeAtom"/>
+        <Class IRI="#Atom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freshwater"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fuel"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GF"/>
+        <Class IRI="#GSeriesNerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GSeriesNerveAgent"/>
+        <Class IRI="#NerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gallium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasMixture"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gasoline"/>
+        <Class IRI="#FossilFuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gemstone"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeneRegulatoryProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glass"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glue"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gold"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gravel"/>
+        <Class IRI="#Rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenhouseGas"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Groundwater"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GumArabic"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GunPowder"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hallucinogen"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hashish"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heroin"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honey"/>
+        <Class IRI="#AnimalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hormone"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hormone"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HormoneTSH"/>
+        <Class IRI="#Hormone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horn"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humus"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydrocarbon"/>
+        <Class IRI="#OrganicCompound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydrogen"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenCyanide"/>
+        <Class IRI="#BloodAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrophilicLipidHead"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrophobicLipidTail"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ice"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iceberg"/>
+        <Class IRI="#Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IllicitDrug"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IllicitSyntheticDrug"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncapacitatingAgent"/>
+        <Class IRI="#ChemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitiatorProtein"/>
+        <Class IRI="#Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InsulatorSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insulin"/>
+        <Class IRI="#Hormone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ion"/>
+        <Class IRI="#PureSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iron"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IronOre"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IronOre"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ivory"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keflex"/>
+        <Class IRI="#OralAntibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Krypton"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeadOre"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lewisite"/>
+        <Class IRI="#BlisterAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LifeThreateningAgent"/>
+        <Class IRI="#BiochemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LifeThreateningAgent"/>
+        <Class IRI="#LifeThreateningAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LipidMembraneMolecule"/>
+        <Class IRI="#AmphipathicMolecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lipoprotein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquefiedPetroleumGas"/>
+        <Class IRI="#FossilFuel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquefiedPetroleumGas"/>
+        <Class IRI="#RefinedPetroleumProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidBodySubstance"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidMixture"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lithium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loam"/>
+        <Class IRI="#Soil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magnesium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manganese"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marble"/>
+        <Class IRI="#Rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marijuana"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mercury"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetallicAlloy"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Methamphetamine"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milk"/>
+        <Class IRI="#Beverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milk"/>
+        <Class IRI="#LiquidBodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mineral"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mixture"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Molecule"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorOil"/>
+        <Class IRI="#PetroleumLubricant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscle"/>
+        <Class IRI="#AnimalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscle"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MustardGas"/>
+        <Class IRI="#BlisterAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mycotoxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mycotoxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Narcotic"/>
+        <Class IRI="#ControlledSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGas"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nectar"/>
+        <Class IRI="#PlantSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neon"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NerveAgent"/>
+        <Class IRI="#ChemicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neutron"/>
+        <Class IRI="#SubatomicParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nickel"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NickelOre"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NitrogenMustardGas"/>
+        <Class IRI="#MustardGas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoxiousSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oil"/>
+        <Class IRI="#Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OilPaint"/>
+        <Class IRI="#Paint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opium"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opium"/>
+        <Class IRI="#Depressant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opium"/>
+        <Class IRI="#Narcotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opium"/>
+        <Class IRI="#PlantSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OralAntibiotic"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganicCompound"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxygen"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paint"/>
+        <Class IRI="#Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillin"/>
+        <Class IRI="#OralAntibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Petroleum"/>
+        <Class IRI="#PetroleumProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PetroleumLubricant"/>
+        <Class IRI="#RefinedPetroleumProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PetroleumProduct"/>
+        <Class IRI="#Oil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phosgene"/>
+        <Class IRI="#ChokingAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhosgeneOxime"/>
+        <Class IRI="#BlisterAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phosphate"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhosphoricAcid"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantSubstance"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plastic"/>
+        <Class IRI="#Hydrocarbon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotableWater"/>
+        <Class IRI="#Freshwater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potash"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powder"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreciousGemstone"/>
+        <Class IRI="#Gemstone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protein"/>
+        <Class IRI="#Nutrient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proton"/>
+        <Class IRI="#SubatomicParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PureSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyrethrum"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PyridostigmineBromide"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RNAMolecule"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RNAProcessingEnzyme"/>
+        <Class IRI="#Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radon"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadyMixConcrete"/>
+        <Class IRI="#Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReceptorProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RefinedPetroleumProduct"/>
+        <Class IRI="#PetroleumProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RicinToxin"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RicinToxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rock"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rubber"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rubber"/>
+        <Class IRI="#Hydrocarbon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rubber"/>
+        <Class IRI="#PlantSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalineSolution"/>
+        <Class IRI="#Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salt"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sand"/>
+        <Class IRI="#Soil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sarin"/>
+        <Class IRI="#GSeriesNerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saxitoxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saxitoxin"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saxitoxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeaIce"/>
+        <Class IRI="#Ice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemipreciousGemstone"/>
+        <Class IRI="#Gemstone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serum"/>
+        <Class IRI="#LiquidBodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sewage"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShigaToxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SignalingProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silt"/>
+        <Class IRI="#Soil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Silver"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skull"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoke"/>
+        <Class IRI="#Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soap"/>
+        <Class IRI="#Surfactant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sodium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumChloride"/>
+        <Class IRI="#ChemicalSalt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soil"/>
+        <Class IRI="#Mixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilSolution"/>
+        <Class IRI="#Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solution"/>
+        <Class IRI="#LiquidMixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soman"/>
+        <Class IRI="#GSeriesNerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialPurposeProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcalEnterotoxinB"/>
+        <Class IRI="#LifeThreateningAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcalEnterotoxinB"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Starch"/>
+        <Class IRI="#Carbohydrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steel"/>
+        <Class IRI="#MetallicAlloy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steroid"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steroid"/>
+        <Class IRI="#OrganicCompound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stimulant"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StimulantDrug"/>
+        <Class IRI="#IllicitDrug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stone"/>
+        <Class IRI="#Rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StructuralProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubatomicParticle"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sugar"/>
+        <Class IRI="#Carbohydrate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sugar"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sulphur"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SulphurMustardGas"/>
+        <Class IRI="#MustardGas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surfactant"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suspension"/>
+        <Class IRI="#LiquidMixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweat"/>
+        <Class IRI="#AnimalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticSubstance"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T2Toxin"/>
+        <Class IRI="#Mycotoxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tabun"/>
+        <Class IRI="#GSeriesNerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Talc"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tea"/>
+        <Class IRI="#Beverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TearSubstance"/>
+        <Class IRI="#LiquidBodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TearSubstance"/>
+        <Class IRI="#SalineSolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tendon"/>
+        <Class IRI="#AnimalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tendon"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetrodotoxin"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetrodotoxin"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetrodotoxin"/>
+        <Class IRI="#Toxin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThyroidHormone"/>
+        <Class IRI="#Hormone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timber"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tissue"/>
+        <Class IRI="#BodySubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Titanium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tooth"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TopicalAntibiotic"/>
+        <Class IRI="#Antibiotic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toxin"/>
+        <Class IRI="#BiologicalAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toxin"/>
+        <Class IRI="#BiologicallyActiveSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportProtein"/>
+        <Class IRI="#Protein"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uranium"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urea"/>
+        <Class IRI="#OrganicCompound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VSeriesNerveAgent"/>
+        <Class IRI="#NerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VX"/>
+        <Class IRI="#VSeriesNerveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViralGenome"/>
+        <Class IRI="#Molecule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirionEnzyme"/>
+        <Class IRI="#Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VitF2Protein"/>
+        <Class IRI="#Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vitamin"/>
+        <Class IRI="#Nutrient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vollum1B"/>
+        <Class IRI="#AerosolizedBacillusAnthracis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#CompoundSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterCloud"/>
+        <Class IRI="#Cloud"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WatercolorPaint"/>
+        <Class IRI="#Paint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wax"/>
+        <Class IRI="#Substance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Whiskey"/>
+        <Class IRI="#DistilledAlcoholicBeverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine"/>
+        <Class IRI="#AlcoholicBeverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine"/>
+        <Class IRI="#Beverage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wood"/>
+        <Class IRI="#PlantSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wood"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xenon"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zinc"/>
+        <Class IRI="#ElementalSubstance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZincOre"/>
+        <Class IRI="#Mineral"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Asphalt"/>
+        <Class IRI="#FossilFuel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Blood"/>
+        <Class IRI="#Serum"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalAcid"/>
+        <Class IRI="#ChemicalBase"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Depressant"/>
+        <Class IRI="#Stimulant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GSeriesNerveAgent"/>
+        <Class IRI="#VSeriesNerveAgent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GasMixture"/>
+        <Class IRI="#LiquidMixture"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OilPaint"/>
+        <Class IRI="#WatercolorPaint"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#CompoundSubstance"/>
+        <NamedIndividual IRI="#OzoneShield"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompoundSubstance"/>
+        <NamedIndividual IRI="#Permafrost"/>
+    </ClassAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -10,71 +10,293 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-125"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-125">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of the environmental conditions proposed in this work</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#AirQuality"/>
+        <Class IRI="#ApparentTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AtmosphericPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detours"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DewPointTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffuseHorizontalSolarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectNormalSolarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalConditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extra-terrestrialDirectNormalSolarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extra-terrestrialSolarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalHorizontalSolarRadiation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Humidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Noise"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pollution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Pressure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Smog"/>
+        <Class IRI="#RelativeHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadConditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarRadiation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceAirTemperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Temperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TrafficConditions"/>
+        <Class IRI="#TrafficAccidents"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Weather"/>
+        <Class IRI="#TrafficCongestion"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherConditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WetBulbTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindChill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindSpeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirTemperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClimateCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnvironmentalConditions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isClimateConditionOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ApparentTemperature"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AtmosphericPressure"/>
+        <Class IRI="#Pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detours"/>
+        <Class IRI="#RoadConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DewPointTemperature"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffuseHorizontalSolarRadiation"/>
+        <Class IRI="#SolarRadiation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectNormalSolarRadiation"/>
+        <Class IRI="#SolarRadiation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extra-terrestrialDirectNormalSolarRadiation"/>
+        <Class IRI="#SolarRadiation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extra-terrestrialSolarRadiation"/>
+        <Class IRI="#SolarRadiation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalHorizontalSolarRadiation"/>
+        <Class IRI="#SolarRadiation"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Humidity"/>
-        <Class IRI="#Weather"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Noise"/>
-        <Class IRI="#Pollution"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pollution"/>
-        <Class IRI="#AirQuality"/>
+        <Class IRI="#WeatherConditions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pressure"/>
-        <Class IRI="#Weather"/>
+        <Class IRI="#WeatherConditions"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Smog"/>
-        <Class IRI="#Pollution"/>
+        <Class IRI="#RelativeHumidity"/>
+        <Class IRI="#Humidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadConditions"/>
+        <Class IRI="#EnvironmentalConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarRadiation"/>
+        <Class IRI="#WeatherConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceAirTemperature"/>
+        <Class IRI="#Temperature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Temperature"/>
-        <Class IRI="#Weather"/>
+        <Class IRI="#WeatherConditions"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficAccidents"/>
+        <Class IRI="#RoadConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrafficCongestion"/>
+        <Class IRI="#RoadConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherConditions"/>
+        <Class IRI="#EnvironmentalConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WetBulbTemperature"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindChill"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindDirection"/>
+        <Class IRI="#WindMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindMeasure"/>
+        <Class IRI="#WeatherConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindSpeed"/>
+        <Class IRI="#WindMeasure"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasClimateCondition"/>
+        <ObjectProperty IRI="#hasEnvironmentalConditions"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isClimateConditionOf"/>
+        <ObjectProperty IRI="#hasClimateCondition"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isClimateConditionOf"/>
+        <Class IRI="#WeatherConditions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirTemperature"/>
+        <Class IRI="#SurfaceAirTemperature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClimateCondition"/>
+        <Class IRI="#WeatherConditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnvironmentalConditions"/>
+        <Class IRI="#EnvironmentalConditions"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ApparentTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">“feels like” temperature due to impact of wind and humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DewPointTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temperature at which dew forms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DiffuseHorizontalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diffuse (indirect) solar radiation at Earth’s surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DirectNormalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maximum direct (90 degree) downward solar radiation for selected location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extra-terrestrialDirectNormalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Direct (90 degree) downward solar radiation at top of atmosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extra-terrestrialSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Total direct and indirect solar radiation at top of atmosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GlobalHorizontalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Total direct and indirect solar radiation at Earth’s surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelativeHumidity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Percent of water in air</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SurfaceAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temperature of air shielded from radiation and moisture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WetBulbTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temperature due to impact of humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WindChill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Apparent temperature due to impact of wind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WindDirection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wind from direction (degrees)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WindSpeed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Speed of wind at desired altitude</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

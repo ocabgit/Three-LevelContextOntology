@@ -44,6 +44,9 @@
         <Class IRI="#Acidification"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Advertising"/>
     </Declaration>
     <Declaration>
@@ -78,6 +81,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#AmphibiousReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anniversary"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Answering"/>
@@ -429,6 +435,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Congratulating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Congress"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Constructing"/>
@@ -767,6 +776,9 @@
         <Class IRI="#Evaporating"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Execution"/>
     </Declaration>
     <Declaration>
@@ -1139,6 +1151,9 @@
         <Class IRI="#InternalTransfer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#InternationalCongress"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#InternationalDispute"/>
     </Declaration>
     <Declaration>
@@ -1448,6 +1463,9 @@
         <Class IRI="#Naming"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NationalCongress"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NaturalProcess"/>
     </Declaration>
     <Declaration>
@@ -1455,6 +1473,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Nodding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoisePollution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Offering"/>
@@ -1644,6 +1665,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ProduceStudies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Proliferation"/>
@@ -1886,6 +1910,9 @@
         <Class IRI="#Scholarship"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ScientificEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Score"/>
     </Declaration>
     <Declaration>
@@ -1995,6 +2022,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SoberingUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SocialInteraction"/>
@@ -2136,6 +2166,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TargetThreatReconnaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Tasting"/>
@@ -2420,19 +2453,100 @@
         <Class IRI="#XRayRadiation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#benefits"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#causes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#relatedEvent"/>
+        <ObjectProperty IRI="#changesLocation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#subProcess"/>
+        <ObjectProperty IRI="#computerResponseTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#detainee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#electionForOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#electionForPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#financialResponseTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#flowCurrent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpectedAudience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInvitedSpeaker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResponseTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStateOfProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#invadingVirus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContestOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEventOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInvitedSpeakerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProcessAbortedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTaskOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#moves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#systemMeasured"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accelerating"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AntarcticCircumpolarCurrent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BaseballStrike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buying"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Driving"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ExerciseAnOption"/>
@@ -2448,6 +2562,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#OtherSourcePowerGeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Working"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Abort"/>
@@ -2528,6 +2648,10 @@
     <SubClassOf>
         <Class IRI="#AmphibiousReconnaissance"/>
         <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anniversary"/>
+        <Class IRI="#ScheduledActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Answering"/>
@@ -2831,6 +2955,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Buying"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buying"/>
         <Class IRI="#FinancialTransaction"/>
     </SubClassOf>
     <SubClassOf>
@@ -2887,11 +3015,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CausingHappiness"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CausingHappiness"/>
         <Class IRI="#Process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CausingPain"/>
         <Class IRI="#CausingUnhappiness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CausingUnhappiness"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CausingUnhappiness"/>
@@ -2912,6 +3048,10 @@
     <SubClassOf>
         <Class IRI="#Ceremony"/>
         <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceremony"/>
+        <Class IRI="#ScheduledActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ceremony"/>
@@ -3102,12 +3242,20 @@
         <Class IRI="#ExpressingApproval"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Congress"/>
+        <Class IRI="#ScientificEvent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Constructing"/>
         <Class IRI="#Making"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ContactReconnaissance"/>
         <Class IRI="#ReconnaissanceOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentDevelopment"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ContentDevelopment"/>
@@ -3127,7 +3275,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cooperation"/>
-        <Class IRI="#SocialInteraction"/>
+        <Class IRI="#FreshwaterOverutilization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Copying"/>
@@ -3255,6 +3403,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DeployingWeaponOfMassDestruction"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeployingWeaponOfMassDestruction"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -3319,6 +3471,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Digging"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digging"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -3367,6 +3523,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DismantlingWeaponOfMassDestruction"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DismantlingWeaponOfMassDestruction"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -3404,6 +3564,10 @@
     <SubClassOf>
         <Class IRI="#Dodging"/>
         <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dodging"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dodging"/>
@@ -3447,6 +3611,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Drilling"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drilling"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -3483,11 +3651,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DualObjectProcess"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DualObjectProcess"/>
         <Class IRI="#Process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ducking"/>
         <Class IRI="#BodyMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ducking"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ducking"/>
@@ -3536,6 +3712,10 @@
     <SubClassOf>
         <Class IRI="#Election"/>
         <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Election"/>
+        <Class IRI="#ScheduledActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ElectoralCollegeElection"/>
@@ -3591,6 +3771,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EngineersSubprocess"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EngineersSubprocess"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -3628,6 +3812,10 @@
     <SubClassOf>
         <Class IRI="#Espionage"/>
         <Class IRI="#PoliticalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evacuation"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Evacuation"/>
@@ -3978,6 +4166,10 @@
         <Class IRI="#LeavingAnOrganization"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Graduation"/>
+        <Class IRI="#ScheduledActivity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GrassFire"/>
         <Class IRI="#Combustion"/>
     </SubClassOf>
@@ -3988,6 +4180,10 @@
     <SubClassOf>
         <Class IRI="#Growth"/>
         <Class IRI="#AutonomicProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guiding"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Guiding"/>
@@ -4223,6 +4419,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IntentionalPsychologicalProcess"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntentionalPsychologicalProcess"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -4235,11 +4435,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InternalChange"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalChange"/>
         <Class IRI="#Process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InternalTransfer"/>
         <Class IRI="#FinancialTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternationalCongress"/>
+        <Class IRI="#Congress"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InternationalDispute"/>
@@ -4300,6 +4508,10 @@
     <SubClassOf>
         <Class IRI="#Jumping"/>
         <Class IRI="#MotionUpward"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keeping"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Keeping"/>
@@ -4471,6 +4683,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Listening"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Listening"/>
         <Class IRI="#Hearing"/>
     </SubClassOf>
     <SubClassOf>
@@ -4480,6 +4696,10 @@
     <SubClassOf>
         <Class IRI="#LoadingWeapon"/>
         <Class IRI="#Inserting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Looking"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Looking"/>
@@ -4527,11 +4747,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Maintaining"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintaining"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Making"/>
         <Class IRI="#Creation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Making"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Making"/>
@@ -4544,6 +4772,10 @@
     <SubClassOf>
         <Class IRI="#Managing"/>
         <Class IRI="#OrganizationalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maneuver"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Maneuver"/>
@@ -4592,6 +4824,10 @@
     <SubClassOf>
         <Class IRI="#MechanicalResonance"/>
         <Class IRI="#Resonance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meeting"/>
+        <Class IRI="#ScheduledActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Meeting"/>
@@ -4652,6 +4888,10 @@
     <SubClassOf>
         <Class IRI="#MixedTideProcess"/>
         <Class IRI="#TidalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modeling"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Modeling"/>
@@ -4734,6 +4974,14 @@
         <Class IRI="#Declaring"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NationalCongress"/>
+        <Class IRI="#Congress"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalProcess"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NaturalProcess"/>
         <Class IRI="#Process"/>
     </SubClassOf>
@@ -4750,6 +4998,10 @@
         <Class IRI="#Gesture"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NoisePollution"/>
+        <Class IRI="#Pollution"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Offering"/>
         <Class IRI="#Committing"/>
     </SubClassOf>
@@ -4760,6 +5012,10 @@
     <SubClassOf>
         <Class IRI="#OfferingToPurchase"/>
         <Class IRI="#Offering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OlympicGames"/>
+        <Class IRI="#ScheduledActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OlympicGames"/>
@@ -4951,6 +5207,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Poking"/>
+        <Class IRI="#DeducedActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poking"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
     <SubClassOf>
@@ -5000,6 +5260,10 @@
     <SubClassOf>
         <Class IRI="#Pouring"/>
         <Class IRI="#Transfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerGeneration"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PowerGeneration"/>
@@ -5062,6 +5326,10 @@
         <Class IRI="#PsychologicalOperation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Programming"/>
+        <Class IRI="#IntentionalProcess"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Proliferation"/>
         <Class IRI="#Increasing"/>
     </SubClassOf>
@@ -5092,6 +5360,10 @@
     <SubClassOf>
         <Class IRI="#Punishing"/>
         <Class IRI="#RegulatoryProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pursuing"/>
+        <Class IRI="#DeducedActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pursuing"/>
@@ -5410,6 +5682,10 @@
         <Class IRI="#Funding"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ScientificEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Score"/>
         <Class IRI="#GameShot"/>
     </SubClassOf>
@@ -5578,6 +5854,10 @@
         <Class IRI="#PsychologicalProcess"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SocialEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SocialInteraction"/>
         <Class IRI="#IntentionalProcess"/>
     </SubClassOf>
@@ -5588,6 +5868,10 @@
     <SubClassOf>
         <Class IRI="#SocialParty"/>
         <Class IRI="#RecreationOrExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialParty"/>
+        <Class IRI="#ScheduledActivity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SoilDegradation"/>
@@ -6090,6 +6374,10 @@
         <Class IRI="#RecreationOrExercise"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Vacationing"/>
+        <Class IRI="#ScheduledActivity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vandalism"/>
         <Class IRI="#Destruction"/>
     </SubClassOf>
@@ -6330,6 +6618,10 @@
         <Class IRI="#Encoding"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#DeducedActivity"/>
+        <Class IRI="#ScheduledActivity"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Deposit"/>
         <Class IRI="#Withdrawal"/>
     </DisjointClasses>
@@ -6410,12 +6702,24 @@
         <Class IRI="#Untying"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Accelerating"/>
+        <NamedIndividual IRI="#Accelerating"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#WaterMotion"/>
         <NamedIndividual IRI="#AntarcticCircumpolarCurrent"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BaseballManeuver"/>
         <NamedIndividual IRI="#BaseballStrike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinancialTransaction"/>
+        <NamedIndividual IRI="#Buying"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driving"/>
+        <NamedIndividual IRI="#Driving"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FinancialTransaction"/>
@@ -6437,36 +6741,190 @@
         <Class IRI="#PowerGeneration"/>
         <NamedIndividual IRI="#OtherSourcePowerGeneration"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Working"/>
+        <NamedIndividual IRI="#Working"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isEventOf"/>
+        <ObjectProperty IRI="#hasEvent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInvitedSpeaker"/>
+        <ObjectProperty IRI="#isInvitedSpeakerOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTaskOf"/>
+        <ObjectProperty IRI="#hasTask"/>
+    </InverseObjectProperties>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="#relatedEvent"/>
+        <ObjectProperty IRI="#hasRelatedEvent"/>
     </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInvitedSpeaker"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPerformance"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isInvitedSpeakerOf"/>
+    </AsymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#subProcess"/>
+        <ObjectProperty IRI="#coordinates"/>
     </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSubProcess"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInvitedSpeaker"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPerformance"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isInvitedSpeakerOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#benefits"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#causes"/>
         <Class IRI="#Process"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#relatedEvent"/>
+        <ObjectProperty IRI="#changesLocation"/>
+        <Class IRI="#Translocation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#computerResponseTo"/>
+        <Class IRI="#ComputerResponse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coordinates"/>
         <Class IRI="#Process"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#subProcess"/>
+        <ObjectProperty IRI="#detainee"/>
+        <Class IRI="#Confining"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#electionForOrganization"/>
+        <Class IRI="#Election"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#electionForPosition"/>
+        <Class IRI="#Election"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#financialResponseTo"/>
+        <Class IRI="#FinancialResponse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#flowCurrent"/>
+        <Class IRI="#WaterMotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExpectedAudience"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvitedSpeaker"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedEvent"/>
         <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResponseTime"/>
+        <Class IRI="#UserRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStateOfProcess"/>
+        <Class IRI="#ComputerProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubProcess"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#invadingVirus"/>
+        <Class IRI="#ViralCellInvasion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContestOf"/>
+        <Class IRI="#Contest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEventOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProcessAbortedOf"/>
+        <Class IRI="#Abort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTaskOf"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#moves"/>
+        <Class IRI="#Motion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#systemMeasured"/>
+        <Class IRI="#MeasuringPerformance"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#causes"/>
         <Class IRI="#Process"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#relatedEvent"/>
+        <ObjectProperty IRI="#computerResponseTo"/>
+        <Class IRI="#UserRequest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinates"/>
         <Class IRI="#Process"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#subProcess"/>
+        <ObjectProperty IRI="#financialResponseTo"/>
+        <Class IRI="#FinancialRequest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPerformance"/>
+        <Class IRI="#Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedEvent"/>
         <Class IRI="#Process"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubProcess"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTask"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInvitedSpeakerOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProcessAbortedOf"/>
+        <Class IRI="#ComputerProcess"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#SocialParty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Party</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

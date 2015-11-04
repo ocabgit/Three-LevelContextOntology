@@ -35,6 +35,9 @@
         <Class IRI="#ATMSlot"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Above"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AirRoute"/>
     </Declaration>
     <Declaration>
@@ -560,6 +563,9 @@
         <Class IRI="#LocalizablePlace"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LocationCoordinates"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Longitude"/>
     </Declaration>
     <Declaration>
@@ -647,6 +653,9 @@
         <Class IRI="#NaturalSatellite"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NextTo"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NuclearWeaponProductionFacility"/>
     </Declaration>
     <Declaration>
@@ -657,6 +666,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OfficeBuilding"/>
@@ -800,6 +812,9 @@
         <Class IRI="#Region"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RelativeLocation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ReligiousBuilding"/>
     </Declaration>
     <Declaration>
@@ -918,6 +933,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SlopedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartCity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sound"/>
@@ -1160,52 +1178,94 @@
         <Class IRI="#Workshop"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#administrativeCenter"/>
+        <ObjectProperty IRI="#HasDependentGeopoliticalArea"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#capitalCity"/>
+        <ObjectProperty IRI="#claimedTerritoryBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+        <ObjectProperty IRI="#existsIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#diplomaticRelations"/>
+        <ObjectProperty IRI="#hasAdministrativeCenter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#geographicSubregion"/>
+        <ObjectProperty IRI="#hasCapitalCity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+        <ObjectProperty IRI="#hasCoordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiplomaticRelations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeographicSubregion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeopoliticalSubdivision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostDistrict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostPostcodeArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPostStreet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryGeopoliticalSubdivision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelativeLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTenant"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#internationalDispute"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty IRI="#isCurrentLocationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#postCity"/>
+        <ObjectProperty IRI="#isLocationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#postCountry"/>
+        <ObjectProperty IRI="#isPopulatedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#postDistrict"/>
+        <ObjectProperty IRI="#isRelativeLocationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#postPostcodeArea"/>
+        <ObjectProperty IRI="#isSpatiallySubsumedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#postStreet"/>
+        <DataProperty IRI="#latitude"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#primaryGeopoliticalSubdivision"/>
+        <DataProperty IRI="#locationName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#longtitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lotNumber"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AachenAirport"/>
@@ -1254,6 +1314,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AmericanSamoa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amsterdam"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Andorra"/>
@@ -1323,6 +1386,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BaltimoreMaryland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BassasDaIndia"/>
@@ -1653,6 +1719,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SouthernOcean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stockholm"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#USVirginIslands"/>
@@ -1682,6 +1751,10 @@
         <Class IRI="#Hole"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Above"/>
+        <Class IRI="#RelativeLocation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AirRoute"/>
         <Class IRI="#TransitRoute"/>
     </SubClassOf>
@@ -2551,6 +2624,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Latitude"/>
+        <Class IRI="#LocationCoordinates"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Latitude"/>
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
@@ -2576,6 +2653,10 @@
     <SubClassOf>
         <Class IRI="#LocalizablePlace"/>
         <Class IRI="#GeographicArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Longitude"/>
+        <Class IRI="#LocationCoordinates"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Longitude"/>
@@ -2746,6 +2827,10 @@
         <Class IRI="#Satellite"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NextTo"/>
+        <Class IRI="#RelativeLocation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NuclearWeaponProductionFacility"/>
         <Class IRI="#WMDWeaponsProductionFacility"/>
     </SubClassOf>
@@ -2772,6 +2857,10 @@
     <SubClassOf>
         <Class IRI="#Ocean"/>
         <Class IRI="#SaltWaterArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <Class IRI="#IndoorSpace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OfficeBuilding"/>
@@ -3256,6 +3345,10 @@
     <SubClassOf>
         <Class IRI="#SlopedArea"/>
         <Class IRI="#LandForm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartCity"/>
+        <Class IRI="#City"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sound"/>
@@ -3814,6 +3907,10 @@
         <NamedIndividual IRI="#AmericanSamoa"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SmartCity"/>
+        <NamedIndividual IRI="#Amsterdam"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EuropeanNation"/>
         <NamedIndividual IRI="#Andorra"/>
     </ClassAssertion>
@@ -3928,6 +4025,10 @@
     <ClassAssertion>
         <Class IRI="#AmericanCity"/>
         <NamedIndividual IRI="#BaltimoreMaryland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SmartCity"/>
+        <NamedIndividual IRI="#Barcelona"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DependencyOrSpecialSovereigntyArea"/>
@@ -4406,6 +4507,10 @@
         <NamedIndividual IRI="#SouthernOcean"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SmartCity"/>
+        <NamedIndividual IRI="#Stockholm"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Archipelago"/>
         <NamedIndividual IRI="#USVirginIslands"/>
     </ClassAssertion>
@@ -4421,142 +4526,249 @@
         <Class IRI="#BodyOfWater"/>
         <NamedIndividual IRI="#WorldOcean"/>
     </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRelativeLocation"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCurrentLocationOf"/>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRelativeLocationOf"/>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#contains"/>
-        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty IRI="#isCurrentLocationOf"/>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
     </InverseObjectProperties>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#diplomaticRelations"/>
-    </SymmetricObjectProperty>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelativeLocation"/>
+        <ObjectProperty IRI="#isRelativeLocationOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCoordinates"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#HasDependentGeopoliticalArea"/>
+    </TransitiveObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#contains"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#geographicSubregion"/>
+        <ObjectProperty IRI="#hasGeographicSubregion"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+        <ObjectProperty IRI="#hasGeopoliticalSubdivision"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasRelativeLocation"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCurrentLocationOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isLocationOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isRelativeLocationOf"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#administrativeCenter"/>
+        <ObjectProperty IRI="#HasDependentGeopoliticalArea"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#capitalCity"/>
-        <Class IRI="#City"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
-        <Class IRI="#GeopoliticalArea"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#diplomaticRelations"/>
-        <Class IRI="#GeopoliticalArea"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#geographicSubregion"/>
+        <ObjectProperty IRI="#claimedTerritoryBy"/>
         <Class IRI="#GeographicArea"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAdministrativeCenter"/>
         <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCapitalCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDiplomaticRelations"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGeographicSubregion"/>
+        <Class IRI="#GeographicArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGeopoliticalSubdivision"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPostCity"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPostCountry"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPostDistrict"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPostPostcodeArea"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPostStreet"/>
+        <Class IRI="#PostalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrimaryGeopoliticalSubdivision"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTenant"/>
+        <Class IRI="#Residence"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#internationalDispute"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postCity"/>
-        <Class IRI="#PostalPlace"/>
+        <ObjectProperty IRI="#isPopulatedBy"/>
+        <Class IRI="#Region"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postCountry"/>
-        <Class IRI="#PostalPlace"/>
+        <ObjectProperty IRI="#isRelativeLocationOf"/>
+        <Class IRI="#RelativeLocation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postDistrict"/>
-        <Class IRI="#PostalPlace"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postPostcodeArea"/>
-        <Class IRI="#PostalPlace"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postStreet"/>
-        <Class IRI="#PostalPlace"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#primaryGeopoliticalSubdivision"/>
-        <Class IRI="#GeopoliticalArea"/>
+        <ObjectProperty IRI="#isSpatiallySubsumedBy"/>
+        <Class IRI="#GeographicArea"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#administrativeCenter"/>
+        <ObjectProperty IRI="#HasDependentGeopoliticalArea"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#capitalCity"/>
+        <ObjectProperty IRI="#existsIn"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAdministrativeCenter"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#dependentGeopoliticalArea"/>
+        <ObjectProperty IRI="#hasCapitalCity"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#diplomaticRelations"/>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <Class IRI="#LocationCoordinates"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiplomaticRelations"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#geographicSubregion"/>
+        <ObjectProperty IRI="#hasGeographicSubregion"/>
         <Class IRI="#GeographicArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#geopoliticalSubdivision"/>
+        <ObjectProperty IRI="#hasGeopoliticalSubdivision"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#internationalDispute"/>
-        <Class IRI="#GeopoliticalArea"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#postCity"/>
+        <ObjectProperty IRI="#hasPostCity"/>
         <Class IRI="#City"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#postCountry"/>
+        <ObjectProperty IRI="#hasPostCountry"/>
         <Class IRI="#GeopoliticalArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#postDistrict"/>
+        <ObjectProperty IRI="#hasPostDistrict"/>
         <Class IRI="#StateOrProvince"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#postPostcodeArea"/>
+        <ObjectProperty IRI="#hasPostPostcodeArea"/>
         <Class IRI="#PostcodeArea"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#postStreet"/>
+        <ObjectProperty IRI="#hasPostStreet"/>
         <Class IRI="#Roadway"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#primaryGeopoliticalSubdivision"/>
+        <ObjectProperty IRI="#hasPrimaryGeopoliticalSubdivision"/>
         <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelativeLocation"/>
+        <Class IRI="#RelativeLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#internationalDispute"/>
+        <Class IRI="#GeopoliticalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpatiallySubsumedBy"/>
+        <Class IRI="#GeographicArea"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#longtitude"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
+        <DataProperty IRI="#latitude"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locationName"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#longtitude"/>
         <Class IRI="#Region"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lotNumber"/>
+        <Class IRI="#GeographicArea"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#longtitude"/>
         <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lotNumber"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>

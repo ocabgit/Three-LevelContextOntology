@@ -16,27 +16,482 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AfghanAfghaniCoin"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#Agenda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanExpressCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BankCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlueChipStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BorrowedStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BritishPoundCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CanadianDollarCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Check"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contacts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Currency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrencyBill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrencyCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DebitCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefensiveStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscoverCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuroCentCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuroDollarCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EuropeanProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpiredCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrenchFrancCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GermanMarkCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrowthStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ItalianLireCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JapaneseYenCoin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ManagedEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MasterCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Note"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PayCheck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PennyStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreferredStock"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Project"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Requirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestrictedStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TajikSomoniCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitedStatesCentCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitedStatesDollarBill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitedStatesFiveCentCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitedStatesQuarterCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitedStatesTenCentCoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValidCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueStock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisaCard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScheduledActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContactOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isListedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequirementOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isScheduledActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RISCOSS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Receipt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SUPERSEDE"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#term_status"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AfghanAfghaniCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Agenda"/>
         <Class IRI="#ManagedEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AmericanExpressCard"/>
+        <Class IRI="#CreditCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BankCard"/>
+        <Class IRI="#FinancialInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlueChipStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BorrowedStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BritishPoundCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CanadianDollarCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cash"/>
+        <Class IRI="#FinancialInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Check"/>
+        <Class IRI="#FinancialInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contacts"/>
+        <Class IRI="#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditCard"/>
+        <Class IRI="#BankCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Currency"/>
+        <Class IRI="#FinancialInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CurrencyBill"/>
+        <Class IRI="#Currency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CurrencyCoin"/>
+        <Class IRI="#Currency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DebitCard"/>
+        <Class IRI="#BankCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefensiveStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiscoverCard"/>
+        <Class IRI="#CreditCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuroCentCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuroDollarCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EuropeanProject"/>
+        <Class IRI="#Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpiredCard"/>
+        <Class IRI="#BankCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialInstrument"/>
+        <Class IRI="#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrenchFrancCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GermanMarkCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrowthStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItalianLireCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JapaneseYenCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MasterCard"/>
+        <Class IRI="#CreditCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Note"/>
+        <Class IRI="#FinancialInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PayCheck"/>
+        <Class IRI="#Check"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PennyStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreferredStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Project"/>
         <Class IRI="#ManagedEntity"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Requirement"/>
+        <Class IRI="#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestrictedStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stock"/>
+        <Class IRI="#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TajikSomoniCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitedStatesCentCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitedStatesDollarBill"/>
+        <Class IRI="#CurrencyBill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitedStatesFiveCentCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitedStatesQuarterCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitedStatesTenCentCoin"/>
+        <Class IRI="#CurrencyCoin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserAccount"/>
+        <Class IRI="#ManagedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValidCard"/>
+        <Class IRI="#BankCard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueStock"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisaCard"/>
+        <Class IRI="#CreditCard"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ExpiredCard"/>
+        <Class IRI="#ValidCard"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#EuropeanProject"/>
+        <NamedIndividual IRI="#RISCOSS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinancialInstrument"/>
+        <NamedIndividual IRI="#Receipt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EuropeanProject"/>
+        <NamedIndividual IRI="#SUPERSEDE"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasContact"/>
+        <ObjectProperty IRI="#isContactOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRequirementOf"/>
+        <ObjectProperty IRI="#hasRequirement"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isScheduledActivityOf"/>
+        <ObjectProperty IRI="#hasScheduledActivity"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRequirement"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isRequirementOf"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasRequirement"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isRequirementOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Agenda"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContact"/>
+        <Class IRI="#Agenda"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScheduledActivity"/>
+        <Class IRI="#Agenda"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isListedOn"/>
+        <Class IRI="#Stock"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRequirementOf"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Contacts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRequirement"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContactOf"/>
+        <Class IRI="#Agenda"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isScheduledActivityOf"/>
+        <Class IRI="#Agenda"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#term_status"/>
+        <IRI>#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A project (a collective endeavour of some kind).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://xmlns.com/foaf/0.1/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Project</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">User profile is a module combined with vocabulary coming from different ontologies in the area of context including SUMO, CONON, SOUPA, etc. </Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AccessRights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunityCultureInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunityPreferencesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunityProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DescriptionPreferencesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceCapabilityInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceFunctionalitiesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevicePhysicalPropertiesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectionalAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardwareProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IPAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterfacePreferencesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocationProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkCapabilityInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkProtocolInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkTopologyInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSecureInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectPhysicalPropertiesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositionalAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecureInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceCapabilityInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServicePreferencesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceTypeInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymbolicRepresentationInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymmetricPositionalAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserBackgroundSkillsCapabilitiesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserContactInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserCultureInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserDemographicInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserEnvisionsInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserExpertiseInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserHealth&amp;MedicalInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserHistoricalInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserNameInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPhysicalFeaturesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPreferencesInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPreferredChannelDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPreferredDeviceDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPriority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserProfessionalInf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPsychologicalFeaturesInf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHomeAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIPAddressOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Above"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adjacent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Below"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Downhill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Downstairs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Downstream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Downwind"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#East"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighPriority"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Horizontal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Left"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowPriority"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Near"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NextTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#North"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Northeast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nortwest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#On"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Outside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#South"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Southeast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Southwest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uphill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upstairs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upstream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upwind"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vertical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#West"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#definition"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AccessRights"/>
+        <Class IRI="#SecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <Class IRI="#UserContactInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+        <Class IRI="#PositionalAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunityCultureInf"/>
+        <Class IRI="#CommunityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunityPreferencesInf"/>
+        <Class IRI="#CommunityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DescriptionPreferencesInf"/>
+        <Class IRI="#UserPreferencesInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceCapabilityInf"/>
+        <Class IRI="#DeviceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceFunctionalitiesInf"/>
+        <Class IRI="#DeviceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevicePhysicalPropertiesInf"/>
+        <Class IRI="#DeviceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectionalAttribute"/>
+        <Class IRI="#PositionalAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardwareProfile"/>
+        <Class IRI="#DeviceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IPAddress"/>
+        <Class IRI="#Address"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InterfacePreferencesInf"/>
+        <Class IRI="#UserPreferencesInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkCapabilityInf"/>
+        <Class IRI="#NetworkProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkProtocolInf"/>
+        <Class IRI="#NetworkProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkTopologyInf"/>
+        <Class IRI="#NetworkProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonSecureInformation"/>
+        <Class IRI="#UserProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectPhysicalPropertiesInf"/>
+        <Class IRI="#ObjectProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositionalAttribute"/>
+        <Class IRI="#LocationProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecureInformation"/>
+        <Class IRI="#UserProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceCapabilityInf"/>
+        <Class IRI="#ServiceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServicePreferencesInf"/>
+        <Class IRI="#UserPreferencesInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceTypeInf"/>
+        <Class IRI="#ServiceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareProfile"/>
+        <Class IRI="#DeviceProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymbolicRepresentationInf"/>
+        <Class IRI="#LocationProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymmetricPositionalAttribute"/>
+        <Class IRI="#PositionalAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserBackgroundSkillsCapabilitiesInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserContactInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserCultureInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserDemographicInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserEnvisionsInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserExpertiseInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserHealth&amp;MedicalInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserHistoricalInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserID"/>
+        <Class IRI="#SecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserNameInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPhysicalFeaturesInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreferencesInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreferredChannelDescription"/>
+        <Class IRI="#DescriptionPreferencesInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreferredDeviceDescription"/>
+        <Class IRI="#DescriptionPreferencesInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPriority"/>
+        <Class IRI="#UserPreferencesInf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserProfessionalInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPsychologicalFeaturesInf"/>
+        <Class IRI="#NonSecureInformation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#NonSecureInformation"/>
+        <Class IRI="#SecureInformation"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#Above"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Above"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#Adjacent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#Below"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Below"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Downhill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Downstairs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Downstream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Downwind"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#East"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UserPriority"/>
+        <NamedIndividual IRI="#HighPriority"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Horizontal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Inside"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#Left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UserPriority"/>
+        <NamedIndividual IRI="#LowPriority"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#Near"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#NextTo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#North"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#Northeast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#Nortwest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#On"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Outside"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiSymmetricPositionalAttribute"/>
+        <NamedIndividual IRI="#Right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#South"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#Southeast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#Southwest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Uphill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Upstairs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Upstream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Upwind"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionalAttribute"/>
+        <NamedIndividual IRI="#Vertical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectionalAttribute"/>
+        <NamedIndividual IRI="#West"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIPAddressOf"/>
+        <Class IRI="#IPAddress"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddress"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#definition"/>
+        <IRI>#SymbolicRepresentationInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Symbolic representation location describes the location using specific Symbolic representation such as No 2. Meeting room.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

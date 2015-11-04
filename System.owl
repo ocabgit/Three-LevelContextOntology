@@ -16,10 +16,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a system from which we can represent the elements involved in the following definitions:
@@ -37,12 +38,38 @@ System (a group of physiologically or anatomically related organs or parts) &quo
         <Class IRI="#System"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSystemOf"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="#definition"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#GPS"/>
         <Class IRI="#System"/>
     </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSystemOf"/>
+        <ObjectProperty IRI="#hasSystem"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSystem"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSystemOf"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSystem"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSystemOf"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
         <IRI>#GPS</IRI>

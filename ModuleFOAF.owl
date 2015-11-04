@@ -1,0 +1,736 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="#title"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Friend of a Friend (FOAF) vocabulary</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agent profile is a module that adopts vocabulary coming from FOAF ontology. The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language. </Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Gmail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineChatAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineEcommerceAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineGamingAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineWebmailAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutlookMail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YahooMail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aimChatID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#depiction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#depicts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAccountServiceHomepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#homepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#image"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrimaryTopicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jabberID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#knows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#logo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#made"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mbox_sha1sum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#msnChatID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#openid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#page"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#personalMailbox"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#primaryTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publications"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schoolHomepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#thumbnail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tipjar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#topicInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weblog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#workInfoHomepage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#workplaceHomepage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accountName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aimChatID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#birthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#familyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#geekcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#givenName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#icqChatID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#msnChatID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#myersBriggs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nickname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sha1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#skypeID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#surname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yahooChatID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cabrera.bejar82@gmail.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#marc.oriol@gmail.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#marco.jordi@gmail.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xavier.franch@gmail.com"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Gmail"/>
+        <Class IRI="#OnlineWebmailAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineChatAccount"/>
+        <Class IRI="#OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineEcommerceAccount"/>
+        <Class IRI="#OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineGamingAccount"/>
+        <Class IRI="#OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineWebmailAccount"/>
+        <Class IRI="#OnlineAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutlookMail"/>
+        <Class IRI="#OnlineWebmailAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YahooMail"/>
+        <Class IRI="#OnlineWebmailAccount"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Gmail"/>
+        <NamedIndividual IRI="#cabrera.bejar82@gmail.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gmail"/>
+        <NamedIndividual IRI="#marc.oriol@gmail.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gmail"/>
+        <NamedIndividual IRI="#marco.jordi@gmail.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gmail"/>
+        <NamedIndividual IRI="#xavier.franch@gmail.com"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#homepage"/>
+        <ObjectProperty IRI="#isPrimaryTopicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#homepage"/>
+        <ObjectProperty IRI="#page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#image"/>
+        <ObjectProperty IRI="#depiction"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPrimaryTopicOf"/>
+        <ObjectProperty IRI="#page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#openid"/>
+        <ObjectProperty IRI="#isPrimaryTopicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tipjar"/>
+        <ObjectProperty IRI="#page"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weblog"/>
+        <ObjectProperty IRI="#page"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#depiction"/>
+        <ObjectProperty IRI="#depicts"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPrimaryTopicOf"/>
+        <ObjectProperty IRI="#primaryTopic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#made"/>
+        <ObjectProperty IRI="#maker"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#primaryTopic"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#aimChatID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#homepage"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isPrimaryTopicOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#jabberID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#logo"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#mbox_sha1sum"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#msnChatID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#openid"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#personalMailbox"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#weblog"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAccountServiceHomepage"/>
+        <Class IRI="#OnlineAccount"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAccount"/>
+        <Class IRI="#OnlineAccount"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aimChatID"/>
+        <DataProperty IRI="#nickname"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#icqChatID"/>
+        <DataProperty IRI="#nickname"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#msnChatID"/>
+        <DataProperty IRI="#nickname"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#skypeID"/>
+        <DataProperty IRI="#nickname"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#yahooChatID"/>
+        <DataProperty IRI="#nickname"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#birthday"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#gender"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accountName"/>
+        <Class IRI="#OnlineAccount"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#accountName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aimChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#birthday"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#familyName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#geekcode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#icqChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#msnChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#myersBriggs"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#skypeID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surname"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yahooChatID"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OnlineAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnlineAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Online Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OnlineChatAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An online chat account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnlineChatAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Online Chat Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OnlineEcommerceAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An online e-commerce account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnlineEcommerceAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Online E-commerce Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OnlineGamingAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An online gaming account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnlineGamingAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Online Gaming Account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accountName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates the name (identifier) associated with this online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#age</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The age in years of some agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aimChatID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An AIM chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#birthday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#depiction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A depiction of something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#depicts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A thing depicted in this representation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#familyName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The family name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#firstName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The first name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#geekcode</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A textual geekcode for this person, see http://www.geekcode.com/geek.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#gender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The gender of this Agent (typically but not necessarily &apos;male&apos; or &apos;female&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#givenName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The given name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates an account held by this agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAccountServiceHomepage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates a homepage of the service provide for this online account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#homepage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A homepage for something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#image</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one&apos;s photo on a homepage).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMemberOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates a member of a Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPrimaryTopicOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document that this thing is the primary topic of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#jabberID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A jabber ID for something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#knows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person known by this person (indicating some level of reciprocated interaction between the parties).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lastName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The last name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#logo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A logo representing something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#made</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Something that was made by this agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An agent that  made this thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mbox_sha1sum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">- sha1sum of a personal mailbox URI name
+- The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#msnChatID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An MSN chat ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#myersBriggs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Myers Briggs (MBTI) personality classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A name for something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nickname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#openid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An OpenID for an Agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#page</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A page or document about this thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#personalMailbox</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a &apos;static inverse functional property&apos;, in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#phone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#primaryTopic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The primary topic of some page or document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#publications</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A link to the publications of this person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#schoolHomepage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A homepage of a school attended by the person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sha1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">- sha1sum (hex)
+- A sha1sum hash, in hex.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#skypeID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Skype ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#status</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A string expressing what the user is happy for the general public (normally) to know about their current activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#surname</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The surname of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#thumbnail</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A derived thumbnail image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tipjar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A tipjar document for this agent, describing means for payment and reward.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Title (Mr, Mrs, Ms, Dr. etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#topicInterest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A thing of interest to this person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weblog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A weblog of some thing (whether person, group, company etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#workInfoHomepage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A work info homepage of some person; a page about their work for some organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#workplaceHomepage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A workplace homepage of some person; the homepage of an organization they work for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#yahooChatID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A Yahoo chat ID</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

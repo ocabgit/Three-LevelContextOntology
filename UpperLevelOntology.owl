@@ -59,13 +59,85 @@
         <Class IRI="#Time"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#enemy"/>
+        <ObjectProperty IRI="#affects"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#exportPartner"/>
+        <ObjectProperty IRI="#agentOperatesInArea"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#importPartner"/>
+        <ObjectProperty IRI="#changesStateStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#characterizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnniversary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnemy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnvisions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExportPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImportPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatusState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interactsWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdaptedAccordingTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCustomerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEnvironmentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSupervisedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#synonym"/>
@@ -106,37 +178,186 @@
         <Class IRI="#Time"/>
         <Class IRI="#ContextInformation"/>
     </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <ObjectProperty IRI="#isEnvironmentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasResource"/>
+        <ObjectProperty IRI="#isResourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </InverseObjectProperties>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="#enemy"/>
+        <ObjectProperty IRI="#hasEnemy"/>
     </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#interactsWith"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRole"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#affects"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasRole"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#enemy"/>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#ContextInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#agentOperatesInArea"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#exportPartner"/>
+        <ObjectProperty IRI="#changesStateStatus"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#characterizes"/>
+        <Class IRI="#ContextInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnniversary"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#importPartner"/>
+        <ObjectProperty IRI="#hasEnemy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnvisions"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExportPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasImportPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProfile"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interactsWith"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAdaptedAccordingTo"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEnvironmentOf"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isResourceOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSupervisedBy"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possesses"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#enemy"/>
+        <ObjectProperty IRI="#affects"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#characterizes"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAgent"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#exportPartner"/>
+        <ObjectProperty IRI="#hasEnemy"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#importPartner"/>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExportPartner"/>
         <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasImportPartner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProfile"/>
+        <Class IRI="#Profile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResource"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStatusState"/>
+        <Class IRI="#States&amp;Status"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interactsWith"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAdaptedAccordingTo"/>
+        <Class IRI="#ContextInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Resource"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#Activity</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Task, Action, Process</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Task, Action</Literal>
     </AnnotationAssertion>
 </Ontology>
 

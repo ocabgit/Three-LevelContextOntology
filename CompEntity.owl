@@ -23,8 +23,20 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a computational entity taken from CONON</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of a computational entity taken from CONON and the combination of other context ontologies</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="#AudioFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudioVisualFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutomaticApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BitsPerSecond"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#CompAgent"/>
     </Declaration>
@@ -35,19 +47,112 @@
         <Class IRI="#CompEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CompNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompResource"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CompService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerPassword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerPath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsoleApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DOCFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalSignature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EBookFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JPGFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MUSFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediaPlayer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Middleware"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MonitorApplicationCmd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitorComponentCmd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitorConnectivityCmd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitoringProgram"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MultiAgentSystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Network"/>
+        <Class IRI="#MultimediaFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OS-X"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PDFFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Packet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RM-StartApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceManagementProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShutdownBlock"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Software"/>
@@ -56,7 +161,154 @@
         <Class IRI="#SoftwareAgent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SoftwareFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solaris"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpreadsheetDesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartupBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utility"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#VirtualMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebPage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Windows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WordProcessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XMLFile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAvailableNetwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBandwidth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDependencyDelay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirectory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNetworkProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSoftware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAvailableNetworkOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCPUOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDirectoryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMonitoredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPasswordOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProgramCopyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRunningOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ramMemory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.cs.upc.edu/jmarco/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/dameller/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~cayala/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~franch/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~moriol/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~ocabrera/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~ohernan/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealPlayer4.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealPlayer9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealPlayerG2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows98"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WindowsXP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.smart-cities.eu/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.smartcities.es/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.smartcityexpo.com/"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://mail.google.com/"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#definition"/>
@@ -65,6 +317,30 @@
         <AnnotationProperty IRI="#synonym"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#AudioFile"/>
+        <Class IRI="#ComputerFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudioVisualFile"/>
+        <Class IRI="#AudioFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudioVisualFile"/>
+        <Class IRI="#ImageFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudioVisualFile"/>
+        <Class IRI="#MultimediaFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutomaticApplication"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BitsPerSecond"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CompAgent"/>
         <Class IRI="#CompEntity"/>
     </SubClassOf>
@@ -73,26 +349,154 @@
         <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CompNetwork"/>
+        <Class IRI="#CompSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompResource"/>
+        <Class IRI="#CompSystem"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CompService"/>
         <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompSystem"/>
+        <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerData"/>
+        <Class IRI="#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerFile"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerPassword"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerPath"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerProgram"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerReport"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsoleApplication"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DOCFile"/>
+        <Class IRI="#ImageFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Database"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalSignature"/>
+        <Class IRI="#ImageFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EBookFile"/>
+        <Class IRI="#ImageFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageFile"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageFile"/>
+        <Class IRI="#ComputerFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JPGFile"/>
+        <Class IRI="#ImageFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linux"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MUSFile"/>
+        <Class IRI="#MultimediaFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediaPlayer"/>
+        <Class IRI="#CompApplication"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Middleware"/>
         <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MonitorApplicationCmd"/>
+        <Class IRI="#MonitoringProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitorComponentCmd"/>
+        <Class IRI="#MonitoringProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitorConnectivityCmd"/>
+        <Class IRI="#MonitoringProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitoringProgram"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MultiAgentSystem"/>
         <Class IRI="#SoftwareAgent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Network"/>
-        <Class IRI="#CompEntity"/>
+        <Class IRI="#MultimediaFile"/>
+        <Class IRI="#ComputerFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkResource"/>
+        <Class IRI="#CompResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OS-X"/>
+        <Class IRI="#OperatingSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OperatingSystem"/>
         <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PDFFile"/>
+        <Class IRI="#ImageFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Packet"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RM-StartApplication"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealPlayer"/>
+        <Class IRI="#MediaPlayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResourceManagementProgram"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShutdownBlock"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Software"/>
         <Class IRI="#CompEntity"/>
     </SubClassOf>
@@ -101,9 +505,262 @@
         <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SoftwareFile"/>
+        <Class IRI="#ComputerFile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solaris"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpreadsheetDesign"/>
+        <Class IRI="#CompApplication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartupBlock"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserInterface"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utility"/>
+        <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#VirtualMachine"/>
         <Class IRI="#Software"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebPage"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebSite"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Windows"/>
+        <Class IRI="#OperatingSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WordProcessor"/>
+        <Class IRI="#CompApplication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XMLFile"/>
+        <Class IRI="#ComputerFile"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.cs.upc.edu/jmarco/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebSite"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/dameller/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~cayala/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~franch/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~moriol/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~ocabrera/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.essi.upc.edu/~ohernan/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPlayer"/>
+        <NamedIndividual IRI="#RealPlayer4.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPlayer"/>
+        <NamedIndividual IRI="#RealPlayer9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPlayer"/>
+        <NamedIndividual IRI="#RealPlayerG2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#Windows7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#Windows8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#Windows98"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#WindowsXP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebSite"/>
+        <NamedIndividual IRI="http://www.smart-cities.eu/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebSite"/>
+        <NamedIndividual IRI="http://www.smartcities.es/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebSite"/>
+        <NamedIndividual IRI="http://www.smartcityexpo.com/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebPage"/>
+        <NamedIndividual IRI="https://mail.google.com/"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAvailableNetworkOf"/>
+        <ObjectProperty IRI="#hasAvailableNetwork"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isCPUOf"/>
+        <ObjectProperty IRI="#hasCPU"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCPU"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isCPUOf"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCPU"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isCPUOf"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isRunningOn"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCPU"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isCPUOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBandwidth"/>
+        <Class IRI="#CompNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDependency"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDependencyDelay"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirectory"/>
+        <Class IRI="#ComputerFile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNetworkProfile"/>
+        <Class IRI="#CompNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSoftware"/>
+        <Class IRI="#CompAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSoftware"/>
+        <Class IRI="#CompService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSoftware"/>
+        <Class IRI="#CompSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSoftware"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAvailableNetworkOf"/>
+        <Class IRI="#CompNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDirectoryOf"/>
+        <Class IRI="#ComputerPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPasswordOf"/>
+        <Class IRI="#ComputerPassword"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProgramCopyOf"/>
+        <Class IRI="#ComputerFile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRunningOn"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAvailableNetwork"/>
+        <Class IRI="#CompNetwork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBandwidth"/>
+        <Class IRI="#BitsPerSecond"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDependency"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirectory"/>
+        <Class IRI="#ComputerPath"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSoftware"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDirectoryOf"/>
+        <Class IRI="#ComputerFile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProgramCopyOf"/>
+        <Class IRI="#ComputerProgram"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasDirectory"/>
+        <ObjectProperty IRI="#isDirectoryOf"/>
+    </DisjointObjectProperties>
+    <DataPropertyRange>
+        <DataProperty IRI="#ramMemory"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#CompApplication</IRI>
@@ -113,6 +770,21 @@
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#CompEntity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ComputationalEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#CompNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#CompSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputationalSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonym"/>
+        <IRI>#ComputerPath</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerDirectory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
