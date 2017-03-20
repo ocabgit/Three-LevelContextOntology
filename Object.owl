@@ -10,19 +10,19 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Object"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Object">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance</Import>
-    <Import>http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice</Import>
+    <Import>http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/TransportationDevice</Import>
+    <Import>http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology represents the module of an object taken from SUMO ontology</Literal>
@@ -32,6 +32,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Apron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ArtificialEntity"/>
@@ -67,7 +70,13 @@
         <Class IRI="#CommunicationChannel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CommunicationDevice"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerHardware"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ContactSite"/>
@@ -79,6 +88,12 @@
         <Class IRI="#Correspondence"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Document"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Dress"/>
     </Declaration>
     <Declaration>
@@ -86,6 +101,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#EmailMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EngineeringComponent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EntertainmentDevice"/>
@@ -104,6 +122,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Footwear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Furniture"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Glove"/>
@@ -142,10 +163,16 @@
         <Class IRI="#MotionSensor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PDA"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PersonalProfileDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PublicSchedule"/>
@@ -217,33 +244,6 @@
         <Class IRI="#WebDocument"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Furniture"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#fills"/>
     </Declaration>
     <Declaration>
@@ -253,9 +253,6 @@
         <ObjectProperty IRI="#hasDevice"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasDeviceFunctionality"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasDeviceProfile"/>
     </Declaration>
     <Declaration>
@@ -263,9 +260,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasFunctionality"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasInformation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasObject"/>
@@ -290,9 +284,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isFunctionalityOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isInformationOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isInsuredBy"/>
@@ -377,15 +368,19 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#Actuator"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Apron"/>
         <Class IRI="#Clothing"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Artifact"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArtificialEntity"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Belt"/>
@@ -393,7 +388,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CPU"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Camera"/>
@@ -409,7 +404,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Certificate"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Document"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cloak"/>
@@ -417,7 +412,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Clothing"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Coat"/>
@@ -432,20 +427,36 @@
         <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CommunicationDevice"/>
+        <Class IRI="#EngineeringComponent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Computer"/>
         <Class IRI="#ElectricDevice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ComputerHardware"/>
+        <Class IRI="#EngineeringComponent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ContactSite"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Contract"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Document"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Correspondence"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Document"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dress"/>
@@ -453,19 +464,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ElectricDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EmailMessage"/>
         <Class IRI="#Correspondence"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EngineeringComponent"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EntertainmentDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Equipment"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FaxMachine"/>
@@ -482,6 +497,10 @@
     <SubClassOf>
         <Class IRI="#Footwear"/>
         <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Furniture"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Glove"/>
@@ -509,7 +528,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Memory"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Microphone"/>
@@ -529,7 +548,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MobileResidence"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MotionSensor"/>
@@ -545,7 +564,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PersonalProfileDocument"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class IRI="#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PublicSchedule"/>
@@ -553,11 +576,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReceiverDevice"/>
-        <Class IRI="#ElectricDevice"/>
+        <Class IRI="#CommunicationDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReceiverDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+        <Class IRI="#ElectricDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Reminder"/>
@@ -573,11 +596,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sensor"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Server"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
+        <Class IRI="#ComputerHardware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Shirt"/>
@@ -605,7 +628,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TelephonyDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
+        <Class IRI="#CommunicationDevice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tent"/>
@@ -625,7 +648,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tool"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Trousers"/>
@@ -637,51 +660,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VisualObject"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WebDocument"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance#Substance"/>
+        <Class IRI="#Object"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#CommunicationDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#EngineeringComponent"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Furniture"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Product"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance#Substance"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice#TransportationDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/TransportationDevice#TransportationDevice"/>
+        <Class IRI="#Device"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="#Image"/>
@@ -720,20 +711,16 @@
         <ObjectProperty IRI="#hasFunctionality"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasInformation"/>
-        <ObjectProperty IRI="#isInformationOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasObject"/>
         <ObjectProperty IRI="#isObjectOf"/>
+        <ObjectProperty IRI="#hasObject"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isTopicAddressedIn"/>
         <ObjectProperty IRI="#hasTopic"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isSmallerThan"/>
         <ObjectProperty IRI="#isLargerThan"/>
+        <ObjectProperty IRI="#isSmallerThan"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isUsedBy"/>
@@ -765,39 +752,19 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#fills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasDeviceFunctionality"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDeviceProfile"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEquipmentType"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Artifact"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFunctionality"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasInformation"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTopic"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Artifact"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAttachedTo"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isConnectedTo"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isContactSiteOf"/>
@@ -805,7 +772,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDeviceOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInsuredBy"/>
@@ -813,19 +780,19 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isLargerThan"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isObjectOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isOlderThan"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isSignedBy"/>
@@ -833,11 +800,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isSmallerThan"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTopicAddressedIn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isUsedBy"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isViewedBy"/>
@@ -845,11 +816,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#partiallyFills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#properlyFills"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCommunicationChannel"/>
@@ -857,63 +828,55 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDevice"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEquipmentType"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasObject"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="#Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAttachedTo"/>
         <Class IRI="#EmailMessage"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isAttachedTo"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isConnectedTo"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isDisplayedBy"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isFunctionalityOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isInformationOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isLargerThan"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isOlderThan"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSmallerThan"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isTopicAddressedIn"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Document"/>
+        <Class IRI="#Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isUserOf"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Object"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#communicationChannelID"/>
@@ -925,11 +888,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#deviceID"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#deviceType"/>
-        <Class IRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#Device"/>
+        <Class IRI="#Device"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#communicationChannelID"/>
@@ -948,9 +911,524 @@
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#/images/Bulldog.jpg</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">/images/Bulldog.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#/images/Ocabrera.jpg</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">/images/Ocabrera.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#/images/Ohernan.jpg</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">/images/Ohernan.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Actuator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actuators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Actuator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actuator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Apron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aprons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Apron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Apron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Artifact</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Artifacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Artifact</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Artifact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ArtificialEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ArtificialEntities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ArtificialEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ArtificialEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Belt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Belts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Belt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Belt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CPU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CPUs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CPU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CPU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
         <IRI>#CPU</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Camera</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cameras</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Camera</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Camera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Camp</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Camps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Camp</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Camp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Certificate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certificates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Certificate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cloak</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cloaks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cloak</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cloak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Clothing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Clothings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Clothing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Clothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Coat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Coat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Collar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Collar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommunicationChannel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunicationChannels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommunicationChannel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunicationChannel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommunicationDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunicationDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommunicationDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunicationDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Computer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Computers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Computer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerHardware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerHardwares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerHardware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerHardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ContactSite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ContactSites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ContactSite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ContactSite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Contract</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contracts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Contract</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Correspondence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Correspondences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Correspondence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Correspondence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Device</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Devices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Device</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Documents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Dress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dresses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Dress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ElectricDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ElectricDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EmailMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EmailMessages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EmailMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EmailMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EngineeringComponent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EngineeringComponents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EngineeringComponent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EngineeringComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EntertainmentDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EntertainmentDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EntertainmentDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EntertainmentDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Equipment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equipments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Equipment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FaxMachine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FaxMachines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FaxMachine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FaxMachine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FaxMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FaxMessages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FaxMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FaxMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FixedPhone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FixedPhones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FixedPhone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FixedPhone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Footwear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Footwears</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Footwear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Footwear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Furniture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Furnitures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Furniture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Furniture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Glove</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gloves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Glove</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Glove</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Handwatch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Handwatches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Handwatch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Handwatch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Image</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Images</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Image</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InternalSchedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternalSchedules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InternalSchedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternalSchedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Letter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Letters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Letter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Letter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Memory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Memories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Memory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Microphone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Microphones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Microphone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Microphone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MobileCellPhone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MobileCellPhones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MobileCellPhone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MobileCellPhone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MobileDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MobileDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MobileDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MobileDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MobileResidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MobileResidences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MobileResidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MobileResidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MotionSensor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MotionSensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MotionSensor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MotionSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#MovieTicket</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MovieTicket</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Object</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Object</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PDA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PDA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PDA-AcerN30</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDA-AcerN30</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PDA-AcerN310</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDA-AcerN310</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PDA-Jornada820</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDA-Jornada820</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PersonalProfileDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PersonalProfileDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PersonalProfileDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PersonalProfileDocument</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#term_status"/>
@@ -968,9 +1446,209 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">PersonalProfileDocument</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Product</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Products</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Product</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PublicSchedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicSchedules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PublicSchedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicSchedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ReceiverDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReceiverDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ReceiverDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReceiverDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Reminder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Reminders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Reminder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Reminder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sandal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sandals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sandal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sandal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Schedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Schedules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Schedule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Schedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#Schedule</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Timetable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sensor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sensor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Server</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Servers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Server</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Server</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Shirt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Shirts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Shirt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Shirt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Shoe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Shoes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Shoe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Shoe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sleeve</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sleeves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sleeve</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sleeve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Socks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sunglasses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunglasseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sunglasses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunglasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Telephone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Telephones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Telephone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Telephone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TelephonyDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TelephonyDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TelephonyDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TelephonyDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ticket</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tickets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ticket</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ticket</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TieClothing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TieClothings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TieClothing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TieClothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TimeManagementTool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeManagementTools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TimeManagementTool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeManagementTool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tool</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
@@ -978,14 +1656,534 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Instrument</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Trousers</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trousers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Trousers</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trousers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Veil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Veils</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Veil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Veil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VisualObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VisualObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VisualObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VisualObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WebDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WebDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WebDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WebDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#communicationChannelID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicationChannelID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#communicationChannelID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicationChannelIDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#communicationChannelID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicationChannelIDed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#communicationChannelType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicationChannelType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#communicationChannelType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicationChannelTypes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#communicationChannelType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">communicationChannelTyped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#deviceID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deviceID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#deviceID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deviceIDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#deviceID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deviceIDed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#deviceType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deviceType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#deviceType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deviceTypes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#deviceType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deviceTyped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#fills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#fills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fillses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#fills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fillsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasCommunicationChannel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCommunicationChannel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasCommunicationChannel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCommunicationChannels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasCommunicationChannel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCommunicationChanneled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDeviced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDeviceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDeviceProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDeviceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDeviceProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDeviceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDeviceProfiled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasEquipmentType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEquipmentType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasEquipmentType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEquipmentTypes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasEquipmentType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEquipmentTyped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasFunctionality</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFunctionality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasFunctionality</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFunctionalities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasFunctionality</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFunctionalitied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObjected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasTopic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTopic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasTopic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTopics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasTopic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTopiced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isAttachedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAttachedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isAttachedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAttachedToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isAttachedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAttachedToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isConnectedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isConnectedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isConnectedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isConnectedToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isConnectedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isConnectedToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isContactSiteOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContactSiteOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isContactSiteOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContactSiteOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isContactSiteOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContactSiteOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isDeviceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDeviceOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isDeviceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDeviceOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isDeviceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDeviceOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isDisplayedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDisplayedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isDisplayedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDisplayedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isDisplayedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDisplayedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isFunctionalityOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFunctionalityOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isFunctionalityOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFunctionalityOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isFunctionalityOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFunctionalityOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isInsuredBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isInsuredBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isInsuredBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isInsuredBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isInsuredBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isInsuredBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isLargerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isLargerThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isLargerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isLargerThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isLargerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isLargerThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isObjectOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isObjectOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isObjectOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isObjectOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isObjectOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isObjectOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isOlderThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isOlderThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isOlderThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isOlderThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isOlderThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isOlderThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isSignedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSignedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isSignedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSignedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isSignedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSignedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isSmallerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSmallerThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isSmallerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSmallerThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isSmallerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSmallerThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isTopicAddressedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isTopicAddressedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isTopicAddressedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isTopicAddressedIns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isTopicAddressedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isTopicAddressedIned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isUsedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isUsedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isUsedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#isUsedBy</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">isControlledBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#synonym"/>
-        <IRI>http://www.semanticweb.org/ojcb/ontologies/2015/2/untitled-ontology-109#ComputerHardware</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware, ComputationalDevice, CompDevice, Computer</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isUserOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isUserOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isUserOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isUserOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isUserOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isUserOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isViewedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isViewedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isViewedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isViewedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isViewedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isViewedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#partiallyFills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">partiallyFills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#partiallyFills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">partiallyFillses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#partiallyFills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">partiallyFillsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#properlyFills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">properlyFills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#properlyFills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">properlyFillses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#properlyFills</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">properlyFillsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance#Substance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Substances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance#Substance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/TransportationDevice#TransportationDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TransportationDevices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/TransportationDevice#TransportationDevice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TransportationDevice</Literal>
     </AnnotationAssertion>
 </Ontology>
 

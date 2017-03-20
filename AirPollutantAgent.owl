@@ -10,16 +10,17 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/6/AirPollutantAgent"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/AirPollutantAgent"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/AirPollutantAgent">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/AirPollutantAgent">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#AirPollutantAgent"/>
     </Declaration>
@@ -107,6 +108,136 @@
         <Class IRI="#ToxicAirPollutants"/>
         <Class IRI="#AirPollutantAgent"/>
     </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AirPollutantAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollutantAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AirPollutantAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollutantAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Arsenic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arsenics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Arsenic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arsenic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Asbestos</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asbestoses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Asbestos</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asbestos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Benzene</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Benzenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Benzene</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Benzene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CarbonMonoxide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CarbonMonoxides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CarbonMonoxide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CarbonMonoxide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Dioxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dioxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Dioxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dioxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lead</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Leads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lead</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lead</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NitrogenDioxide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NitrogenDioxides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NitrogenDioxide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NitrogenDioxide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ozone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ozones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ozone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ozone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ParticulateMatter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ParticulateMatters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ParticulateMatter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ParticulateMatter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Smog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Smogs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Smog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Smog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SulfurDioxide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SulfurDioxides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SulfurDioxide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SulfurDioxide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ToxicAirPollutants</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ToxicAirPollutantses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ToxicAirPollutants</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ToxicAirPollutants</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

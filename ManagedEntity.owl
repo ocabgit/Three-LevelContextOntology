@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ManagedEntity"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ManagedEntity">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -421,8 +421,8 @@
         <ObjectProperty IRI="#hasRequirement"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isScheduledActivityOf"/>
         <ObjectProperty IRI="#hasScheduledActivity"/>
+        <ObjectProperty IRI="#isScheduledActivityOf"/>
     </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasRequirement"/>
@@ -449,6 +449,10 @@
         <Class IRI="#Agenda"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContactOf"/>
+        <Class IRI="#Contacts"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isListedOn"/>
         <Class IRI="#Stock"/>
     </ObjectPropertyDomain>
@@ -458,6 +462,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Contacts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContact"/>
         <Class IRI="#Contacts"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -472,6 +480,366 @@
         <ObjectProperty IRI="#isScheduledActivityOf"/>
         <Class IRI="#Agenda"/>
     </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AfghanAfghaniCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AfghanAfghaniCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AfghanAfghaniCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AfghanAfghaniCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Agenda</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agendas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Agenda</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agenda</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AmericanExpressCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AmericanExpressCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AmericanExpressCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AmericanExpressCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BankCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BankCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BankCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BankCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BlueChipStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BlueChipStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BlueChipStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BlueChipStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BorrowedStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BorrowedStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BorrowedStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BorrowedStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BritishPoundCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BritishPoundCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BritishPoundCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BritishPoundCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CanadianDollarCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CanadianDollarCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CanadianDollarCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CanadianDollarCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cash</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cashes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cash</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cash</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Check</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Checks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Check</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Check</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommonStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommonStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommonStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommonStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Contacts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contactses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Contacts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Contacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CreditCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CreditCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CreditCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CreditCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Currency</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Currencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Currency</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Currency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CurrencyBill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrencyBills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CurrencyBill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrencyBill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CurrencyCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrencyCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CurrencyCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrencyCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DebitCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DebitCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DebitCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DebitCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DefensiveStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DefensiveStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DefensiveStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DefensiveStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DiscoverCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiscoverCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DiscoverCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiscoverCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EuroCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EuroCentCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EuroCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EuroCentCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EuroDollarCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EuroDollarCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EuroDollarCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EuroDollarCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EuropeanProject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EuropeanProjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EuropeanProject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EuropeanProject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ExpiredCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ExpiredCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ExpiredCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ExpiredCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FinancialInstrument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FinancialInstruments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FinancialInstrument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FinancialInstrument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FrenchFrancCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FrenchFrancCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FrenchFrancCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FrenchFrancCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GermanMarkCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GermanMarkCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GermanMarkCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GermanMarkCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GrowthStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GrowthStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GrowthStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GrowthStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ItalianLireCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ItalianLireCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ItalianLireCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ItalianLireCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#JapaneseYenCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JapaneseYenCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#JapaneseYenCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JapaneseYenCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ManagedEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ManagedEntities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ManagedEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ManagedEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MasterCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MasterCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MasterCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MasterCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Note</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Notes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Note</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PayCheck</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PayChecks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PayCheck</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PayCheck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PennyStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PennyStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PennyStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PennyStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PreferredStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PreferredStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PreferredStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PreferredStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Projects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Project</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#term_status"/>
         <IRI>#Project</IRI>
@@ -491,6 +859,271 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Project</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#RISCOSS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RISCOSS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Receipt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Receipt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Requirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Requirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RestrictedStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RestrictedStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RestrictedStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RestrictedStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SUPERSEDE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SUPERSEDE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Stock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Stock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TajikSomoniCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TajikSomoniCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TajikSomoniCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TajikSomoniCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnitedStatesCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesCentCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnitedStatesCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesCentCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnitedStatesDollarBill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesDollarBills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnitedStatesDollarBill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesDollarBill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnitedStatesFiveCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesFiveCentCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnitedStatesFiveCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesFiveCentCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnitedStatesQuarterCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesQuarterCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnitedStatesQuarterCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesQuarterCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnitedStatesTenCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesTenCentCoins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnitedStatesTenCentCoin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesTenCentCoin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserAccounts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserAccount</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserAccount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ValidCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ValidCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ValidCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ValidCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ValueStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ValueStocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ValueStock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ValueStock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VisaCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VisaCards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VisaCard</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VisaCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#consistsOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">consistsOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#consistsOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">consistsOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#consistsOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">consistsOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasContact</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasContact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasContact</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasContacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasContact</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasContacted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasRequirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasRequirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRequirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasRequirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRequiremented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasScheduledActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasScheduledActivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasScheduledActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasScheduledActivities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasScheduledActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasScheduledActivitied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isContactOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContactOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isContactOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContactOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isContactOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContactOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isListedOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isListedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isListedOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isListedOns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isListedOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isListedOned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isRequirementOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRequirementOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isRequirementOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRequirementOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isRequirementOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRequirementOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isScheduledActivityOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isScheduledActivityOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isScheduledActivityOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isScheduledActivityOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isScheduledActivityOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isScheduledActivityOfed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

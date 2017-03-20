@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/BiologicalState"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/BiologicalState">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -684,14 +684,879 @@
         <NamedIndividual IRI="#Unhappiness"/>
     </ClassAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AbdominalPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AbdominalPains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AbdominalPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AbdominalPain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Addiction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Addictions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Addiction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Addiction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Allergies</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Allergieses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Allergies</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Allergies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Alzheimer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alzheimers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Alzheimer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alzheimer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Anger</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Angers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Anger</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Angry</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Angries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Angry</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Angry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Anxiety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anxieties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Anxiety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anxiety</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Asleep</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asleep</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Asthma</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asthmas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Asthma</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asthma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Attention</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Attentions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Attention</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Attention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Autism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Autisms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Autism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Autism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Awake</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Awake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BackPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BackPains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BackPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BackPain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BiologicalMeasurements</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicalMeasurementses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BiologicalMeasurements</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicalMeasurements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BiologicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicalStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BiologicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicalState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BipolarDisorder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BipolarDisorders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BipolarDisorder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BipolarDisorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BloodInStool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodInStools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BloodInStool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodInStool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BodyPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BodyPositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BodyPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BodyPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BreastCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BreastCancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BreastCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BreastCancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BreathingProblems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BreathingProblemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BreathingProblems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BreathingProblems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Burns</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Burnses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Burns</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Burns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CervicalCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CervicalCancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CervicalCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CervicalCancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChestPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChestPains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChestPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChestPain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cognitive</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cognitives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cognitive</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cognitive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Colds</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coldses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Colds</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Colds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Confusion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Confusions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Confusion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Confusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConsciousnessAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsciousnessAttributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConsciousnessAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsciousnessAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coughs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DarkUrine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DarkUrines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DarkUrine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DarkUrine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diabetes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diabeteses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diabetes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diabetes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diarrhea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diarrheas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diarrhea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diarrhea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diseases</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diseaseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diseases</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diseases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Dizziness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dizzinesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Dizziness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dizziness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Drugged</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Drugged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Earache</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Earaches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Earache</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Earache</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ElectricShock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricShocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ElectricShock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricShock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EmotionalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EmotionalStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EmotionalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EmotionalState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fatigue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fatigues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fatigue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fatigue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#Fatigue</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Tireness</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fever</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fevers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fever</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fever</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Fist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Flu</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Flus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Flu</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Flu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FrequentUrination</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FrequentUrinations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FrequentUrination</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FrequentUrination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GastroesophagealRefluxDisease</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GastroesophagealRefluxDiseases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GastroesophagealRefluxDisease</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GastroesophagealRefluxDisease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HIV/AIDS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HIV/AIDS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HIV/AIDS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HIV/AIDS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Handstand</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Handstand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Happiness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Happiness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Happy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Happies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Happy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Happy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Headache</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Headaches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Headache</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Headache</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HealthConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HealthConditionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HealthConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HealthConditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HeartRate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HeartRates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HeartRate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HeartRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HeartRate</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The rate at which the heart beats; usually measured to obtain a quick evaluation of a person&apos;s health.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hepatitis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hepatitises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hepatitis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hepatitis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Humour</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Humours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Humour</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Humour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Kneeling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kneeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lightheadedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lightheadednesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lightheadedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lightheadedness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LossOfAppetite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LossOfAppetites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LossOfAppetite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LossOfAppetite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LungCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LungCancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LungCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LungCancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MemoryChange</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MemoryChanges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MemoryChange</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MemoryChange</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Nausea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nauseas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Nausea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nausea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NeckPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NeckPains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NeckPain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NeckPain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Neurosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neuroses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Neurosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neurosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Osteoporosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Osteoporoses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Osteoporosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Osteoporosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OvarianCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OvarianCancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OvarianCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OvarianCancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Parkinson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Parkinsons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Parkinson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Parkinson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Perception</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Perceptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Perception</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Perception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PhysiologicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysiologicalStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PhysiologicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysiologicalState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ProstateCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProstateCancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ProstateCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProstateCancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Prostrate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Prostrate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PsychologicalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PsychologicalAttributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PsychologicalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PsychologicalAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PsychologicalDysfunction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PsychologicalDysfunctions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PsychologicalDysfunction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PsychologicalDysfunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PsychologicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PsychologicalStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PsychologicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PsychologicalState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Psychosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Psychoses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Psychosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Psychosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Rashes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rasheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Rashes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rashes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Scalds</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scaldses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Scalds</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scalds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SexuallyTransmittedDiseases</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SexuallyTransmittedDiseaseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SexuallyTransmittedDiseases</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SexuallyTransmittedDiseases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Sitting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sitting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SkinCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkinCancers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SkinCancer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkinCancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SkinConductance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkinConductances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SkinConductance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkinConductance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SkinProblems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkinProblemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SkinProblems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkinProblems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Sober</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sober</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Splitting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Splitting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Standing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Standing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StateOfMind</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StateOfMinds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StateOfMind</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StateOfMind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Surprise</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Surprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SwollenFeet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SwollenFeets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SwollenFeet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SwollenFeet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Symptoms</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Symptomses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Symptoms</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tiredness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tirednesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tiredness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tiredness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Unconscious</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unconscious</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Unhappiness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unhappiness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UrinaryProblems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UrinaryProblemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UrinaryProblems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UrinaryProblems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VaginalDischarge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VaginalDischarges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VaginalDischarge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VaginalDischarge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Vertigo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vertigoes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Vertigo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vertigo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Vomiting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vomitings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Vomiting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vomiting</Literal>
     </AnnotationAssertion>
 </Ontology>
 

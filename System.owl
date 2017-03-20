@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/3/System"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/System"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/System">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/System">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -71,9 +71,59 @@ System (a group of physiologically or anatomically related organs or parts) &quo
         <Class IRI="#System"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GPS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GPSes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GPS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GPS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
         <IRI>#GPS</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Global Positioning System, GPS (a navigational system involving satellites and computers that can determine the latitude and longitude of a receiver on Earth by computing the time difference for signals from different satellites to reach the receiver)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#System</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#System</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSystemed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isSystemOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSystemOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isSystemOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSystemOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isSystemOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSystemOfed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

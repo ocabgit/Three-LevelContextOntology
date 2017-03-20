@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Proposition"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Proposition">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -983,8 +983,8 @@
         <NamedIndividual IRI="#VoterCitizenshipRequirement"/>
     </ClassAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasDesire"/>
         <ObjectProperty IRI="#isDesireOf"/>
+        <ObjectProperty IRI="#hasDesire"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasGoal"/>
@@ -1037,9 +1037,1214 @@
         <Class IRI="#FieldOfStudy"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Agreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agreements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Agreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agreement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AirPollution-NitrogenOxidesProtocol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollution-NitrogenOxidesProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AirPollution-PeristentOrganicPollutantsProtocol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollution-PeristentOrganicPollutantsProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AirPollution-Sulphur85Protocol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollution-Sulphur85Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AirPollution-Sulphur94Protocol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollution-Sulphur94Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AirPollution-VolatileOrganicCompoundsProtocol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollution-VolatileOrganicCompoundsProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AirPollutionConvention</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AirPollutionConvention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AlgebraicEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AlgebraicEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AlgebraicEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AlgebraicEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AlgorithmsAndDataStructures</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AlgorithmsAndDataStructures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ambition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ambitions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ambition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ambition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Anthropology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anthropology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AppliedComputerScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AppliedComputerSciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AppliedComputerScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AppliedComputerScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Architecture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Architecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Argument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arguments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Argument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Argument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ArtificialIntelligence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ArtificialIntelligence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BankStatement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BankStatements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BankStatement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BankStatement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BesselsEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BesselsEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BesselsEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BesselsEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Biology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Biology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CONPLAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CONPLANs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CONPLAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CONPLAN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CONPLANwithTPFDD</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CONPLANwithTPFDDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CONPLANwithTPFDD</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CONPLANwithTPFDD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Chemistry</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chemistry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ClassificationScheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassificationSchemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ClassificationScheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassificationScheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CodeMaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CodeMap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CodingScheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CodingSchemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CodingScheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CodingScheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CompulsorySuffrageLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompulsorySuffrageLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerSciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Constitution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Constitutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Constitution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Constitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ControlDesignMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ControlDesignMethods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ControlDesignMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ControlDesignMethod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CounterTerrorismStrategy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CounterTerrorismStrategies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CounterTerrorismStrategy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CounterTerrorismStrategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CurrencyCodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrencyCodeMaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CurrencyCodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CurrencyCodeMap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DeductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeductiveArguments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DeductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeductiveArgument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DeliveryMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeliveryMethods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DeliveryMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeliveryMethod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Desire</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Desires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Desire</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Desire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DifferentialEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DifferentialEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Discretization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Discretizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Discretization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Discretization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EconomicIndicator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EconomicIndicators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EconomicIndicator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EconomicIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Economics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Economics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EducationalCourse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EducationalCourses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EducationalCourse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EducationalCourse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EducationalProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EducationalPrograms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EducationalProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EducationalProgram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ElectricalEngineeringMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricalEngineeringMethods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ElectricalEngineeringMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricalEngineeringMethod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Electronics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electronics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EmergingTechnologiesField</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EmergingTechnologiesFields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EmergingTechnologiesField</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EmergingTechnologiesField</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EncodingProcedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EncodingProcedures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EncodingProcedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EncodingProcedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Engineering</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Engineering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Envisions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Envisionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Envisions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Envisions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Equation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Equation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ExclusiveMaleSuffrage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ExclusiveMaleSuffrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Explanation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Explanations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Explanation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Explanation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#FieldOfLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldOfLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FieldOfStudy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldOfStudies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FieldOfStudy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldOfStudy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FirstOrderDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FirstOrderDifferentialEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FirstOrderDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FirstOrderDifferentialEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FourierAnalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FourierAnalyses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FourierAnalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FourierAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FourierSynthesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FourierSyntheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FourierSynthesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FourierSynthesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GeographicCodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GeographicCodeMaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GeographicCodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GeographicCodeMap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Goals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HigherOrderDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HigherOrderDifferentialEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HigherOrderDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HigherOrderDifferentialEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#History</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ISO-3166-1-alpha-2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ISO-3166-1-alpha-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ISO-4217-A</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ISO-4217-A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ISO-639-1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ISO-639-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InductiveArguments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InductiveArgument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Inflation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Inflations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Inflation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Inflation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#InteriorDesign</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InteriorDesign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InternationalAgreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternationalAgreements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InternationalAgreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternationalAgreement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#InternetOfThings</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternetOfThings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InvalidDeductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InvalidDeductiveArguments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InvalidDeductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InvalidDeductiveArgument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LanguageCodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LanguageCodeMaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LanguageCodeMap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LanguageCodeMap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LegalOpinion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LegalOpinions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LegalOpinion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LegalOpinion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LicenseAgreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LicenseAgreements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LicenseAgreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LicenseAgreement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LinearEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LinearEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LinearEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LinearEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Linguistics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Linguistics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Literature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Literature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MathematicalMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MathematicalMethods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MathematicalMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MathematicalMethod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Mathematics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mathematics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#MedicalScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MedicalScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Method</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#MilitaryScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MilitaryScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeApplications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeApplication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeAudio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeAudios</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeAudio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeAudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeEncodingScheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeEncodingSchemes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeEncodingScheme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeEncodingScheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeEnrichedText</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeEnrichedTexts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeEnrichedText</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeEnrichedText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeImage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeImages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeImage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeImage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeMessages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeMultipart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeMultiparts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeMultipart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeMultipart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeText</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeTexts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeText</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MimeVideo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeVideos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MimeVideo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MimeVideo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NewtonsFirstLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsFirstLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NewtonsFirstLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsFirstLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NewtonsLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NewtonsLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NewtonsSecondLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsSecondLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NewtonsSecondLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsSecondLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NewtonsThirdLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsThirdLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NewtonsThirdLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewtonsThirdLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NonlinearEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonlinearEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NonlinearEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonlinearEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OPLAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OPLANs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OPLAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OPLAN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Objective</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Objectives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Objective</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Ontologies</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontologies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ontology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontologies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ontology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OperationPlan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OperationPlans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OperationPlan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OperationPlan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OrdinaryDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OrdinaryDifferentialEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OrdinaryDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OrdinaryDifferentialEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Orthography</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orthographies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Orthography</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orthography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PartialDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartialDifferentialEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PartialDifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartialDifferentialEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PaymentMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PaymentMethods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PaymentMethod</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PaymentMethod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Philosophy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philosophy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Physics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Physics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Physiology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Physiology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Plan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Plans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Plan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PoliticalScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PoliticalScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Procedures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Proposition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Propositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Proposition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Proposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Psychology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Psychology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Purpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Purpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Pwm</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pwms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Pwm</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pwm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RegionalLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RegionalLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RegionalLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RegionalLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RestrictedSuffrage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RestrictedSuffrages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RestrictedSuffrage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RestrictedSuffrage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RootLocus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RootLocuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RootLocus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RootLocus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Science</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Science</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ScientificLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ScientificLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ScientificLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ScientificLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ServiceLevelAgreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceLevelAgreements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ServiceLevelAgreement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceLevelAgreement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SmartCities</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SmartCities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialSciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SoftwareEngineering</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareEngineering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SportsPlay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SportsPlays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SportsPlay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SportsPlay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SuffrageLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SuffrageLaws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SuffrageLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SuffrageLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Taxonomy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Taxonomies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Taxonomy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Taxonomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Technique</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Techniques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Technique</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Theology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TheoreticalComputerScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalComputerSciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TheoreticalComputerScience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalComputerScience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TheoryOfComputation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryOfComputation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#UniversalSuffrageLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UniversalSuffrageLaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ValidDeductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ValidDeductiveArguments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ValidDeductiveArgument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ValidDeductiveArgument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VanderpolsEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VanderpolsEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VanderpolsEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VanderpolsEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VoterAgeRequirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VoterAgeRequirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VoterAgeRequirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VoterAgeRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#VoterCitizenshipRequirement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VoterCitizenshipRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDesire</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDesire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDesire</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDesires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDesire</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDesired</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasGoal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasGoal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasGoal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasGoals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasGoal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasGoaled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#hasGoal</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasIntention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSubField</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubField</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSubField</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubFields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSubField</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubFielded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSubPlan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubPlan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSubPlan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubPlans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSubPlan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubPlaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isDesireOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDesireOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isDesireOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDesireOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isDesireOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDesireOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isGoalOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isGoalOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isGoalOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isGoalOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isGoalOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isGoalOfed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

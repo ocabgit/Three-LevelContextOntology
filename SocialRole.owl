@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialRole"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialRole">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -1135,8 +1135,8 @@
         <NamedIndividual IRI="#USMilitaryRankWO5"/>
     </ClassAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isOwnerOf"/>
         <ObjectProperty IRI="#hasOwner"/>
+        <ObjectProperty IRI="#isOwnerOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isOwnerOf"/>
@@ -1147,9 +1147,1099 @@
         <Class IRI="#Owner"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Accountant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accountant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Actor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Ambassador</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ambassador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Artist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Artist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Attorney</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Attorney</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#AttorneyGeneral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AttorneyGeneral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Audience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Audiences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Audience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Banker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Banker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#BusinessPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BusinessPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Carpenter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Carpenter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Celebrity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Celebrity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Chairman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chairman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ChargeDAffaires</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChargeDAffaires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Chauffeur</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chauffeurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Chauffeur</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chauffeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Civilian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Civilians</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Civilian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Civilian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CivilianInternee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CivilianInternee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Cleric</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cleric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ClericalSecretary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClericalSecretary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Coach</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CollegeFreshman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeFreshman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CollegeJunior</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeJunior</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CollegeSenior</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeSenior</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CollegeSophomore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeSophomore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CollegeStudentPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeStudentPositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CollegeStudentPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeStudentPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CombatantCommander</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CombatantCommander</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Comedian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Comedian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommissionedOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommissionedOfficerRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommissionedOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommissionedOfficerRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Companion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Companions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Companion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Companion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompanyGradeRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompanyGradeRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompanyGradeRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompanyGradeRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Consul</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Consul</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ConsulGeneral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsulGeneral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Consumer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Consumers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Consumer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Consumer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Coroner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coroner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Customer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Customers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Customer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Deacon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deacon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Dentist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dentist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Diplomat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diplomat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#DiplomaticAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiplomaticAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#DisplacedPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DisplacedPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Dissident</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dissident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Drivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Enemy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Enemy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Engineer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Engineers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Engineer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Engineer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EnlistedSoldierRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnlistedSoldierRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EnlistedSoldierRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnlistedSoldierRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EntertainmentProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EntertainmentProfessions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EntertainmentProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EntertainmentProfession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EnvPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnvPersons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EnvPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnvPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#EnvPerson</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who is neither a User nor an Owner but relevant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Evacuee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Evacuee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Expelle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#FarmHand</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FarmHand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FieldGradeOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldGradeOfficerRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FieldGradeOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldGradeOfficerRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#FilmDirector</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FilmDirector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FilmMakingProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FilmMakingProfessions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FilmMakingProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FilmMakingProfession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#FilmProducer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FilmProducer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#FirstMate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FirstMate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FlagOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FlagOfficerRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FlagOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FlagOfficerRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ForeignServicePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ForeignServicePositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ForeignServicePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ForeignServicePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FullTimePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FullTimePositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FullTimePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FullTimePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#GameReferee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GameReferee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#GovernmentDeputy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentDeputy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GovernmentOfficer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentOfficers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GovernmentOfficer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentOfficer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#GovernmentPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GovernmentSecretary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentSecretaries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GovernmentSecretary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentSecretary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Governor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Governor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#HumanSlave</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HumanSlave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#InternallyDisplacedPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternallyDisplacedPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#InternetUser</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternetUser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Investor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Investors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Investor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Investor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Janitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Janitors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Janitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Janitor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Journalist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Journalist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Judge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Judge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#JuniorNCORank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JuniorNCORanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#JuniorNCORank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JuniorNCORank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Knight</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Knight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Maid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Maid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Maid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Manager</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Managers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Manager</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Manager</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ManualLabor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ManualLabors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ManualLabor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ManualLabor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#MedicalDoctor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MedicalDoctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#MilitaryPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MilitaryPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MilitaryRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MilitaryRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MilitaryRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MilitaryRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ModellingPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ModellingPositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ModellingPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ModellingPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Motorman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Motormen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Motorman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Motorman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#MusicalConductor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MusicalConductor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#NewsReporter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NewsReporter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NonCommissionedOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonCommissionedOfficerRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NonCommissionedOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonCommissionedOfficerRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OccupationalRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OccupationalRoles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OccupationalRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OccupationalRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OccupationalTrade</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OccupationalTrades</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OccupationalTrade</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OccupationalTrade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Owners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PartTimePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartTimePositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PartTimePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartTimePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Performer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Performer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Pharmacist</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pharmacist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Plumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Plumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PoliceOfficer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PoliceOfficer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PolicePerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PolicePerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Position</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Positions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Position</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Position</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Potter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Potter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PrivateDetective</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrivateDetective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PrivateRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrivateRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PrivateRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrivateRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ProductExpert</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProductExperts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ProductExpert</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProductExpert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Profession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Professions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Profession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Profession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Provider</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Providers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Provider</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PublicDefender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicDefender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PublicProsecutor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicProsecutor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ReligiousPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReligiousPositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ReligiousPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReligiousPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Requestor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Requestors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Requestor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Requestor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Researcher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Researcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Sailor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sailor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SalesPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SalesPositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SalesPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SalesPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SecretaryOfTheInterior</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecretaryOfTheInterior</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SecretaryOfTheTreasury</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecretaryOfTheTreasury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SeniorNCORank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeniorNCORanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SeniorNCORank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeniorNCORank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ServicePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServicePositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ServicePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServicePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SkilledOccupation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkilledOccupations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SkilledOccupation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SkilledOccupation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialRoles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Soldier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soldier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Speaker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Speakers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Speaker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Speaker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SportsPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SportsPositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SportsPosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SportsPosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Staffer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Staffers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Staffer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Staffer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#StoreOwner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StoreOwner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Student</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Students</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Student</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Student</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Teacher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teachers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Teacher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teacher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Teacher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teacher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TheaterProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheaterProfessions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TheaterProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheaterProfession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TheaterProfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheaterProfession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Treasurer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Treasurer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#USMilitaryRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#USMilitaryRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank01</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank02</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank03</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank03</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank04</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank05</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank05</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank06</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank06</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank07</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank07</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank08</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank08</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRank09</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRank09</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankE1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankE1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankE2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankE2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankE5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankE5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankE6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankE6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankE7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankE7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankE8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankE8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankW01</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankW01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankW02</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankW02</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankW03</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankW03</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankWO2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankWO2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankWO3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankWO3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankWO4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankWO4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USMilitaryRankWO5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USMilitaryRankWO5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#USWarrantOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USWarrantOfficerRanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#USWarrantOfficerRank</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USWarrantOfficerRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnskilledOccupation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnskilledOccupations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnskilledOccupation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnskilledOccupation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#User</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#User</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Visitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Visitors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Visitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Visitor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Worker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Workers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Worker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Worker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasOwner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasOwner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasOwner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasOwners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasOwner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasOwnered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isOwnerOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isOwnerOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isOwnerOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isOwnerOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isOwnerOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isOwnerOfed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

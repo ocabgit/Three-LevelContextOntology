@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -187,8 +187,8 @@
         <ObjectProperty IRI="#isResourceOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasRole"/>
         <ObjectProperty IRI="#isRoleOf"/>
+        <ObjectProperty IRI="#hasRole"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#hasEnemy"/>
@@ -231,12 +231,24 @@
         <Class IRI="#ContextInformation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAgent"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAnniversary"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEnemy"/>
         <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnvironment"/>
+        <Class IRI="#Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEnvisions"/>
@@ -252,6 +264,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProfile"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStatusState"/>
         <Class IRI="#Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -294,9 +310,17 @@
         <ObjectProperty IRI="#possesses"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#affects"/>
         <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#changesStateStatus"/>
+        <Class IRI="#Resource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#characterizes"/>
@@ -343,6 +367,14 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#interactsWith"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interactsWith"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isAdaptedAccordingTo"/>
         <Class IRI="#ContextInformation"/>
     </ObjectPropertyRange>
@@ -351,13 +383,544 @@
         <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEnvironmentOf"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEnvironmentOf"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#requires"/>
         <Class IRI="#Resource"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#Activity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Task, Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Agent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Agent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ContextInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ContextInformations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ContextInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ContextInformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Environment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Environments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Environment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Location</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Locations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Location</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Profile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Profiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Profile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Resource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Resource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Roles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#States&amp;Status</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">States&amp;Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#States&amp;Status</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">States&amp;Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Time</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Time</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#affects</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">affects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#affects</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">affectses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#affects</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">affectsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#agentOperatesInArea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">agentOperatesInArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#agentOperatesInArea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">agentOperatesInAreas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#agentOperatesInArea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">agentOperatesInAreaed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#changesStateStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">changesStateStatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#changesStateStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">changesStateStatuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#changesStateStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">changesStateStatused</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#characterizes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#characterizes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizeses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#characterizes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAgented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAnniversary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAnniversary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAnniversary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAnniversaries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAnniversary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAnniversaried</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasEnemy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnemy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasEnemy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnemies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasEnemy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnemied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasEnvironment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvironment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasEnvironment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvironments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasEnvironment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvironmented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasEnvisions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvisions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasEnvisions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvisionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasEnvisions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvisionsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasExportPartner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExportPartner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasExportPartner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExportPartners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasExportPartner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExportPartnered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasImportPartner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasImportPartner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasImportPartner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasImportPartners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasImportPartner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasImportPartnered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasProfiled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasResource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasResources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasResourced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRoles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRoled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasStatusState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasStatusState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasStatusState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasStatusStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasStatusState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasStatusStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#interactsWith</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">interactsWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#interactsWith</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">interactsWiths</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#interactsWith</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">interactsWithed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isAdaptedAccordingTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAdaptedAccordingTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isAdaptedAccordingTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAdaptedAccordingToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isAdaptedAccordingTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAdaptedAccordingToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isAdjacentTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAdjacentTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isAdjacentTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAdjacentToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isAdjacentTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAdjacentToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isCustomerOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCustomerOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isCustomerOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCustomerOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isCustomerOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCustomerOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isEnvironmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isEnvironmentOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isEnvironmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isEnvironmentOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isEnvironmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isEnvironmentOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isPerformedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPerformedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isPerformedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPerformedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isPerformedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPerformedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isResourceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isResourceOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isResourceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isResourceOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isResourceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isResourceOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isRoleOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRoleOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isRoleOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRoleOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isRoleOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRoleOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isSupervisedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSupervisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isSupervisedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSupervisedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isSupervisedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSupervisedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#needs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">needs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#needs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">needses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#needs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">needsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#possesses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">possesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#possesses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">possesseses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#possesses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">possessesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#requires</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">requires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#requires</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">requireses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#requires</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">requiresed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

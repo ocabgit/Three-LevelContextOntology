@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/EnvironmentalConditions"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/EnvironmentalConditions">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -213,8 +213,8 @@
         <ObjectProperty IRI="#hasEnvironmentalConditions"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isClimateConditionOf"/>
         <ObjectProperty IRI="#hasClimateCondition"/>
+        <ObjectProperty IRI="#isClimateConditionOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isClimateConditionOf"/>
@@ -233,9 +233,49 @@
         <Class IRI="#EnvironmentalConditions"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ApparentTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ApparentTemperatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ApparentTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ApparentTemperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ApparentTemperature</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">“feels like” temperature due to impact of wind and humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AtmosphericPressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtmosphericPressures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AtmosphericPressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtmosphericPressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Detours</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Detourses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Detours</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Detours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DewPointTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DewPointTemperatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DewPointTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DewPointTemperature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -243,9 +283,29 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Temperature at which dew forms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DiffuseHorizontalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiffuseHorizontalSolarRadiations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DiffuseHorizontalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiffuseHorizontalSolarRadiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DiffuseHorizontalSolarRadiation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Diffuse (indirect) solar radiation at Earth’s surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DirectNormalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DirectNormalSolarRadiations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DirectNormalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DirectNormalSolarRadiation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -253,9 +313,39 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Maximum direct (90 degree) downward solar radiation for selected location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EnvironmentalConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnvironmentalConditionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EnvironmentalConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnvironmentalConditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Extra-terrestrialDirectNormalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Extra-terrestrialDirectNormalSolarRadiations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Extra-terrestrialDirectNormalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Extra-terrestrialDirectNormalSolarRadiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Extra-terrestrialDirectNormalSolarRadiation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Direct (90 degree) downward solar radiation at top of atmosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Extra-terrestrialSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Extra-terrestrialSolarRadiations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Extra-terrestrialSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Extra-terrestrialSolarRadiation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -263,9 +353,49 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Total direct and indirect solar radiation at top of atmosphere</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GlobalHorizontalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GlobalHorizontalSolarRadiations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GlobalHorizontalSolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GlobalHorizontalSolarRadiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GlobalHorizontalSolarRadiation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Total direct and indirect solar radiation at Earth’s surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Humidity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Humidities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Humidity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pressures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Pressure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RelativeHumidity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativeHumidities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RelativeHumidity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativeHumidity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -273,9 +403,89 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Percent of water in air</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RoadConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RoadConditionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RoadConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RoadConditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SolarRadiations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SolarRadiation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SolarRadiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SurfaceAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SurfaceAirTemperatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SurfaceAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SurfaceAirTemperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SurfaceAirTemperature</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Temperature of air shielded from radiation and moisture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Temperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temperatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Temperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TrafficAccidents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TrafficAccidentses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TrafficAccidents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TrafficAccidents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TrafficCongestion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TrafficCongestions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TrafficCongestion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TrafficCongestion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WeatherConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WeatherConditionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WeatherConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WeatherConditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WetBulbTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WetBulbTemperatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WetBulbTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WetBulbTemperature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -283,9 +493,29 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Temperature due to impact of humidity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WindChill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindChills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WindChill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindChill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WindChill</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Apparent temperature due to impact of wind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WindDirection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindDirections</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WindDirection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindDirection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -293,9 +523,89 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Wind from direction (degrees)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WindMeasure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindMeasures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WindMeasure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WindSpeed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindSpeeds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WindSpeed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindSpeed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WindSpeed</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Speed of wind at desired altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAirTemperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAirTemperatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAirTemperature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAirTemperatured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasClimateCondition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasClimateCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasClimateCondition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasClimateConditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasClimateCondition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasClimateConditioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasEnvironmentalConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvironmentalConditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasEnvironmentalConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvironmentalConditionses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasEnvironmentalConditions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEnvironmentalConditionsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isClimateConditionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isClimateConditionOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isClimateConditionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isClimateConditionOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isClimateConditionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isClimateConditionOfed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Service"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Service">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -135,6 +135,9 @@ Service (work done by one person or group that benefits another) &quot;budget se
         <ObjectProperty IRI="#isServiceProviderOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isServiceTypeOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isSubscribedTo"/>
     </Declaration>
     <Declaration>
@@ -266,16 +269,16 @@ Service (work done by one person or group that benefits another) &quot;budget se
         <NamedIndividual IRI="#VideoStreaming"/>
     </ClassAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasService"/>
         <ObjectProperty IRI="#isServiceOf"/>
+        <ObjectProperty IRI="#hasService"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasServiceProvider"/>
         <ObjectProperty IRI="#isServiceProviderOf"/>
+        <ObjectProperty IRI="#hasServiceProvider"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#runsOn"/>
         <ObjectProperty IRI="#runs"/>
+        <ObjectProperty IRI="#runsOn"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasServiceConsumer"/>
@@ -298,8 +301,16 @@ Service (work done by one person or group that benefits another) &quot;budget se
         <Class IRI="#Service"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isServiceTypeOf"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#runsOn"/>
         <Class IRI="#AudiovisualServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runsOn"/>
+        <Class IRI="#Service"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasService"/>
@@ -310,6 +321,10 @@ Service (work done by one person or group that benefits another) &quot;budget se
         <Class IRI="#Service"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isServiceTypeOf"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isSubscribedTo"/>
         <Class IRI="#Service"/>
     </ObjectPropertyRange>
@@ -317,6 +332,465 @@ Service (work done by one person or group that benefits another) &quot;budget se
         <ObjectProperty IRI="#runs"/>
         <Class IRI="#AudiovisualServices"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runs"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AudiovisualServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AudiovisualServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AudiovisualServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AudiovisualServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BusinessServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BusinessServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BusinessServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BusinessServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommunicationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunicationServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommunicationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunicationServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerAndRelatedServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerAndRelatedServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerAndRelatedServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerAndRelatedServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConstructionAndRelatedEngineeringServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConstructionAndRelatedEngineeringServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConstructionAndRelatedEngineeringServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConstructionAndRelatedEngineeringServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DistributionServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DistributionServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DistributionServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DistributionServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EducationalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EducationalServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EducationalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EducationalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EngineeringServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EngineeringServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EngineeringServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EngineeringServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EnvironmentalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnvironmentalServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EnvironmentalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EnvironmentalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FinancialServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FinancialServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FinancialServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FinancialServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HealthRelatedAndSocialServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HealthRelatedAndSocialServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HealthRelatedAndSocialServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HealthRelatedAndSocialServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HospitalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HospitalServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HospitalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HospitalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ImageService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ImageServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ImageService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ImageService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LegalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LegalServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LegalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LegalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MaritimeTransportServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MaritimeTransportServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MaritimeTransportServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MaritimeTransportServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Museum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Museums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Museum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Museum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PostalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PostalServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PostalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PostalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PrimaryEducationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrimaryEducationServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PrimaryEducationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PrimaryEducationServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ProfessionalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProfessionalServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ProfessionalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProfessionalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RecreationalCulturalAndSportingServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RecreationalCulturalAndSportingServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RecreationalCulturalAndSportingServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RecreationalCulturalAndSportingServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RetailingServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RetailingServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RetailingServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RetailingServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Service</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Services</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Service</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SewageServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SewageServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SewageServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SewageServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TaxationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TaxationServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TaxationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TaxationServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TelecommunicationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TelecommunicationServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TelecommunicationServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TelecommunicationServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TourismAndTravelRelatedServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TourismAndTravelRelatedServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TourismAndTravelRelatedServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TourismAndTravelRelatedServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TransportServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TransportServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TransportServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TransportServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#VideoHosting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VideoHosting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VideoService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VideoServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VideoService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VideoService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#VideoStreaming</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VideoStreaming</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasServiceConsumer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceConsumer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasServiceConsumer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceConsumers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasServiceConsumer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceConsumered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasServiceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasServiceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasServiceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceProfiled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasServiceProvider</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceProvider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasServiceProvider</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceProviders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasServiceProvider</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasServiceProvidered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isRankedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRankedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isRankedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRankedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isRankedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRankedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isServiceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isServiceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isServiceOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isServiceProviderOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceProviderOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isServiceProviderOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceProviderOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isServiceProviderOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceProviderOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isServiceTypeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceTypeOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isServiceTypeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceTypeOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isServiceTypeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isServiceTypeOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isSubscribedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSubscribedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isSubscribedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSubscribedToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isSubscribedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSubscribedToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#runs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">runs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#runs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">runses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#runs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">runsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#runsOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">runsOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#runsOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">runsOns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#runsOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">runsOned</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

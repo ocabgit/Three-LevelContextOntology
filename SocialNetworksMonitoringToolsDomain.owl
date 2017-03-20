@@ -1,0 +1,748 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialNetworksMonitoringToolsDomain"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialNetworksMonitoringToolsDomain">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialNetworksMonitoredData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialNetworksMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialNetworksMonitoringProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArchitecturalStyle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConfigurationProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataItems"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConfigurationProfileOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMonitoringToolOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataItemAuthor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataItemID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataItemLink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataItemMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#keywords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#monitoringStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numDataItems"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#outputFormat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeSlot"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeStamp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SocialMentionAPI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SocialMentionAPIProfile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SocialMentionConfProf1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SocialMentionDataItem1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SocialMentionDataItem2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SocialMentionMonitoredData"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterAPI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterAPIDataItem1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterAPIDataItem2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterAPIMonitoredData"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterAPIProfile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterConfProf1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterConfProf2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+        <Class IRI="#SocialNetworksMonitoringProfile"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoring"/>
+        <NamedIndividual IRI="#SocialMentionAPI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoringProfile"/>
+        <NamedIndividual IRI="#SocialMentionAPIProfile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+        <NamedIndividual IRI="#SocialMentionConfProf1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksDataItems"/>
+        <NamedIndividual IRI="#SocialMentionDataItem1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksDataItems"/>
+        <NamedIndividual IRI="#SocialMentionDataItem2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoredData"/>
+        <NamedIndividual IRI="#SocialMentionMonitoredData"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoring"/>
+        <NamedIndividual IRI="#TwitterAPI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksDataItems"/>
+        <NamedIndividual IRI="#TwitterAPIDataItem1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksDataItems"/>
+        <NamedIndividual IRI="#TwitterAPIDataItem2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoredData"/>
+        <NamedIndividual IRI="#TwitterAPIMonitoredData"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoringProfile"/>
+        <NamedIndividual IRI="#TwitterAPIProfile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+        <NamedIndividual IRI="#TwitterConfProf1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+        <NamedIndividual IRI="#TwitterConfProf2"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isConfigurationProfileOf"/>
+        <ObjectProperty IRI="#hasConfigurationProfile"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArchitecturalStyle"/>
+        <Class IRI="#SocialNetworksMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConfigurationProfile"/>
+        <Class IRI="#SocialNetworksMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataItems"/>
+        <Class IRI="#SocialNetworksMonitoredData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConfigurationProfileOf"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMonitoringToolOf"/>
+        <Class IRI="#SocialNetworksMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <Class IRI="#SocialNetworksMonitoredData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConfigurationProfile"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataItems"/>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConfigurationProfileOf"/>
+        <Class IRI="#SocialNetworksMonitoring"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numDataItems"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#confStatus"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataItemAuthor"/>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataItemID"/>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataItemLink"/>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataItemMessage"/>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#SocialNetworksMonitoringProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endPoint"/>
+        <Class IRI="#SocialNetworksMonitoringProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#keywords"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#monitoringStatus"/>
+        <Class IRI="#SocialNetworksMonitoring"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#outputFormat"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timeSlot"/>
+        <Class IRI="#SocialNetworksMonitoringConfProf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timeStamp"/>
+        <Class IRI="#SocialNetworksDataItems"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timeStamp"/>
+        <Class IRI="#SocialNetworksMonitoredData"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#confStatus"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataItemAuthor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataItemID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataItemLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataItemMessage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#endPoint"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#keywords"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#monitoringStatus"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numDataItems"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#outputFormat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timeSlot"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timeStamp"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SocialMentionAPI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialMentionAPI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SocialMentionAPIProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialMentionAPIProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SocialMentionConfProf1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialMentionConfProf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SocialMentionDataItem1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialMentionDataItem1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SocialMentionDataItem2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialMentionDataItem2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#SocialMentionMonitoredData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialMentionMonitoredData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialNetworksDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksDataItemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialNetworksDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksDataItems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialNetworksMonitoredData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoredDatas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialNetworksMonitoredData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoredData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialNetworksMonitoring</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitorings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialNetworksMonitoring</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialNetworksMonitoringConfProf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoringConfProves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialNetworksMonitoringConfProf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoringConfProf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialNetworksMonitoringProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoringProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialNetworksMonitoringProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworksMonitoringProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterAPI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterAPI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterAPIDataItem1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterAPIDataItem1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterAPIDataItem2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterAPIDataItem2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterAPIMonitoredData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterAPIMonitoredData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterAPIProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterAPIProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterConfProf1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterConfProf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#TwitterConfProf2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TwitterConfProf2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#confStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">confStatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#confStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">confStatuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#confStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">confStatused</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#dataItemAuthor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemAuthor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#dataItemAuthor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemAuthors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#dataItemAuthor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemAuthored</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#dataItemID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#dataItemID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemIDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#dataItemID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemIDed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#dataItemLink</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemLink</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#dataItemLink</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemLinks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#dataItemLink</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemLinked</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#dataItemMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemMessage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#dataItemMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemMessages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#dataItemMessage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataItemMessaged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">descriptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">descriptioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#endPoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endPoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#endPoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endPoints</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#endPoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endPointed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasArchitecturalStyle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasArchitecturalStyle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasArchitecturalStyle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasArchitecturalStyles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasArchitecturalStyle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasArchitecturalStyled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasConfigurationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasConfigurationProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasConfigurationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasConfigurationProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasConfigurationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasConfigurationProfiled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDataItems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDataItemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDataItemsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isConfigurationProfileOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isConfigurationProfileOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isConfigurationProfileOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isConfigurationProfileOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isConfigurationProfileOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isConfigurationProfileOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isMonitoringToolOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">monitoringToolOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isMonitoringToolOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">monitoringToolOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isMonitoringToolOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">monitoringToolOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isProducedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isProducedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isProducedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isProducedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isProducedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isProducedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#keywords</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">keywords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#keywords</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">keywordses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#keywords</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">keywordsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#monitoringStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">monitoringStatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#monitoringStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">monitoringStatuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#monitoringStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">monitoringStatused</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#numDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">numDataItems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#numDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">numDataItemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#numDataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">numDataItemsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#outputFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">outputFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#outputFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">outputFormats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#outputFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">outputFormated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#timeSlot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">timeSlot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#timeSlot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">timeSlots</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#timeSlot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">timeSloted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#timeStamp</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">timeStamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#timeStamp</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">timeStamps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#timeStamp</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">timeStamped</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

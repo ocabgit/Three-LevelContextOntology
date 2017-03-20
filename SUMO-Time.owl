@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SUMO-Time"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SUMO-Time">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -778,6 +778,1006 @@
         <ObjectProperty IRI="#temporalPart"/>
         <Class IRI="#TimePosition"/>
     </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AdHocTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AdHocTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AdHocTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AdHocTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Advent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Advent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Advent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AdventSunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AdventSundays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AdventSunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AdventSunday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Afternoon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Afternoons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Afternoon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Afternoon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AnteMeridiem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnteMeridiems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AnteMeridiem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnteMeridiem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#April</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aprils</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#April</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">April</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AscensionThursday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AscensionThursdays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AscensionThursday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AscensionThursday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#August</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Augusts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#August</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">August</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#BeforeCommonEra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BeforeCommonEra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChristianHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristianHolidays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChristianHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristianHoliday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChristmasDay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristmasDays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChristmasDay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristmasDay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CommonEra</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommonEra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Date</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Date</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Day</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Days</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Day</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DayTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DayTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DayTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DayTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#December</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Decembers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#December</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">December</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DhuAlHijjah</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DhuAlHijjahs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DhuAlHijjah</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DhuAlHijjah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EasterSunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EasterSundays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EasterSunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EasterSunday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EidAlFitr</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EidAlFitrs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EidAlFitr</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EidAlFitr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Epiphany</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Epiphanies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Epiphany</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Epiphany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Epoch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Epoches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Epoch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Epoch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FallSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FallSeasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FallSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FallSeason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#February</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Februaries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#February</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">February</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FixedHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FixedHolidays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FixedHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FixedHoliday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Future</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Futures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Future</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Future</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hanukkah</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hanukkahs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hanukkah</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hanukkah</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Holiday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Holidays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Holiday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Holiday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hour</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hour</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#IndefiniteTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IndefiniteTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#IndefiniteTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IndefiniteTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#JewishHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JewishHolidays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#JewishHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JewishHoliday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#July</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Julies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#July</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">July</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#June</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Junes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#June</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">June</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LeapYear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LeapYears</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LeapYear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LeapYear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#March</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#March</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">March</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#May</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#May</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">May</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Minute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Minutes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Minute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Minute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Month</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Months</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Month</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Morning</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mornings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Morning</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Morning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MoveableHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MoveableHolidays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MoveableHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MoveableHoliday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#NegativeInfinity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NegativeInfinity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NightTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NightTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NightTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NightTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#November</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Novembers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#November</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">November</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#October</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Octobers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#October</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">October</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PalmSunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PalmSundays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PalmSunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PalmSunday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Passover</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Passovers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Passover</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Passover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Past</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pasts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Past</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Past</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Pentecost</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pentecosts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Pentecost</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pentecost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#PositiveInfinity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PositiveInfinity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PostMeridiem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PostMeridiems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PostMeridiem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PostMeridiem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Present</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Presents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Present</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Present</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ramadan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ramadans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ramadan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ramadan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RelativeTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativeTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RelativeTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativeTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SeasonOfYear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeasonOfYears</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SeasonOfYear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeasonOfYear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Second</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Seconds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Second</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Second</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#September</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Septembers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#September</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">September</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SpringSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SpringSeasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SpringSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SpringSeason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SummerSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SummerSeasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SummerSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SummerSeason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sundays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sunday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sunrise</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunrises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sunrise</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunrise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sunset</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunsets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sunset</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sunset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Thursday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Thursdays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Thursday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Thursday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TimeDuration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeDurations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TimeDuration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TimeInterval</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeIntervals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TimeInterval</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TimeMeasure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeMeasures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TimeMeasure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimeMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TimePoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimePoints</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TimePoint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimePoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TimePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimePositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TimePosition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TimePosition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#USHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USHolidays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#USHoliday</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USHoliday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#USThanksgivingDay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USThanksgivingDays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#USThanksgivingDay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USThanksgivingDay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#UnixEpoch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnixEpoch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Week</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weeks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Week</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Weekend</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weekends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Weekend</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weekend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WinterSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WinterSeasons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WinterSeason</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WinterSeason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Year</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Years</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Year</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#during</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#during</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">durings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#during</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">durung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#earlier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">earlier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#earlier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">earliers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#earlier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">earliered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#endsBeforeStartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsBeforeStartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#endsBeforeStartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsBeforeStartOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#endsBeforeStartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsBeforeStartOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#endsLaterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsLaterThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#endsLaterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsLaterThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#endsLaterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsLaterThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#endsSameTimeAs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsSameTimeAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#endsSameTimeAs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsSameTimeAses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#endsSameTimeAs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsSameTimeAsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#endsSoonerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsSoonerThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#endsSoonerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsSoonerThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#endsSoonerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsSoonerThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#finishes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">finishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#finishes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">finisheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#finishes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">finishesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#futureFn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">futureFn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#futureFn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">futureFns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#futureFn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">futureFned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDuration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDuration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDurations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDuration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDurationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasEndTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEndTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasEndTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEndTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasEndTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasEndTimed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasExecutionTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExecutionTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasExecutionTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExecutionTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasExecutionTime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExecutionTimed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasTimeToFinish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTimeToFinish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasTimeToFinish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTimeToFinishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasTimeToFinish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTimeToFinished</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#overlapsTemporally</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">overlapsTemporally</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#overlapsTemporally</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">overlapsTemporallies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#overlapsTemporally</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">overlapsTemporallied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#starts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">starts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#starts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#starts</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#startsAfterEndOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsAfterEndOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#startsAfterEndOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsAfterEndOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#startsAfterEndOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsAfterEndOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#startsLaterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsLaterThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#startsLaterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsLaterThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#startsLaterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsLaterThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#startsSameTimeAs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsSameTimeAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#startsSameTimeAs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsSameTimeAses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#startsSameTimeAs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsSameTimeAsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#startsSoonerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsSoonerThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#startsSoonerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsSoonerThans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#startsSoonerThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">startsSoonerThaned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#temporalPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">temporalPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#temporalPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">temporalParts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#temporalPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">temporalParted</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

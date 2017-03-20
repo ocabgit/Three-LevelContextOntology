@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ComputationalEntity"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ComputationalEntity">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -83,6 +83,9 @@
         <Class IRI="#DOCFile"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DataItems"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Database"/>
     </Declaration>
     <Declaration>
@@ -119,7 +122,13 @@
         <Class IRI="#MonitorConnectivityCmd"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MonitoredData"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MonitoringProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonitoringTool"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MultiAgentSystem"/>
@@ -155,10 +164,16 @@
         <Class IRI="#ShutdownBlock"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SocialNetworkingServices"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Software"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SoftwareAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareArchitecture"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SoftwareFile"/>
@@ -206,6 +221,9 @@
         <ObjectProperty IRI="#hasCPU"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasComments"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasDependency"/>
     </Declaration>
     <Declaration>
@@ -219,6 +237,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSoftware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpeed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAvailableNetworkOf"/>
@@ -246,6 +267,36 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ramMemory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Facebook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealPlayer4.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealPlayer9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealPlayerG2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows98"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WindowsXP"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
@@ -276,27 +327,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RealPlayer4.01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RealPlayer9"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RealPlayerG2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Windows7"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Windows8"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Windows98"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#WindowsXP"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.smart-cities.eu/"/>
@@ -397,6 +427,10 @@
         <Class IRI="#ImageFile"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DataItems"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Database"/>
         <Class IRI="#ComputerData"/>
     </SubClassOf>
@@ -449,8 +483,16 @@
         <Class IRI="#MonitoringProgram"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MonitoredData"/>
+        <Class IRI="#ComputerData"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MonitoringProgram"/>
         <Class IRI="#ComputerProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonitoringTool"/>
+        <Class IRI="#MonitoringProgram"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MultiAgentSystem"/>
@@ -497,12 +539,20 @@
         <Class IRI="#ComputerProgram"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SocialNetworkingServices"/>
+        <Class IRI="#CompService"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Software"/>
         <Class IRI="#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SoftwareAgent"/>
         <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareArchitecture"/>
+        <Class IRI="#CompEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SoftwareFile"/>
@@ -553,6 +603,46 @@
         <Class IRI="#ComputerFile"/>
     </SubClassOf>
     <ClassAssertion>
+        <Class IRI="#SocialNetworkingServices"/>
+        <NamedIndividual IRI="#Facebook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPlayer"/>
+        <NamedIndividual IRI="#RealPlayer4.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPlayer"/>
+        <NamedIndividual IRI="#RealPlayer9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RealPlayer"/>
+        <NamedIndividual IRI="#RealPlayerG2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoftwareArchitecture"/>
+        <NamedIndividual IRI="#Rest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialNetworkingServices"/>
+        <NamedIndividual IRI="#Twitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#Windows7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#Windows8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#Windows98"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Windows"/>
+        <NamedIndividual IRI="#WindowsXP"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#WebPage"/>
         <NamedIndividual IRI="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"/>
     </ClassAssertion>
@@ -593,34 +683,6 @@
         <NamedIndividual IRI="http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealPlayer"/>
-        <NamedIndividual IRI="#RealPlayer4.01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RealPlayer"/>
-        <NamedIndividual IRI="#RealPlayer9"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RealPlayer"/>
-        <NamedIndividual IRI="#RealPlayerG2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Windows"/>
-        <NamedIndividual IRI="#Windows7"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Windows"/>
-        <NamedIndividual IRI="#Windows8"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Windows"/>
-        <NamedIndividual IRI="#Windows98"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Windows"/>
-        <NamedIndividual IRI="#WindowsXP"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#WebSite"/>
         <NamedIndividual IRI="http://www.smart-cities.eu/"/>
     </ClassAssertion>
@@ -641,8 +703,8 @@
         <ObjectProperty IRI="#hasAvailableNetwork"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isCPUOf"/>
         <ObjectProperty IRI="#hasCPU"/>
+        <ObjectProperty IRI="#isCPUOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasCPU"/>
@@ -668,6 +730,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasBandwidth"/>
         <Class IRI="#CompNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComments"/>
+        <Class IRI="#SocialNetworkingServices"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDependency"/>
@@ -700,6 +766,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSoftware"/>
         <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpeed"/>
+        <Class IRI="#CompNetwork"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAvailableNetworkOf"/>
@@ -762,9 +832,79 @@
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AudioFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AudioFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AudioFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AudioFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AudioVisualFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AudioVisualFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AudioVisualFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AudioVisualFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AutomaticApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AutomaticApplications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AutomaticApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AutomaticApplication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BitsPerSecond</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BitsPerSeconds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BitsPerSecond</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BitsPerSecond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompApplications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompApplication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#CompApplication</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">applications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompEntities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompEntity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
@@ -772,9 +912,49 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">ComputationalEntity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompNetworks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#CompNetwork</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerNetwork</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerNetwork, Network, NetworkConnection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompResources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompResource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompSystem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
@@ -782,14 +962,929 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">ComputationalSystem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerDatas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerPassword</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerPasswords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerPassword</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerPassword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerPath</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerPaths</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerPath</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerPath</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#synonym"/>
         <IRI>#ComputerPath</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ComputerDirectory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerPrograms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerProgram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ComputerReport</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerReports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ComputerReport</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComputerReport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConsoleApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsoleApplications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConsoleApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsoleApplication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DOCFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DOCFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DOCFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DOCFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DataItemses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DataItems</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DataItems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Database</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Databases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Database</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Database</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DigitalSignature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DigitalSignatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DigitalSignature</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DigitalSignature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EBookFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EBookFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EBookFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EBookFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Facebook</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Facebook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ImageFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ImageFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ImageFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ImageFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#JPGFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JPGFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#JPGFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">JPGFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Linux</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Linuxes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Linux</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Linux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MUSFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MUSFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MUSFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MUSFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MediaPlayer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MediaPlayers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MediaPlayer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MediaPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Middleware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Middlewares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Middleware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Middleware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
         <IRI>#Middleware</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Software that acts as a bridge between an operating system or database and applications, especially on a network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MonitorApplicationCmd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitorApplicationCmds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MonitorApplicationCmd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitorApplicationCmd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MonitorComponentCmd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitorComponentCmds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MonitorComponentCmd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitorComponentCmd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MonitorConnectivityCmd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitorConnectivityCmds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MonitorConnectivityCmd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitorConnectivityCmd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MonitoredData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitoredDatas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MonitoredData</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitoredData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MonitoringProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitoringPrograms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MonitoringProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitoringProgram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MonitoringTool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitoringTools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MonitoringTool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MonitoringTool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MultiAgentSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MultiAgentSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MultiAgentSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MultiAgentSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MultimediaFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MultimediaFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MultimediaFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MultimediaFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NetworkResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkResources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NetworkResource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkResource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OS-X</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OS-Xes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OS-X</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OS-X</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OperatingSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OperatingSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PDFFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDFFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PDFFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PDFFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Packet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Packets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Packet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Packet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RM-StartApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RM-StartApplications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RM-StartApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RM-StartApplication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RealPlayer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RealPlayers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RealPlayer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RealPlayer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#RealPlayer4.01</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RealPlayer4.01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#RealPlayer9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RealPlayer9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#RealPlayerG2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RealPlayerG2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ResourceManagementProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ResourceManagementPrograms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ResourceManagementProgram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ResourceManagementProgram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Rest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ShutdownBlock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ShutdownBlocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ShutdownBlock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ShutdownBlock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialNetworkingServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworkingServiceses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialNetworkingServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialNetworkingServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Software</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Softwares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Software</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SoftwareAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SoftwareAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SoftwareArchitecture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareArchitectures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SoftwareArchitecture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareArchitecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SoftwareFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SoftwareFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Solaris</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Solarises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Solaris</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Solaris</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SpreadsheetDesign</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SpreadsheetDesigns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SpreadsheetDesign</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SpreadsheetDesign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StartupBlock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StartupBlocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StartupBlock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StartupBlock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Twitter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Twitter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserInterface</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserInterfaces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserInterface</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Utility</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Utilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Utility</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Utility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VirtualMachine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VirtualMachines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VirtualMachine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VirtualMachine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WebPage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WebPages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WebPage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WebPage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WebSite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WebSites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WebSite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WebSite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Windows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Windowses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Windows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Windows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Windows7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Windows7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Windows8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Windows8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Windows98</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Windows98</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#WindowsXP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WindowsXP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WordProcessor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WordProcessors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WordProcessor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WordProcessor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#XMLFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">XMLFiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#XMLFile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">XMLFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAvailableNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAvailableNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAvailableNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAvailableNetworks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAvailableNetwork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAvailableNetworked</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasBandwidth</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasBandwidth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasBandwidth</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasBandwidths</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasBandwidth</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasBandwidthed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasCPU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCPU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasCPU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCPUs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasCPU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCPUed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasComments</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasComments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasComments</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCommentses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasComments</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCommentsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDependency</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDependency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDependency</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDependencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDependency</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDependencied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDependencyDelay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDependencyDelay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDependencyDelay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDependencyDelays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDependencyDelay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDependencyDelayed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasDirectory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDirectory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasDirectory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDirectories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasDirectory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDirectoried</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasNetworkProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasNetworkProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasNetworkProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasNetworkProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasNetworkProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasNetworkProfiled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSoftware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSoftware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSoftware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSoftwares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSoftware</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSoftwared</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSpeed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSpeed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSpeed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSpeeds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSpeed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSpeeded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isAvailableNetworkOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAvailableNetworkOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isAvailableNetworkOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAvailableNetworkOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isAvailableNetworkOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAvailableNetworkOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isCPUOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCPUOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isCPUOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCPUOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isCPUOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCPUOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isCompatibleWith</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCompatibleWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isCompatibleWith</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCompatibleWiths</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isCompatibleWith</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isCompatibleWithed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isDirectoryOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDirectoryOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isDirectoryOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDirectoryOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isDirectoryOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDirectoryOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isMonitoredBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isMonitoredBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isMonitoredBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isMonitoredBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isMonitoredBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isMonitoredBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isPasswordOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPasswordOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isPasswordOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPasswordOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isPasswordOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPasswordOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isProgramCopyOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isProgramCopyOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isProgramCopyOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isProgramCopyOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isProgramCopyOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isProgramCopyOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isRunningOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRunningOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isRunningOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRunningOns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isRunningOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRunningOned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#ramMemory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ramMemory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#ramMemory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ramMemories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#ramMemory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ramMemoried</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ontology101-noy-mcguinness.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.cs.upc.edu/jmarco/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/dameller/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/~cayala/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/~franch/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/~moriol/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/~ocabrera/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.essi.upc.edu/~ohernan/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.ibm.com/smarterplanet/us/en/smarter_cities/overview/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.smart-cities.eu/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.smartcities.es/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.smartcityexpo.com/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>https://mail.google.com/</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
 </Ontology>
 

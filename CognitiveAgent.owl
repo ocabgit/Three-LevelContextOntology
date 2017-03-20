@@ -5,6 +5,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
@@ -14,10 +15,58 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent">
         <rdfs:comment>Cognitive agent is a module taken from SUMO ontology</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
     
 
 
@@ -32,36 +81,50 @@
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#dislikes -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#dislikes -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#dislikes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:ObjectProperty rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#dislikes">
+        <ace_lexicon:TV_vbg>dislikesed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>dislikeses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>dislikes</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#hasAllegiance -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#hasAllegiance -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#hasAllegiance">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:ObjectProperty rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#hasAllegiance">
+        <ace_lexicon:TV_sg>hasAllegiances</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasAllegianced</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasAllegiance</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <rdfs:range rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#hasCustomer -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#hasCustomer -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#hasCustomer">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:ObjectProperty rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#hasCustomer">
+        <ace_lexicon:TV_vbg>hasCustomered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasCustomers</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasCustomer</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <rdfs:domain rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#likes -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#likes -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#likes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:ObjectProperty rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#likes">
+        <ace_lexicon:TV_vbg>likesed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>likes</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>likeses</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
     </owl:ObjectProperty>
     
 
@@ -77,40 +140,51 @@
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Angel -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Angel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Angel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Deity"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Angel">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Deity"/>
+        <ace_lexicon:CN_pl>Angels</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Angel</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Broker -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Broker -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Broker">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Broker">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <ace_lexicon:CN_pl>Brokers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Broker</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#ComputerUser -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#ComputerUser">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent">
+        <ace_lexicon:CN_pl>CognitiveAgents</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>CognitiveAgent</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Deity -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#ComputerUser -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Deity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#CognitiveAgent"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#ComputerUser">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <ace_lexicon:CN_sg>ComputerUser</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>ComputerUsers</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Deity -->
+
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Deity">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#CognitiveAgent"/>
+        <ace_lexicon:CN_pl>Deities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Deity</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -126,10 +200,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#God -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#God -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#God">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent#Deity"/>
+    <owl:NamedIndividual rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#God">
+        <rdf:type rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent#Deity"/>
+        <ace_lexicon:PN_sg>God</ace_lexicon:PN_sg>
     </owl:NamedIndividual>
 </rdf:RDF>
 

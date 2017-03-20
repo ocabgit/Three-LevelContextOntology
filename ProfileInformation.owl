@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ProfileInformation"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ProfileInformation">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -42,6 +42,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#CommunityProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompEntityProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfigurationProfile"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DescriptionPreferencesInf"/>
@@ -296,6 +302,10 @@
     <SubClassOf>
         <Class IRI="#CommunityPreferencesInf"/>
         <Class IRI="#CommunityProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfigurationProfile"/>
+        <Class IRI="#CompEntityProfile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DescriptionPreferencesInf"/>
@@ -598,9 +608,724 @@
         <Class IRI="#Address"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Above</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Above</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AccessRights</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AccessRightses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AccessRights</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AccessRights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Address</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Addresses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Address</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Adjacent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adjacent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AntiSymmetricPositionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntiSymmetricPositionalAttributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AntiSymmetricPositionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntiSymmetricPositionalAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Below</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Below</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommunityCultureInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunityCultureInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommunityCultureInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunityCultureInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommunityPreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunityPreferencesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommunityPreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunityPreferencesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CommunityProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunityProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CommunityProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CommunityProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompEntityProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompEntityProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompEntityProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompEntityProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConfigurationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConfigurationProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConfigurationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConfigurationProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DescriptionPreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DescriptionPreferencesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DescriptionPreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DescriptionPreferencesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DeviceCapabilityInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeviceCapabilityInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DeviceCapabilityInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeviceCapabilityInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DeviceFunctionalitiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeviceFunctionalitiesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DeviceFunctionalitiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeviceFunctionalitiesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DevicePhysicalPropertiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DevicePhysicalPropertiesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DevicePhysicalPropertiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DevicePhysicalPropertiesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DeviceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeviceProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DeviceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeviceProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DirectionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DirectionalAttributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DirectionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DirectionalAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Downhill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Downhill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Downstairs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Downstairs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Downstream</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Downstream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Downwind</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Downwind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#East</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">East</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HardwareProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HardwareProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HardwareProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HardwareProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#HighPriority</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HighPriority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Horizontal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Horizontal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#IPAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IPAddresses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#IPAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IPAddress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Inside</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Inside</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InterfacePreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InterfacePreferencesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InterfacePreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InterfacePreferencesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Left</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Left</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LocationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LocationProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LocationProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LocationProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#LowPriority</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LowPriority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Near</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Near</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NetworkCapabilityInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkCapabilityInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NetworkCapabilityInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkCapabilityInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NetworkProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NetworkProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NetworkProtocolInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkProtocolInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NetworkProtocolInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkProtocolInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NetworkTopologyInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkTopologyInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NetworkTopologyInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NetworkTopologyInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#NextTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NextTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NonSecureInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonSecureInformations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NonSecureInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonSecureInformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#North</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">North</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Northeast</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Northeast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Nortwest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nortwest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ObjectPhysicalPropertiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjectPhysicalPropertiesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ObjectPhysicalPropertiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjectPhysicalPropertiesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ObjectProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjectProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ObjectProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjectProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#On</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">On</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Outside</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Outside</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PositionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PositionalAttributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PositionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PositionalAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Right</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SecureInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecureInformations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SecureInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecureInformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ServiceCapabilityInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceCapabilityInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ServiceCapabilityInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceCapabilityInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ServicePreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServicePreferencesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ServicePreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServicePreferencesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ServiceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ServiceProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ServiceTypeInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceTypeInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ServiceTypeInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ServiceTypeInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SoftwareProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SoftwareProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoftwareProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#South</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">South</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Southeast</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Southeast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Southwest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Southwest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SymbolicRepresentationInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SymbolicRepresentationInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SymbolicRepresentationInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SymbolicRepresentationInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#definition"/>
         <IRI>#SymbolicRepresentationInf</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Symbolic representation location describes the location using specific Symbolic representation such as No 2. Meeting room.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SymmetricPositionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SymmetricPositionalAttributes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SymmetricPositionalAttribute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SymmetricPositionalAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Uphill</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uphill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Upstairs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Upstairs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Upstream</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Upstream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Upwind</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Upwind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserBackgroundSkillsCapabilitiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserBackgroundSkillsCapabilitiesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserBackgroundSkillsCapabilitiesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserBackgroundSkillsCapabilitiesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserContactInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserContactInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserContactInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserContactInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserCultureInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserCultureInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserCultureInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserCultureInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserDemographicInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserDemographicInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserDemographicInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserDemographicInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserEnvisionsInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserEnvisionsInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserEnvisionsInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserEnvisionsInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserExpertiseInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserExpertiseInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserExpertiseInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserExpertiseInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserHealth&amp;MedicalInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserHealth&amp;MedicalInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserHealth&amp;MedicalInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserHealth&amp;MedicalInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserHistoricalInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserHistoricalInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserHistoricalInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserHistoricalInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserIDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserNameInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserNameInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserNameInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserNameInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserPhysicalFeaturesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPhysicalFeaturesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserPhysicalFeaturesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPhysicalFeaturesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserPreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPreferencesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserPreferencesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPreferencesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserPreferredChannelDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPreferredChannelDescriptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserPreferredChannelDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPreferredChannelDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserPreferredDeviceDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPreferredDeviceDescriptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserPreferredDeviceDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPreferredDeviceDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserPriority</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPriorities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserPriority</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPriority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserProfessionalInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserProfessionalInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserProfessionalInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserProfessionalInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserProfiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserProfile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UserPsychologicalFeaturesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPsychologicalFeaturesInfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UserPsychologicalFeaturesInf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UserPsychologicalFeaturesInf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Vertical</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vertical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#West</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">West</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAddress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAddresses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAddressed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasHomeAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasHomeAddress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasHomeAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasHomeAddresses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasHomeAddress</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasHomeAddressed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#isIPAddressOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isIPAddressOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#isIPAddressOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isIPAddressOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#isIPAddressOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isIPAddressOfed</Literal>
     </AnnotationAssertion>
 </Ontology>
 

@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantEvents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#LemonIceCream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#IceCream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Juan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Bookings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#dependsOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Enrique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasNoPersons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#GulashSoup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#isDisplayedOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenuProfile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotChocolate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingsMenuProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotSoupe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Profile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingMenu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasWeddingsMenu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Adult"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasSecondCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Resources"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasBirthdayMenu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CouldSoupe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasEventType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Weddings"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenuProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantResources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenuProfile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CurriedZucchiniSoup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Pedro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ContextualMenu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ChocolateIceCream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Birthday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasEvents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CompEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Anniversaries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeatherConditions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasBookings"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasFirstCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#PC"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Adult"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Anniversaries"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantEvents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Birthday"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Anniversaries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenuProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenuProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CompEntity"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Resources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ContextualMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CouldSoupe"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotDrink"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenuProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotSoupe"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#IceCream"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#PC"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CompEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookings"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Bookings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantEvents"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Events"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantResources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantResources"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Resources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeatherConditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Weddings"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Anniversaries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingsMenuProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#IceCream"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ChocolateIceCream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CouldSoupe"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#CurriedZucchiniSoup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Enrique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotSoupe"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#GulashSoup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotDrink"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotChocolate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Juan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#IceCream"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#LemonIceCream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Pedro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasAge"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Enrique"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasAge"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Juan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasAge"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Pedro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasValue"/>
+        <NamedIndividual IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#dependsOn"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasBirthdayMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Birthday"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasBookings"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasEvents"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookings"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingMenu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasResource"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasWeddingsMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Weddings"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#isDisplayedOn"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantMenu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#dependsOn"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantEvents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#dependsOn"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeatherConditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasBirthdayMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasBookings"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasEvents"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenuProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenuProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#HotMenuProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasProfile"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingsMenuProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasResource"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantResources"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasWeddingsMenu"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingMenu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#isDisplayedOn"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#PC"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasDate"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasEventType"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasFirstCourse"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasFirstCourse"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#WeddingsMenuProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasName"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasNoPersons"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#RestaurantBookProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasSecondCourse"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#BirthdayMenuProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasValue"/>
+        <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasEventType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasFirstCourse"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasNoPersons"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasSecondCourse"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Temperature"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ColdMenu"/>
+                <Variable IRI="urn:swrl#cm"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasValue"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Variable IRI="urn:swrl#x"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#ContextualMenu"/>
+                <Variable IRI="urn:swrl#cm"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Test1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+                <Variable abbreviatedIRI="owl:p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasAge"/>
+                <Variable abbreviatedIRI="owl:p"/>
+                <Variable abbreviatedIRI="owl:age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable abbreviatedIRI="owl:age"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">17</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Adult"/>
+                <Variable abbreviatedIRI="owl:p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Person"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#hasAge"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl#age"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain#Adult"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

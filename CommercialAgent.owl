@@ -5,6 +5,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
@@ -14,10 +15,40 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent">
         <rdfs:comment>Commercial agent is a module taken from SUMO ontology</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
     
 
 
@@ -32,285 +63,356 @@
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Agency -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Agency -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Agency">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Agency">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_sg>Agency</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Agencies</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookPublisher -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#BookPublisher -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookPublisher">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#BookPublisher">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Publisher"/>
+        <ace_lexicon:CN_pl>BookPublishers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>BookPublisher</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookSeller -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#BookSeller -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#BookSeller">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#BookSeller">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RetailStore"/>
+        <ace_lexicon:CN_pl>BookSellers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>BookSeller</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#CommercialAgent"/>
+        <ace_lexicon:CN_sg>Business</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Businesses</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Cafeteria -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Cafeteria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Cafeteria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Cafeteria">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Restaurant"/>
+        <ace_lexicon:CN_sg>Cafeteria</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Cafeterias</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIIRailroad -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ClassIIIRailroad -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIIRailroad">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ClassIIIRailroad">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RailroadCompany"/>
+        <ace_lexicon:CN_pl>ClassIIIRailroads</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ClassIIIRailroad</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIRailroad -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ClassIIRailroad -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIIRailroad">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ClassIIRailroad">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RailroadCompany"/>
+        <ace_lexicon:CN_sg>ClassIIRailroad</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>ClassIIRailroads</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIRailroad -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ClassIRailroad -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ClassIRailroad">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ClassIRailroad">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RailroadCompany"/>
+        <ace_lexicon:CN_pl>ClassIRailroads</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ClassIRailroad</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#CommercialAgent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommercialAgent"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommonCarrier -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#CommonCarrier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ContractCarrier"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#CommercialAgent">
+        <ace_lexicon:CN_sg>CommercialAgent</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>CommercialAgents</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ContractCarrier -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#CommonCarrier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ContractCarrier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#CommonCarrier">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#TransportationCompany"/>
+        <owl:disjointWith rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ContractCarrier"/>
+        <ace_lexicon:CN_pl>CommonCarriers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>CommonCarrier</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ContractCarrier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ContractCarrier">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#TransportationCompany"/>
+        <ace_lexicon:CN_pl>ContractCarriers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ContractCarrier</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Crematorium -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Corporation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Crematorium">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Corporation">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_sg>Corporation</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Corporations</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#DrugStore -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Crematorium -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#DrugStore">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Crematorium">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_pl>Crematoriums</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Crematorium</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#EntertainmentCompany -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#DrugStore -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#EntertainmentCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#DrugStore">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RetailStore"/>
+        <ace_lexicon:CN_pl>DrugStores</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>DrugStore</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FamilyBusiness -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#EntertainmentCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FamilyBusiness">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Partnership"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#EntertainmentCompany">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_sg>EntertainmentCompany</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>EntertainmentCompanies</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FinancialCompany -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FamilyBusiness -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FinancialCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FamilyBusiness">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Partnership"/>
+        <ace_lexicon:CN_pl>FamilyBusinesses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FamilyBusiness</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FuneralArranger -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FinancialCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FuneralArranger">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FinancialCompany">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_pl>FinancialCompanies</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FinancialCompany</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#GroceryStore -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FuneralArranger -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#GroceryStore">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FuneralArranger">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_pl>FuneralArrangers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>FuneralArranger</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#InsuranceCompany -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#GroceryStore -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#InsuranceCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#GroceryStore">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RetailStore"/>
+        <ace_lexicon:CN_pl>GroceryStores</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>GroceryStore</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Manufacturer -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#InsuranceCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Manufacturer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#InsuranceCompany">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_sg>InsuranceCompany</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>InsuranceCompanies</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Manufacturer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Corporation"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Corporation"/>
+        <ace_lexicon:CN_sg>Manufacturer</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Manufacturers</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Partnership -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#MercantileOrganization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Partnership">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#MercantileOrganization">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Corporation"/>
+        <ace_lexicon:CN_sg>MercantileOrganization</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MercantileOrganizations</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#PeriodicalPublisher -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Partnership -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#PeriodicalPublisher">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Partnership">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_pl>Partnerships</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Partnership</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Proprietorship -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#PeriodicalPublisher -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Proprietorship">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#PeriodicalPublisher">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Publisher"/>
+        <ace_lexicon:CN_sg>PeriodicalPublisher</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>PeriodicalPublishers</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Proprietorship -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Manufacturer"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Proprietorship">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_pl>Proprietorships</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Proprietorship</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Publisher -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RailroadCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Publisher">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Manufacturer"/>
+        <ace_lexicon:CN_sg>Publisher</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Publishers</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RecordingCompany -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RailroadCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RecordingCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Publisher"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RailroadCompany">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#TransportationCompany"/>
+        <ace_lexicon:CN_pl>RailroadCompanies</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>RailroadCompany</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RecordingCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RecordingCompany">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Publisher"/>
+        <ace_lexicon:CN_pl>RecordingCompanies</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>RecordingCompany</ace_lexicon:CN_sg>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Restaurant -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#RetailStore">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#WholesaleStore"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_sg>Restaurant</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Restaurants</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#SavingsAndLoan -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RetailStore -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#SavingsAndLoan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#FinancialCompany"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#RetailStore">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#MercantileOrganization"/>
+        <owl:disjointWith rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#WholesaleStore"/>
+        <ace_lexicon:CN_sg>RetailStore</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>RetailStores</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ShoppingMall -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#SavingsAndLoan -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#ShoppingMall">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#SavingsAndLoan">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#FinancialCompany"/>
+        <ace_lexicon:CN_sg>SavingsAndLoan</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>SavingsAndLoans</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Tavern -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ShoppingMall -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Tavern">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#ShoppingMall">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#MercantileOrganization"/>
+        <ace_lexicon:CN_sg>ShoppingMall</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>ShoppingMalls</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Tavern -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#TransportationCompany">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Business"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Tavern">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Restaurant"/>
+        <ace_lexicon:CN_sg>Tavern</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Taverns</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#WholesaleStore -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#TransportationCompany -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#WholesaleStore">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Agency"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#MercantileOrganization"/>
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#TransportationCompany">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Business"/>
+        <ace_lexicon:CN_pl>TransportationCompanies</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>TransportationCompany</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#WholesaleStore -->
+
+    <owl:Class rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#WholesaleStore">
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Agency"/>
+        <rdfs:subClassOf rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#MercantileOrganization"/>
+        <ace_lexicon:CN_pl>WholesaleStores</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>WholesaleStore</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -326,10 +428,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#AzurmendiRestaurant -->
+    <!-- http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#AzurmendiRestaurant -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#AzurmendiRestaurant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent#Restaurant"/>
+    <owl:NamedIndividual rdf:about="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#AzurmendiRestaurant">
+        <rdf:type rdf:resource="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent#Restaurant"/>
+        <ace_lexicon:PN_sg>AzurmendiRestaurant</ace_lexicon:PN_sg>
     </owl:NamedIndividual>
 </rdf:RDF>
 

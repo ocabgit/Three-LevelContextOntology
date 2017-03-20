@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Group"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Group">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -260,6 +260,9 @@
         <ObjectProperty IRI="#hasExecutiveBranch"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasFunding"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasJudicialBranch"/>
     </Declaration>
     <Declaration>
@@ -279,12 +282,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSuccessorOrganization"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFundedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#phdFundedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Agnosticism"/>
@@ -782,10 +779,6 @@
         <Class IRI="#BeliefGroup"/>
         <NamedIndividual IRI="#Zoroastrianism"/>
     </ClassAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#phdFundedBy"/>
-        <ObjectProperty IRI="#isFundedBy"/>
-    </SubObjectPropertyOf>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#hasAncestorOrganization"/>
     </TransitiveObjectProperty>
@@ -849,6 +842,10 @@
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFunding"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasReligiousAffiliationOfOrganization"/>
         <Class IRI="#BeliefGroup"/>
     </ObjectPropertyRange>
@@ -860,14 +857,1071 @@
         <ObjectProperty IRI="#hasSuccessorOrganization"/>
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isFundedBy"/>
-        <Class IRI="#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#phdFundedBy"/>
-        <Class IRI="#Organization"/>
-    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Adventistsamfundet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adventistsamfundets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Adventistsamfundet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adventistsamfundet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AgeGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AgeGroups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AgeGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AgeGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Agnosticism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agnosticism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AnglicanApostolicEpiscopalFreeChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnglicanApostolicEpiscopalFreeChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AnglicanApostolicEpiscopalFreeChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnglicanApostolicEpiscopalFreeChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AnglicanChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnglicanChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AnglicanChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnglicanChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Antisemitism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antisemitism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ApostolicChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ApostolicChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ApostolicChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ApostolicChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AssociatedPresbyterianChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AssociatedPresbyterianChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AssociatedPresbyterianChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AssociatedPresbyterianChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Atheism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atheism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Bahaism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bahaism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BaptistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BaptistChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BaptistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BaptistChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Baptistsamfundet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baptistsamfundets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Baptistsamfundet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baptistsamfundet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BeliefGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BeliefGroups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BeliefGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BeliefGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Buddhism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Buddhism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#CONACyT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CONACyT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CareOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CareOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CareOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CareOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CharismaticChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CharismaticChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CharismaticChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CharismaticChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChristianBrethren</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristianBrethrens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChristianBrethren</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristianBrethren</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChristianUnion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristianUnions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChristianUnion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChristianUnion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Christianity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Christianity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Church</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Churches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Church</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Church</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ChurchOfEngland</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChurchOfEngland</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#ChurchOfJesusChristOfLatterDaySaints</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChurchOfJesusChristOfLatterDaySaints</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CityGovernment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CityGovernments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CityGovernment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CityGovernment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CollegeChapel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeChapels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CollegeChapel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CollegeChapel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Confucianism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Confucianism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Consulate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Consulates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Consulate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Consulate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConsulateGeneral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsulateGenerals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConsulateGeneral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConsulateGeneral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CriminalGang</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CriminalGangs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CriminalGang</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CriminalGang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CrusadersUnion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CrusadersUnions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CrusadersUnion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CrusadersUnion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Department</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Departments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Department</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#DepartmentOfHomelandSecurity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DepartmentOfHomelandSecurity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DiplomaticOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiplomaticOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DiplomaticOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiplomaticOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DramaticCast</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DramaticCasts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DramaticCast</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DramaticCast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EcumenicalProject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EcumenicalProjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EcumenicalProject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EcumenicalProject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Embassy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Embassies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Embassy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Embassy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EthnicGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EthnicGroups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EthnicGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EthnicGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EvangelicalChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EvangelicalChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EvangelicalChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EvangelicalChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FamilyGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FamilyGroups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FamilyGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FamilyGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FederalHousingAdministration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FederalHousingAdministrations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FederalHousingAdministration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FederalHousingAdministration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FreeChurchOfEngland</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeChurchOfEnglands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FreeChurchOfEngland</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeChurchOfEngland</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FreeChurchOfScotland</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeChurchOfScotlands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FreeChurchOfScotland</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeChurchOfScotland</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FreeMethodistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeMethodistChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FreeMethodistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeMethodistChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Government</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Governments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Government</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Government</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GovernmentCabinet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentCabinets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GovernmentCabinet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentCabinet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GovernmentOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GovernmentOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GovernmentOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Group</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Groups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Group</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GroupOfAnimals</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GroupOfAnimalses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GroupOfAnimals</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GroupOfAnimals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GroupOfPeople</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GroupOfPeoples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GroupOfPeople</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GroupOfPeople</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Hinduism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hinduism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HospitalOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HospitalOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HospitalOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HospitalOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Institute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Institutes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Institute</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Institute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Institution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Institutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Institution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Institution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Islam</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Islam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Jainism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jainism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Judaism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Judaism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Jury</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Juries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Jury</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Katolskakyrkan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Katolskakyrkans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Katolskakyrkan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Katolskakyrkan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lab</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Labs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lab</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LocalChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LocalChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LocalChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LocalChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LutheranChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LutheranChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LutheranChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LutheranChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MedicalClinic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MedicalClinics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MedicalClinic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MedicalClinic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MethodistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MethodistChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MethodistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MethodistChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MissionOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MissionOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MissionOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MissionOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Missionskyrkan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Missionskyrkans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Missionskyrkan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Missionskyrkan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MissionssaellskapetBibeltrognaVaenner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MissionssaellskapetBibeltrognaVaenners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MissionssaellskapetBibeltrognaVaenner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MissionssaellskapetBibeltrognaVaenner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MusicalGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MusicalGroups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MusicalGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MusicalGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NationalGovernment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NationalGovernments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NationalGovernment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NationalGovernment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Neopaganism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neopaganism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Organization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Organization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Organizations-Interpol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organizations-Interpol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Organizations-UNESCO</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organizations-UNESCO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Organizations-UNICEF</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organizations-UNICEF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ovrigt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ovrigts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ovrigt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ovrigt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Pingstroerelsen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pingstroerelsens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Pingstroerelsen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pingstroerelsen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PoliceOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PoliceOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PoliceOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PoliceOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PresbyterianChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PresbyterianChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PresbyterianChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PresbyterianChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Public</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Publics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Public</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Public</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PublicLibrary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicLibraries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PublicLibrary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicLibrary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PublicSchool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicSchools</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PublicSchool</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PublicSchool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ReligiousOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReligiousOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ReligiousOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReligiousOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#RomanCatholicChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RomanCatholicChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ScottishEpiscopalChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ScottishEpiscopalChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ScottishEpiscopalChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ScottishEpiscopalChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SeventhDayAdventistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeventhDayAdventistChurches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SeventhDayAdventistChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeventhDayAdventistChurch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ShaftesburySociety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ShaftesburySocieties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ShaftesburySociety</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ShaftesburySociety</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Shinto</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Shinto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Sikhism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sikhism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SocialUnit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialUnits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SocialUnit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SocialUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SportsTeam</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SportsTeams</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SportsTeam</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SportsTeam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StateGovernment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StateGovernments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StateGovernment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StateGovernment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SvenskaAlliansmissionen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SvenskaAlliansmissionens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SvenskaAlliansmissionen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SvenskaAlliansmissionen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SvenskaKyrkan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SvenskaKyrkans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SvenskaKyrkan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SvenskaKyrkan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Taoism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Taoism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Trosroerelsen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trosroerelsens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Trosroerelsen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trosroerelsen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USCustomsAndBorderProtection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USCustomsAndBorderProtection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#USStateDepartment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">USStateDepartment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#UnionOfWelshIndependents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnionOfWelshIndependentses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#UnionOfWelshIndependents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnionOfWelshIndependents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#UnitedStatesDepartamentOfAgriculture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesDepartamentOfAgriculture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#UnitedStatesPostalService</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnitedStatesPostalService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#YWAM_BYFC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">YWAM_BYFCs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#YWAM_BYFC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">YWAM_BYFC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Zoroastrianism</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Zoroastrianism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#associateInOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associateInOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#associateInOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associateInOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#associateInOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associateInOrganizationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#employs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">employs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#employs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">employses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#employs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">employsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAffiliatedOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAffiliatedOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAffiliatedOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAffiliatedOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAffiliatedOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAffiliatedOrganizationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasAncestorOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAncestorOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasAncestorOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAncestorOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasAncestorOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasAncestorOrganizationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasExecutiveBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExecutiveBranch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasExecutiveBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExecutiveBranches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasExecutiveBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasExecutiveBranched</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasFunding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFundedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasFunding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFundedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasFunding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFundedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasJudicialBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasJudicialBranch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasJudicialBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasJudicialBranches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasJudicialBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasJudicialBranched</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasLeader</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLeader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasLeader</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLeaders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasLeader</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLeadered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasLegislativeBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLegislativeBranch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasLegislativeBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLegislativeBranches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasLegislativeBranch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLegislativeBranched</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasMember</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMember</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasMember</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMembers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasMember</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMembered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasReligiousAffiliationOfOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasReligiousAffiliationOfOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasReligiousAffiliationOfOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasReligiousAffiliationOfOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasReligiousAffiliationOfOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasReligiousAffiliationOfOrganizationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSubOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSubOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSubOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubOrganizationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#hasSuccessorOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSuccessorOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#hasSuccessorOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSuccessorOrganizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#hasSuccessorOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSuccessorOrganizationed</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

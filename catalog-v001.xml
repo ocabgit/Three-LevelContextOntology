@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialNetworksMonitoringToolsDomain" uri="SocialNetworksMonitoringToolsDomain.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialNetworksMonitoringTools" uri="SocialNetworksMonitoringToolsDomain.owl"/>
+    <uri id="User Entered Import Resolution" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CognitiveAgent" uri="CognitiveAgent.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialEnvironment" uri="SocialEnvironment.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialRole" uri="SocialRole.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Proposition" uri="Proposition.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Organism" uri="Organism.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Object" uri="Object.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/TransportationDevice" uri="TransportationDevice.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance" uri="Substance.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology" uri="UpperLevelOntology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SUMO-Time" uri="SUMO-Time.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ProfileInformation" uri="ProfileInformation.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/System" uri="System.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ManagedEntity" uri="ManagedEntity.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Regulation" uri="Regulation.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/CommercialAgent" uri="CommercialAgent.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions" uri="ThreeLContextOntLocal_Copy/EnvironmentalConditions.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ModuleFOAF" uri="ModuleFOAF.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF" uri="ThreeLContextOntLocal_Copy/ModuleFOAF.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ModuleFOAF" uri="ThreeLContextOntLocal_Copy/ModuleFOAF.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Location" uri="Location.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/AirPollutantAgent" uri="AirPollutantAgent.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Service" uri="Service.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Activity" uri="Activity.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/States&amp;Status" uri="States&amp;Status.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status" uri="ThreeLContextOntLocal_Copy/States&amp;Status.owl"/>
+    <uri id="Imports Wizard Entry" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ComputationalEntity" uri="CompEntity.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice" uri="TransportationDevice.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance" uri="Substance.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF" uri="ModuleFOAF.owl"/>
@@ -27,38 +55,37 @@
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object" uri="Object.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology" uri="UpperLevelOntology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/MyProjectOWL" uri="OntologiesOWL/MyProjectOWL.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://sw.opencyc.org/concept/" uri="OntologiesOWL/owl-export-unversioned.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.context.com/ontologies/context.owl" uri="ContextOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/0/untitled-ontology-49" uri="OntologiesOWL/SUMO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Activity" uri="Activity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/BiologicalState" uri="BiologicalState.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/ComputationalEntity" uri="CompEntity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/EnvironmentalConditions" uri="EnvironmentalConditions.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Group" uri="Group.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Location" uri="Location.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Object" uri="Object.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Organism" uri="Organism.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Proposition" uri="Proposition.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/Regulation" uri="Regulation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/SUMO-Time" uri="SUMO-Time.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/2/UpperLevelOntology" uri="UpperLevelOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/ManagedEntity" uri="ManagedEntity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/Service" uri="Service.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/System" uri="System.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/3/ThreeLevelContextOntology" uri="ThreeLevelContextOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/4/ProfileInformation" uri="ProfileInformation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/4/SocialRole" uri="SocialRole.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent" uri="CognitiveAgent.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent" uri="CommercialAgent.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/AirPollutantAgent" uri="AirPollutantAgent.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/ModuleFOAF" uri="ModuleFOAF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/SocialEnvironment" uri="SocialEnvironment.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/States&amp;Status" uri="States&amp;Status.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance" uri="Substance.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.semanticweb.org/ojcb/ontologies/2015/8/TransportationDevice" uri="TransportationDevice.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.w3.org/2002/07/owl" uri="OntologiesOWL/MyProjectRDF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://www.w3.org/2006/time" uri="OWL-Time.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1443544015018" name="http://xmlns.com/foaf/0.1/" uri="OntologiesOWL/FOAF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Activity" uri="Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/AirPollutantAgent" uri="AirPollutantAgent.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/BiologicalState" uri="BiologicalState.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ComputationalEntity" uri="CompEntity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/EnvironmentalConditions" uri="EnvironmentalConditions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Group" uri="Group.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Location" uri="Location.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ManagedEntity" uri="ManagedEntity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ModuleFOAF" uri="ModuleFOAF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Object" uri="Object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Organism" uri="Organism.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ProfileInformation" uri="ProfileInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Proposition" uri="Proposition.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Regulation" uri="Regulation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SUMO-Time" uri="SUMO-Time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Service" uri="Service.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialEnvironment" uri="SocialEnvironment.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="duplicate:http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialNetworksMonitoringToolsDomain" uri="SocialNetworksMonitoringToolsDomain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="duplicate:http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialNetworksMonitoringToolsDomain" uri="SocialNetworksMonitoringToolsDomain1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/SocialRole" uri="SocialRole.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/States&amp;Status" uri="States&amp;Status.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance" uri="Substance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/System" uri="System.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/ThreeLevelContextOntology" uri="ThreeLevelContextOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/TransportationDevice" uri="TransportationDevice.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology" uri="UpperLevelOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://gessi.lsi.upc.edu/threelevelcontextmodelling/restaurantServiceDomain" uri="RestaurantService.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://www.context.com/ontologies/context.owl" uri="ContextOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://www.semanticweb.org/ojcb/ontologies/2015/5/CognitiveAgent" uri="CognitiveAgent.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://www.semanticweb.org/ojcb/ontologies/2015/5/CommercialAgent" uri="CommercialAgent.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://www.w3.org/2002/07/owl" uri="restaurantServiceDomain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1488834870573" name="http://www.w3.org/2006/time" uri="OWL-Time.owl"/>
     </group>
 </catalog>

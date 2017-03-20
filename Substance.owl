@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance"
+     xml:base="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/ojcb/ontologies/2015/6/Substance">
+     ontologyIRI="http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/Substance">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -961,9 +961,6 @@
         <Class IRI="#ZincOre"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#OzoneShield"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Permafrost"/>
     </Declaration>
     <SubClassOf>
@@ -2440,12 +2437,3143 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#CompoundSubstance"/>
-        <NamedIndividual IRI="#OzoneShield"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CompoundSubstance"/>
         <NamedIndividual IRI="#Permafrost"/>
     </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AbrinToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AbrinToxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AbrinToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AbrinToxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Actinium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actiniums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Actinium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actinium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AerosolParticulate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AerosolParticulates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AerosolParticulate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AerosolParticulate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AerosolizedAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AerosolizedAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AerosolizedAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AerosolizedAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AerosolizedBacillusAnthracis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AerosolizedBacillusAnthracises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AerosolizedBacillusAnthracis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AerosolizedBacillusAnthracis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Aflatoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aflatoxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Aflatoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aflatoxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Air</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Airs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Air</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Air</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Alcohol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alcohols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Alcohol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alcohol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AlcoholicBeverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AlcoholicBeverages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AlcoholicBeverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AlcoholicBeverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Alkaloid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alkaloids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Alkaloid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alkaloid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Alumina</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aluminas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Alumina</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alumina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Aluminum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aluminums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Aluminum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aluminum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Americium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Americiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Americium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Americium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AminoAcid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AminoAcids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AminoAcid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AminoAcid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AmphipathicMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AmphipathicMolecules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AmphipathicMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AmphipathicMolecule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AnimalSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnimalSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AnimalSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AnimalSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Antibiotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antibiotics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Antibiotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antibiotic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Antibody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antibodies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Antibody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antibody</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Antigen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antigens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Antigen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antigen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AntigenA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntigenAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AntigenA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntigenA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AntigenB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntigenBs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AntigenB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntigenB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Antimony</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antimonies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Antimony</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Antimony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Argon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Argons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Argon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Argon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Arsenic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arsenics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Arsenic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arsenic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Arsine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arsines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Arsine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arsine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Asbestos</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asbestoses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Asbestos</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asbestos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Asphalt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asphalts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Asphalt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Asphalt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Astatine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Astatines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Astatine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Astatine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Atom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Atom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AtomicGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtomicGroups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AtomicGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtomicGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#AtomicNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtomicNucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#AtomicNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtomicNucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Atropine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atropines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Atropine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atropine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BZGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BZGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BZGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BZGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Bacitracin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bacitracins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Bacitracin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bacitracin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Barite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Barites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Barite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Barite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Barium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bariums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Barium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Barium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Batrachotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Batrachotoxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Batrachotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Batrachotoxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Bauxite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bauxites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Bauxite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bauxite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Beer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Beer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Berkelium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Berkeliums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Berkelium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Berkelium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Beverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beverages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Beverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Beverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BiochemicalAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiochemicalAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BiochemicalAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiochemicalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BiologicalAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicalAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BiologicalAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BiologicallyActiveSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicallyActiveSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BiologicallyActiveSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BiologicallyActiveSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BlisterAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BlisterAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BlisterAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BlisterAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Blood</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bloods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Blood</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Blood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BloodAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BloodAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BloodTypeA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BloodTypeA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BloodTypeAB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeABs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BloodTypeAB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeAB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BloodTypeB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeBs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BloodTypeB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BloodTypeO</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeOs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BloodTypeO</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BloodTypeO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BodySubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BodySubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BodySubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BodySubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Bone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Bone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BotulinumToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BotulinumToxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BotulinumToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BotulinumToxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Brandy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Brandies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Brandy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Brandy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Brass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Brasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Brass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Brass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#BrownCoal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BrownCoals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#BrownCoal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BrownCoal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CSGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CSGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CSGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CSGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cannabis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cannabises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cannabis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cannabis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Carbohydrate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Carbohydrates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Carbohydrate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Carbohydrate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Carbon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Carbons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Carbon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Carbon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cellulose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Celluloses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cellulose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cellulose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChemicalAcid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalAcids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChemicalAcid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalAcid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChemicalAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChemicalAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChemicalBase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalBases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChemicalBase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalBase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChemicalProduct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalProducts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChemicalProduct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChemicalSalt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalSalts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChemicalSalt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChemicalSalt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChlorineGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChlorineGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChlorineGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChlorineGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Chloropicrin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chloropicrins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Chloropicrin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chloropicrin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ChokingAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChokingAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ChokingAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChokingAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cholesterol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cholesterols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cholesterol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cholesterol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Chromite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chromites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Chromite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chromite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ciprofloxacin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ciprofloxacins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ciprofloxacin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ciprofloxacin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Clay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Clays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Clay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Clay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cloud</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Clouds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cloud</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cloud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Coal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Coal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Cocaine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cocaines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Cocaine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cocaine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Coffee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coffees</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Coffee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Coffee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CompoundSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompoundSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CompoundSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompoundSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Concrete</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Concretes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Concrete</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Concrete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConductorSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConductorSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConductorSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConductorSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ConjugatedSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConjugatedSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ConjugatedSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConjugatedSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Conotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Conotoxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Conotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Conotoxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ControlledSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ControlledSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ControlledSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ControlledSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CopperOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CopperOres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CopperOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CopperOre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#CyanogenChloride</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CyanogenChlorides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#CyanogenChloride</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CyanogenChloride</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DDT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DDTs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DDT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DDT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DNAMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNAMolecules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DNAMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNAMolecule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DNAPolymerase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNAPolymerases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DNAPolymerase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNAPolymerase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Defoliant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defoliants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Defoliant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defoliant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Depressant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Depressants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Depressant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Depressant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DepressantDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DepressantDrugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DepressantDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DepressantDrug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Detergent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Detergents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Detergent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Detergent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diacetoxyscirpenol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diacetoxyscirpenols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diacetoxyscirpenol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diacetoxyscirpenol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diamond</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diamonds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diamond</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diamond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DieselFuel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DieselFuels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DieselFuel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DieselFuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Dimercaprol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dimercaprols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Dimercaprol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dimercaprol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Diphosgene</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diphosgenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Diphosgene</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diphosgene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#DistilledAlcoholicBeverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DistilledAlcoholicBeverages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#DistilledAlcoholicBeverage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DistilledAlcoholicBeverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Dough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Doughs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Dough</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Doxycycline</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Doxycyclines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Doxycycline</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Doxycycline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Effluent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Effluents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Effluent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Effluent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Electricity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electricities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Electricity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electricity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Electron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electrons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Electron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ElementalSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementalSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ElementalSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementalSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Enzyme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Enzymes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Enzyme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Enzyme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#EpsilonToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EpsilonToxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#EpsilonToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EpsilonToxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ExplosiveSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ExplosiveSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ExplosiveSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ExplosiveSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fallout</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fallouts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fallout</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fallout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FatTissue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FatTissues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FatTissue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FatTissue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fertilizer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fertilizers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fertilizer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fertilizer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Flour</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Flours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Flour</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Flour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fluorine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fluorines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fluorine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fluorine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fogs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FossilFuel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FossilFuels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FossilFuel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FossilFuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#FreeAtom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeAtoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#FreeAtom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FreeAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Freshwater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Freshwaters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Freshwater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Freshwater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Fuel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fuels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Fuel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GF</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GFs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GF</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GSeriesNerveAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GSeriesNerveAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GSeriesNerveAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GSeriesNerveAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Gallium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Galliums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Gallium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gallium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GasMixture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GasMixtures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GasMixture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GasMixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Gasoline</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gasolines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Gasoline</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gasoline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Gemstone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gemstones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Gemstone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gemstone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GeneRegulatoryProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GeneRegulatoryProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GeneRegulatoryProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GeneRegulatoryProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Glass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Glasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Glass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Glass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Glue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Glues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Glue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Glue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Gold</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Golds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Gold</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Gravel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gravels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Gravel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gravel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GreenhouseGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GreenhouseGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GreenhouseGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GreenhouseGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Groundwater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Groundwaters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Groundwater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Groundwater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GumArabic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GumArabics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GumArabic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GumArabic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#GunPowder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GunPowders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#GunPowder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GunPowder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hallucinogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hallucinogens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hallucinogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hallucinogen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hashish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hashishes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hashish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hashish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Heroin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Heroins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Heroin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Heroin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Honey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Honeys</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Honey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Honey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hormone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hormones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hormone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hormone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HormoneTSH</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HormoneTSHes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HormoneTSH</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HormoneTSH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Horn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Horns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Horn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Horn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Humus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Humuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Humus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Humus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hydrocarbon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrocarbons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hydrocarbon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrocarbon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Hydrogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrogens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Hydrogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrogen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HydrogenCyanide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenCyanides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HydrogenCyanide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenCyanide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HydrophilicLipidHead</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrophilicLipidHeads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HydrophilicLipidHead</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrophilicLipidHead</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#HydrophobicLipidTail</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrophobicLipidTails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#HydrophobicLipidTail</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrophobicLipidTail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Iceberg</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Icebergs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Iceberg</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Iceberg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#IllicitDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IllicitDrugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#IllicitDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IllicitDrug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#IllicitSyntheticDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IllicitSyntheticDrugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#IllicitSyntheticDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IllicitSyntheticDrug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#IncapacitatingAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IncapacitatingAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#IncapacitatingAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IncapacitatingAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InitiatorProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InitiatorProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InitiatorProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InitiatorProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#InsulatorSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InsulatorSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#InsulatorSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InsulatorSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Insulin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Insulins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Insulin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Insulin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Iron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Irons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Iron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Iron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#IronOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IronOres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#IronOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IronOre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Ivory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ivories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Ivory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ivory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Keflex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Keflexes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Keflex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Keflex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Krypton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kryptons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Krypton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Krypton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LeadOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LeadOres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LeadOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LeadOre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lewisite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lewisites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lewisite</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lewisite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LifeThreateningAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LifeThreateningAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LifeThreateningAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LifeThreateningAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LipidMembraneMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LipidMembraneMolecules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LipidMembraneMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LipidMembraneMolecule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lipoprotein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lipoproteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lipoprotein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lipoprotein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LiquefiedPetroleumGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquefiedPetroleumGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LiquefiedPetroleumGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquefiedPetroleumGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LiquidBodySubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquidBodySubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LiquidBodySubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquidBodySubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#LiquidMixture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquidMixtures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#LiquidMixture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquidMixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Lithium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lithiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Lithium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lithium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Loam</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Loams</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Loam</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Loam</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Magnesium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Magnesiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Magnesium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Magnesium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Manganese</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manganeses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Manganese</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manganese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Marble</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marbles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Marble</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marble</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Marijuana</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marijuanas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Marijuana</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marijuana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Medicine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Medicines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Medicine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Medicine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Mercury</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mercuries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Mercury</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mercury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Metal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Metals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Metal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Metal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MetallicAlloy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MetallicAlloys</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MetallicAlloy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MetallicAlloy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Methamphetamine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Methamphetamines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Methamphetamine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Methamphetamine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Milk</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Milks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Milk</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Milk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Mineral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Minerals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Mineral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mineral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Mixture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mixtures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Mixture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mixture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Molecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Molecules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Molecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Molecule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MotorOil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MotorOils</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MotorOil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MotorOil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MotorProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MotorProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MotorProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MotorProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Muscle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Muscles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Muscle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Muscle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#MustardGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MustardGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#MustardGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MustardGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Mycotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mycotoxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Mycotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mycotoxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Narcotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Narcotics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Narcotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Narcotic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NaturalGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NaturalGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NaturalGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NaturalGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NaturalSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NaturalSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NaturalSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NaturalSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Nectar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nectars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Nectar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nectar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Neon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Neon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NerveAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NerveAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NerveAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NerveAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Neutron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neutrons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Neutron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neutron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Nickel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nickels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Nickel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nickel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NickelOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NickelOres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NickelOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NickelOre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Nitrogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nitrogens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Nitrogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nitrogen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NitrogenMustardGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NitrogenMustardGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NitrogenMustardGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NitrogenMustardGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#NoxiousSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NoxiousSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#NoxiousSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NoxiousSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Nutrient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nutrients</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Nutrient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nutrient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Oil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oils</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Oil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OilPaint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OilPaints</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OilPaint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OilPaint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Opium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Opiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Opium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Opium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OralAntibiotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OralAntibiotics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OralAntibiotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OralAntibiotic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#OrganicCompound</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OrganicCompounds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#OrganicCompound</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OrganicCompound</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Oxygen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oxygens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Oxygen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oxygen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Paint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Paints</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Paint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Paint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Penicillin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Penicillins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Penicillin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Penicillin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Permafrost</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Permafrost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Petroleum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Petroleums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Petroleum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Petroleum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PetroleumLubricant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PetroleumLubricants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PetroleumLubricant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PetroleumLubricant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PetroleumProduct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PetroleumProducts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PetroleumProduct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PetroleumProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Phosgene</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phosgenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Phosgene</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phosgene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PhosgeneOxime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhosgeneOximes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PhosgeneOxime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhosgeneOxime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Phosphate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phosphates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Phosphate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phosphate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PhosphoricAcid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhosphoricAcids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PhosphoricAcid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhosphoricAcid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PlantSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PlantSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PlantSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PlantSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Plastic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Plastics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Plastic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Plastic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PotableWater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PotableWaters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PotableWater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PotableWater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Potash</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Potashes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Potash</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Potash</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Potassium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Potassiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Potassium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Potassium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Powder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Powders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Powder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Powder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PreciousGemstone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PreciousGemstones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PreciousGemstone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PreciousGemstone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Protein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Proteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Protein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Proton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Proton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Proton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PureSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PureSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PureSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PureSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Pyrethrum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pyrethrums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Pyrethrum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pyrethrum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#PyridostigmineBromide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PyridostigmineBromides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#PyridostigmineBromide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PyridostigmineBromide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RNAMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RNAMolecules</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RNAMolecule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RNAMolecule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RNAProcessingEnzyme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RNAProcessingEnzymes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RNAProcessingEnzyme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RNAProcessingEnzyme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Radon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Radons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Radon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Radon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ReadyMixConcrete</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReadyMixConcretes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ReadyMixConcrete</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReadyMixConcrete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ReceptorProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReceptorProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ReceptorProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ReceptorProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RefinedPetroleumProduct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RefinedPetroleumProducts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RefinedPetroleumProduct</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RefinedPetroleumProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#RicinToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RicinToxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#RicinToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RicinToxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Rock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Rock</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Rubber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rubbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Rubber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rubber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SalineSolution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SalineSolutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SalineSolution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SalineSolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Salt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Salts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Salt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Salt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sand</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sand</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sarin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sarins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sarin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sarin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Saxitoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Saxitoxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Saxitoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Saxitoxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SeaIce</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeaIces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SeaIce</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SeaIce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SemipreciousGemstone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SemipreciousGemstones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SemipreciousGemstone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SemipreciousGemstone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Serum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Serums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Serum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Serum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sewage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sewages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sewage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sewage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ShigaToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ShigaToxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ShigaToxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ShigaToxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SignalingProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SignalingProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SignalingProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SignalingProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Silt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Silts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Silt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Silt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Silver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Silvers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Silver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Silver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Skull</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Skulls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Skull</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Skull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Smoke</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Smokes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Smoke</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Smoke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Soap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soaps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Soap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sodium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sodiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sodium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sodium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SodiumChloride</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SodiumChlorides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SodiumChloride</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SodiumChloride</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Soil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soils</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Soil</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SoilSolution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoilSolutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SoilSolution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SoilSolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Solution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Solutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Solution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Soman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Somen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Soman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SpecialPurposeProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SpecialPurposeProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SpecialPurposeProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SpecialPurposeProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StaphylococcalEnterotoxinB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StaphylococcalEnterotoxinBs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StaphylococcalEnterotoxinB</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StaphylococcalEnterotoxinB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Starch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Starches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Starch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Starch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Steel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Steels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Steel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Steel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Steroid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Steroids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Steroid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Steroid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Stimulant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stimulants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Stimulant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stimulant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StimulantDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StimulantDrugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StimulantDrug</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StimulantDrug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Stone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Stone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StorageProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StorageProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StorageProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StorageProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#StructuralProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StructuralProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#StructuralProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StructuralProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SubatomicParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SubatomicParticles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SubatomicParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SubatomicParticle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Substance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Substances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Substance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sugar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sugars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sugar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sugar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sulphur</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sulphurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sulphur</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sulphur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SulphurMustardGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SulphurMustardGases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SulphurMustardGas</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SulphurMustardGas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Surfactant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Surfactants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Surfactant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Surfactant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Suspension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Suspensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Suspension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Suspension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Sweat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sweats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Sweat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sweat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#SyntheticSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SyntheticSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#SyntheticSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SyntheticSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#T2Toxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">T2Toxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#T2Toxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">T2Toxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tabun</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tabuns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tabun</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tabun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Talc</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Talcs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Talc</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Talc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TearSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TearSubstances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TearSubstance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TearSubstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tendon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tendons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tendon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tendon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tetrodotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tetrodotoxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tetrodotoxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tetrodotoxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ThyroidHormone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ThyroidHormones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ThyroidHormone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ThyroidHormone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Timber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Timbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Timber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Timber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tissue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tissues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tissue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tissue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Titanium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Titaniums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Titanium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Titanium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Tooth</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teeth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Tooth</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tooth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TopicalAntibiotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TopicalAntibiotics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TopicalAntibiotic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TopicalAntibiotic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Toxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Toxins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Toxin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Toxin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#TransportProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TransportProteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#TransportProtein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TransportProtein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Uranium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uraniums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Uranium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uranium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Urea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ureas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Urea</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Urea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VSeriesNerveAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VSeriesNerveAgents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VSeriesNerveAgent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VSeriesNerveAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VX</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VXes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VX</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ViralGenome</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ViralGenomes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ViralGenome</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ViralGenome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VirionEnzyme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VirionEnzymes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VirionEnzyme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VirionEnzyme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#VitF2Protein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VitF2Proteins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#VitF2Protein</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">VitF2Protein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Vitamin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vitamins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Vitamin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vitamin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Vollum1B</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vollum1Bs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Vollum1B</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Vollum1B</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Water</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Waters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Water</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WaterCloud</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WaterClouds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WaterCloud</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WaterCloud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#WatercolorPaint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WatercolorPaints</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#WatercolorPaint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WatercolorPaint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Wax</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Waxes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Wax</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wax</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Whiskey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Whiskeys</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Whiskey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Whiskey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Wine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Wine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Wood</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Woods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Wood</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Xenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Xenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Xenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Xenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#Zinc</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Zincs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#Zinc</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Zinc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#ZincOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ZincOres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#ZincOre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ZincOre</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
